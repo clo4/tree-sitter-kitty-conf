@@ -7,6 +7,7 @@ module.exports = grammar({
   rules: {
     config: $ => seq(repeat($._blank), repeat($._value)),
 
+    // TODO: Add map and mouse_map syntax
     _value: $ => choice(
       seq($.setting, "\n"),
       $.doc_comment,
