@@ -1,0 +1,20 @@
+{
+    "name": "tree-sitter-kitty-conf",
+    "version": "0.0.1",
+    "description": "",
+    "main": "bindings/node",
+    "scripts": {
+        "test": "tree-sitter generate; tree-sitter test",
+        "build": "tree-sitter generate",
+        "print-config": "kitty +runpy 'from kitty.config import *; print(commented_out_default_config())' | sed 's/# //'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "nan": "^2.17.0"
+    },
+    "devDependencies": {
+        "tree-sitter-cli": "^0.20.7"
+    }
+}
