@@ -1,0 +1,16 @@
+# Test
+
+map opt+ctrl+a openurl link
+# test
+map kitty_mod+c>opt+n new_window
+
+kitty_mod command+option
+
+map ctrl++ open_url
+
+# Test again
+
+font_size 11.0
+color1 #fff888
+
+mouse_map shift+left click grabbed,ungrabbed mouse_handle_click selection link prompt

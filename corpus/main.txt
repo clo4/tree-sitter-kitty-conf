@@ -44,6 +44,12 @@ Multiple doc comments
   (doc_comment))
 
 ==================
+Using map and mouse_map
+==================
+
+map opt+a 
+
+==================
 Sample config
 ==================
 
