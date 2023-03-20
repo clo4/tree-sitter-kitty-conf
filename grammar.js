@@ -641,9 +641,12 @@ const ACTIONS = [
 // Sequence of whitespace-separated rules
 const seq_ws = (...rules) =>
   seq(
-    ...rules.flatMap((rule, index) =>
-      index === 0 ? [rule] : [INLINE_WHITESPACE, rule],
-    ),
+    ...rules.flatMap((rule, index) => {
+      if (index === 0) {
+        return [rule];
+      }
+      return [INLINE_WHITESPACE, rule];
+    }),
   );
 
 const checked_grammar = grammar_object => {
@@ -702,7 +705,11 @@ const directive_literal = (name, ...values) => {
 const directive = new Proxy(
   (name, ...values) => {
     _directive_check(name);
-    return seq_ws(alias(prec(1, name), name), ...values);
+    const name_alias = alias(prec(1, name), name);
+    if (values.length === 0) {
+      return name_alias;
+    }
+    return seq_ws(name_alias, ...values);
   },
   {
     // Getting a property is done when defining a new rule. This should be done only once per
@@ -814,11 +821,11 @@ module.exports = checked_grammar({
       directive("symbol_map", $.codepoints, $.string),
 
     [directive.narrow_symbols]: $ =>
-      directive_literal(
-        "narrow_symbols",
+      seq(
+        directive("narrow_symbols"),
         INLINE_WHITESPACE,
         $.codepoints,
-        optional(seq(INLINE_WHITESPACE, $.number)),
+        optional(seq(token.immediate(INLINE_WHITESPACE), $.number)),
       ),
 
     // ----------

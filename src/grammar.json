@@ -645,7 +645,16 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "narrow_symbols"
+            }
+          },
+          "named": false,
           "value": "narrow_symbols"
         },
         {
@@ -663,8 +672,11 @@
               "type": "SEQ",
               "members": [
                 {
-                  "type": "PATTERN",
-                  "value": "[\\t ]+"
+                  "type": "IMMEDIATE_TOKEN",
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "[\\t ]+"
+                  }
                 },
                 {
                   "type": "SYMBOL",
