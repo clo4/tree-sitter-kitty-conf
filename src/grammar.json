@@ -98,6 +98,1038 @@
             {
               "type": "SYMBOL",
               "name": "narrow_symbols"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "disable_ligatures"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "font_features"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color0"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color1"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color2"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color3"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color4"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color5"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color6"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color7"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color8"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color9"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color10"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color11"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color12"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color13"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color14"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color15"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color16"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color17"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color18"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color19"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color20"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color21"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color22"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color23"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color24"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color25"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color26"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color27"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color28"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color29"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color30"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color31"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color32"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color33"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color34"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color35"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color36"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color37"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color38"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color39"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color40"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color41"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color42"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color43"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color44"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color45"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color46"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color47"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color48"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color49"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color50"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color51"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color52"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color53"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color54"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color55"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color56"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color57"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color58"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color59"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color60"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color61"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color62"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color63"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color64"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color65"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color66"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color67"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color68"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color69"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color70"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color71"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color72"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color73"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color74"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color75"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color76"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color77"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color78"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color79"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color80"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color81"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color82"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color83"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color84"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color85"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color86"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color87"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color88"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color89"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color90"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color91"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color92"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color93"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color94"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color95"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color96"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color97"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color98"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color99"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color100"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color101"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color102"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color103"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color104"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color105"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color106"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color107"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color108"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color109"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color110"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color111"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color112"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color113"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color114"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color115"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color116"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color117"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color118"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color119"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color120"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color121"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color122"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color123"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color124"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color125"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color126"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color127"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color128"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color129"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color130"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color131"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color132"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color133"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color134"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color135"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color136"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color137"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color138"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color139"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color140"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color141"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color142"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color143"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color144"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color145"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color146"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color147"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color148"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color149"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color150"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color151"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color152"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color153"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color154"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color155"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color156"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color157"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color158"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color159"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color160"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color161"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color162"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color163"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color164"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color165"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color166"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color167"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color168"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color169"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color170"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color171"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color172"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color173"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color174"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color175"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color176"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color177"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color178"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color179"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color180"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color181"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color182"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color183"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color184"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color185"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color186"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color187"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color188"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color189"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color190"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color191"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color192"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color193"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color194"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color195"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color196"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color197"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color198"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color199"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color200"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color201"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color202"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color203"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color204"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color205"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color206"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color207"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color208"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color209"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color210"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color211"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color212"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color213"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color214"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color215"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color216"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color217"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color218"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color219"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color220"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color221"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color222"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color223"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color224"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color225"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color226"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color227"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color228"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color229"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color230"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color231"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color232"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color233"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color234"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color235"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color236"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color237"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color238"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color239"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color240"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color241"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color242"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color243"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color244"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color245"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color246"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color247"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color248"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color249"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color250"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color251"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color252"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color253"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color254"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "color255"
             }
           ]
         },
@@ -688,6 +1720,6743 @@
               "type": "BLANK"
             }
           ]
+        }
+      ]
+    },
+    "disable_ligatures": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "disable_ligatures"
+            }
+          },
+          "named": false,
+          "value": "disable_ligatures"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "disable_ligatures_value"
+        }
+      ]
+    },
+    "disable_ligatures_value": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "never"
+        },
+        {
+          "type": "STRING",
+          "value": "always"
+        },
+        {
+          "type": "STRING",
+          "value": "cursor"
+        }
+      ]
+    },
+    "font_features": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "font_features"
+            }
+          },
+          "named": false,
+          "value": "font_features"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "postscript_font_name"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        }
+      ]
+    },
+    "postscript_font_name": {
+      "type": "PATTERN",
+      "value": "\\S+"
+    },
+    "color0": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color0"
+            }
+          },
+          "named": false,
+          "value": "color0"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color1": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color1"
+            }
+          },
+          "named": false,
+          "value": "color1"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color2": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color2"
+            }
+          },
+          "named": false,
+          "value": "color2"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color3": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color3"
+            }
+          },
+          "named": false,
+          "value": "color3"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color4": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color4"
+            }
+          },
+          "named": false,
+          "value": "color4"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color5": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color5"
+            }
+          },
+          "named": false,
+          "value": "color5"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color6": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color6"
+            }
+          },
+          "named": false,
+          "value": "color6"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color7": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color7"
+            }
+          },
+          "named": false,
+          "value": "color7"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color8": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color8"
+            }
+          },
+          "named": false,
+          "value": "color8"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color9": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color9"
+            }
+          },
+          "named": false,
+          "value": "color9"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color10": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color10"
+            }
+          },
+          "named": false,
+          "value": "color10"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color11": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color11"
+            }
+          },
+          "named": false,
+          "value": "color11"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color12": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color12"
+            }
+          },
+          "named": false,
+          "value": "color12"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color13": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color13"
+            }
+          },
+          "named": false,
+          "value": "color13"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color14": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color14"
+            }
+          },
+          "named": false,
+          "value": "color14"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color15": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color15"
+            }
+          },
+          "named": false,
+          "value": "color15"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color16": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color16"
+            }
+          },
+          "named": false,
+          "value": "color16"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color17": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color17"
+            }
+          },
+          "named": false,
+          "value": "color17"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color18": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color18"
+            }
+          },
+          "named": false,
+          "value": "color18"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color19": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color19"
+            }
+          },
+          "named": false,
+          "value": "color19"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color20": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color20"
+            }
+          },
+          "named": false,
+          "value": "color20"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color21": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color21"
+            }
+          },
+          "named": false,
+          "value": "color21"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color22": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color22"
+            }
+          },
+          "named": false,
+          "value": "color22"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color23": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color23"
+            }
+          },
+          "named": false,
+          "value": "color23"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color24": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color24"
+            }
+          },
+          "named": false,
+          "value": "color24"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color25": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color25"
+            }
+          },
+          "named": false,
+          "value": "color25"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color26": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color26"
+            }
+          },
+          "named": false,
+          "value": "color26"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color27": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color27"
+            }
+          },
+          "named": false,
+          "value": "color27"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color28": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color28"
+            }
+          },
+          "named": false,
+          "value": "color28"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color29": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color29"
+            }
+          },
+          "named": false,
+          "value": "color29"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color30": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color30"
+            }
+          },
+          "named": false,
+          "value": "color30"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color31": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color31"
+            }
+          },
+          "named": false,
+          "value": "color31"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color32": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color32"
+            }
+          },
+          "named": false,
+          "value": "color32"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color33": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color33"
+            }
+          },
+          "named": false,
+          "value": "color33"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color34": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color34"
+            }
+          },
+          "named": false,
+          "value": "color34"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color35": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color35"
+            }
+          },
+          "named": false,
+          "value": "color35"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color36": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color36"
+            }
+          },
+          "named": false,
+          "value": "color36"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color37": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color37"
+            }
+          },
+          "named": false,
+          "value": "color37"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color38": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color38"
+            }
+          },
+          "named": false,
+          "value": "color38"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color39": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color39"
+            }
+          },
+          "named": false,
+          "value": "color39"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color40": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color40"
+            }
+          },
+          "named": false,
+          "value": "color40"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color41": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color41"
+            }
+          },
+          "named": false,
+          "value": "color41"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color42": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color42"
+            }
+          },
+          "named": false,
+          "value": "color42"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color43": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color43"
+            }
+          },
+          "named": false,
+          "value": "color43"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color44": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color44"
+            }
+          },
+          "named": false,
+          "value": "color44"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color45": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color45"
+            }
+          },
+          "named": false,
+          "value": "color45"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color46": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color46"
+            }
+          },
+          "named": false,
+          "value": "color46"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color47": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color47"
+            }
+          },
+          "named": false,
+          "value": "color47"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color48": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color48"
+            }
+          },
+          "named": false,
+          "value": "color48"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color49": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color49"
+            }
+          },
+          "named": false,
+          "value": "color49"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color50": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color50"
+            }
+          },
+          "named": false,
+          "value": "color50"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color51": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color51"
+            }
+          },
+          "named": false,
+          "value": "color51"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color52": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color52"
+            }
+          },
+          "named": false,
+          "value": "color52"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color53": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color53"
+            }
+          },
+          "named": false,
+          "value": "color53"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color54": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color54"
+            }
+          },
+          "named": false,
+          "value": "color54"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color55": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color55"
+            }
+          },
+          "named": false,
+          "value": "color55"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color56": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color56"
+            }
+          },
+          "named": false,
+          "value": "color56"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color57": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color57"
+            }
+          },
+          "named": false,
+          "value": "color57"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color58": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color58"
+            }
+          },
+          "named": false,
+          "value": "color58"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color59": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color59"
+            }
+          },
+          "named": false,
+          "value": "color59"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color60": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color60"
+            }
+          },
+          "named": false,
+          "value": "color60"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color61": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color61"
+            }
+          },
+          "named": false,
+          "value": "color61"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color62": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color62"
+            }
+          },
+          "named": false,
+          "value": "color62"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color63": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color63"
+            }
+          },
+          "named": false,
+          "value": "color63"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color64": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color64"
+            }
+          },
+          "named": false,
+          "value": "color64"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color65": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color65"
+            }
+          },
+          "named": false,
+          "value": "color65"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color66": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color66"
+            }
+          },
+          "named": false,
+          "value": "color66"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color67": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color67"
+            }
+          },
+          "named": false,
+          "value": "color67"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color68": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color68"
+            }
+          },
+          "named": false,
+          "value": "color68"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color69": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color69"
+            }
+          },
+          "named": false,
+          "value": "color69"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color70": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color70"
+            }
+          },
+          "named": false,
+          "value": "color70"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color71": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color71"
+            }
+          },
+          "named": false,
+          "value": "color71"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color72": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color72"
+            }
+          },
+          "named": false,
+          "value": "color72"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color73": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color73"
+            }
+          },
+          "named": false,
+          "value": "color73"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color74": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color74"
+            }
+          },
+          "named": false,
+          "value": "color74"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color75": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color75"
+            }
+          },
+          "named": false,
+          "value": "color75"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color76": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color76"
+            }
+          },
+          "named": false,
+          "value": "color76"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color77": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color77"
+            }
+          },
+          "named": false,
+          "value": "color77"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color78": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color78"
+            }
+          },
+          "named": false,
+          "value": "color78"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color79": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color79"
+            }
+          },
+          "named": false,
+          "value": "color79"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color80": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color80"
+            }
+          },
+          "named": false,
+          "value": "color80"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color81": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color81"
+            }
+          },
+          "named": false,
+          "value": "color81"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color82": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color82"
+            }
+          },
+          "named": false,
+          "value": "color82"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color83": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color83"
+            }
+          },
+          "named": false,
+          "value": "color83"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color84": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color84"
+            }
+          },
+          "named": false,
+          "value": "color84"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color85": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color85"
+            }
+          },
+          "named": false,
+          "value": "color85"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color86": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color86"
+            }
+          },
+          "named": false,
+          "value": "color86"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color87": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color87"
+            }
+          },
+          "named": false,
+          "value": "color87"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color88": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color88"
+            }
+          },
+          "named": false,
+          "value": "color88"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color89": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color89"
+            }
+          },
+          "named": false,
+          "value": "color89"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color90": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color90"
+            }
+          },
+          "named": false,
+          "value": "color90"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color91": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color91"
+            }
+          },
+          "named": false,
+          "value": "color91"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color92": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color92"
+            }
+          },
+          "named": false,
+          "value": "color92"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color93": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color93"
+            }
+          },
+          "named": false,
+          "value": "color93"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color94": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color94"
+            }
+          },
+          "named": false,
+          "value": "color94"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color95": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color95"
+            }
+          },
+          "named": false,
+          "value": "color95"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color96": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color96"
+            }
+          },
+          "named": false,
+          "value": "color96"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color97": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color97"
+            }
+          },
+          "named": false,
+          "value": "color97"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color98": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color98"
+            }
+          },
+          "named": false,
+          "value": "color98"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color99": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color99"
+            }
+          },
+          "named": false,
+          "value": "color99"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color100": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color100"
+            }
+          },
+          "named": false,
+          "value": "color100"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color101": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color101"
+            }
+          },
+          "named": false,
+          "value": "color101"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color102": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color102"
+            }
+          },
+          "named": false,
+          "value": "color102"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color103": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color103"
+            }
+          },
+          "named": false,
+          "value": "color103"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color104": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color104"
+            }
+          },
+          "named": false,
+          "value": "color104"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color105": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color105"
+            }
+          },
+          "named": false,
+          "value": "color105"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color106": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color106"
+            }
+          },
+          "named": false,
+          "value": "color106"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color107": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color107"
+            }
+          },
+          "named": false,
+          "value": "color107"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color108": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color108"
+            }
+          },
+          "named": false,
+          "value": "color108"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color109": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color109"
+            }
+          },
+          "named": false,
+          "value": "color109"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color110": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color110"
+            }
+          },
+          "named": false,
+          "value": "color110"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color111": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color111"
+            }
+          },
+          "named": false,
+          "value": "color111"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color112": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color112"
+            }
+          },
+          "named": false,
+          "value": "color112"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color113": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color113"
+            }
+          },
+          "named": false,
+          "value": "color113"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color114": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color114"
+            }
+          },
+          "named": false,
+          "value": "color114"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color115": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color115"
+            }
+          },
+          "named": false,
+          "value": "color115"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color116": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color116"
+            }
+          },
+          "named": false,
+          "value": "color116"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color117": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color117"
+            }
+          },
+          "named": false,
+          "value": "color117"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color118": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color118"
+            }
+          },
+          "named": false,
+          "value": "color118"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color119": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color119"
+            }
+          },
+          "named": false,
+          "value": "color119"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color120": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color120"
+            }
+          },
+          "named": false,
+          "value": "color120"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color121": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color121"
+            }
+          },
+          "named": false,
+          "value": "color121"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color122": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color122"
+            }
+          },
+          "named": false,
+          "value": "color122"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color123": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color123"
+            }
+          },
+          "named": false,
+          "value": "color123"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color124": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color124"
+            }
+          },
+          "named": false,
+          "value": "color124"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color125": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color125"
+            }
+          },
+          "named": false,
+          "value": "color125"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color126": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color126"
+            }
+          },
+          "named": false,
+          "value": "color126"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color127": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color127"
+            }
+          },
+          "named": false,
+          "value": "color127"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color128": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color128"
+            }
+          },
+          "named": false,
+          "value": "color128"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color129": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color129"
+            }
+          },
+          "named": false,
+          "value": "color129"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color130": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color130"
+            }
+          },
+          "named": false,
+          "value": "color130"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color131": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color131"
+            }
+          },
+          "named": false,
+          "value": "color131"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color132": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color132"
+            }
+          },
+          "named": false,
+          "value": "color132"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color133": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color133"
+            }
+          },
+          "named": false,
+          "value": "color133"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color134": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color134"
+            }
+          },
+          "named": false,
+          "value": "color134"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color135": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color135"
+            }
+          },
+          "named": false,
+          "value": "color135"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color136": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color136"
+            }
+          },
+          "named": false,
+          "value": "color136"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color137": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color137"
+            }
+          },
+          "named": false,
+          "value": "color137"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color138": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color138"
+            }
+          },
+          "named": false,
+          "value": "color138"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color139": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color139"
+            }
+          },
+          "named": false,
+          "value": "color139"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color140": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color140"
+            }
+          },
+          "named": false,
+          "value": "color140"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color141": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color141"
+            }
+          },
+          "named": false,
+          "value": "color141"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color142": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color142"
+            }
+          },
+          "named": false,
+          "value": "color142"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color143": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color143"
+            }
+          },
+          "named": false,
+          "value": "color143"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color144": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color144"
+            }
+          },
+          "named": false,
+          "value": "color144"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color145": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color145"
+            }
+          },
+          "named": false,
+          "value": "color145"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color146": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color146"
+            }
+          },
+          "named": false,
+          "value": "color146"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color147": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color147"
+            }
+          },
+          "named": false,
+          "value": "color147"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color148": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color148"
+            }
+          },
+          "named": false,
+          "value": "color148"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color149": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color149"
+            }
+          },
+          "named": false,
+          "value": "color149"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color150": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color150"
+            }
+          },
+          "named": false,
+          "value": "color150"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color151": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color151"
+            }
+          },
+          "named": false,
+          "value": "color151"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color152": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color152"
+            }
+          },
+          "named": false,
+          "value": "color152"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color153": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color153"
+            }
+          },
+          "named": false,
+          "value": "color153"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color154": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color154"
+            }
+          },
+          "named": false,
+          "value": "color154"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color155": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color155"
+            }
+          },
+          "named": false,
+          "value": "color155"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color156": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color156"
+            }
+          },
+          "named": false,
+          "value": "color156"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color157": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color157"
+            }
+          },
+          "named": false,
+          "value": "color157"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color158": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color158"
+            }
+          },
+          "named": false,
+          "value": "color158"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color159": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color159"
+            }
+          },
+          "named": false,
+          "value": "color159"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color160": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color160"
+            }
+          },
+          "named": false,
+          "value": "color160"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color161": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color161"
+            }
+          },
+          "named": false,
+          "value": "color161"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color162": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color162"
+            }
+          },
+          "named": false,
+          "value": "color162"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color163": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color163"
+            }
+          },
+          "named": false,
+          "value": "color163"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color164": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color164"
+            }
+          },
+          "named": false,
+          "value": "color164"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color165": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color165"
+            }
+          },
+          "named": false,
+          "value": "color165"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color166": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color166"
+            }
+          },
+          "named": false,
+          "value": "color166"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color167": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color167"
+            }
+          },
+          "named": false,
+          "value": "color167"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color168": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color168"
+            }
+          },
+          "named": false,
+          "value": "color168"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color169": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color169"
+            }
+          },
+          "named": false,
+          "value": "color169"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color170": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color170"
+            }
+          },
+          "named": false,
+          "value": "color170"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color171": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color171"
+            }
+          },
+          "named": false,
+          "value": "color171"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color172": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color172"
+            }
+          },
+          "named": false,
+          "value": "color172"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color173": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color173"
+            }
+          },
+          "named": false,
+          "value": "color173"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color174": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color174"
+            }
+          },
+          "named": false,
+          "value": "color174"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color175": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color175"
+            }
+          },
+          "named": false,
+          "value": "color175"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color176": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color176"
+            }
+          },
+          "named": false,
+          "value": "color176"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color177": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color177"
+            }
+          },
+          "named": false,
+          "value": "color177"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color178": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color178"
+            }
+          },
+          "named": false,
+          "value": "color178"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color179": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color179"
+            }
+          },
+          "named": false,
+          "value": "color179"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color180": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color180"
+            }
+          },
+          "named": false,
+          "value": "color180"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color181": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color181"
+            }
+          },
+          "named": false,
+          "value": "color181"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color182": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color182"
+            }
+          },
+          "named": false,
+          "value": "color182"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color183": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color183"
+            }
+          },
+          "named": false,
+          "value": "color183"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color184": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color184"
+            }
+          },
+          "named": false,
+          "value": "color184"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color185": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color185"
+            }
+          },
+          "named": false,
+          "value": "color185"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color186": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color186"
+            }
+          },
+          "named": false,
+          "value": "color186"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color187": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color187"
+            }
+          },
+          "named": false,
+          "value": "color187"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color188": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color188"
+            }
+          },
+          "named": false,
+          "value": "color188"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color189": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color189"
+            }
+          },
+          "named": false,
+          "value": "color189"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color190": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color190"
+            }
+          },
+          "named": false,
+          "value": "color190"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color191": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color191"
+            }
+          },
+          "named": false,
+          "value": "color191"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color192": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color192"
+            }
+          },
+          "named": false,
+          "value": "color192"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color193": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color193"
+            }
+          },
+          "named": false,
+          "value": "color193"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color194": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color194"
+            }
+          },
+          "named": false,
+          "value": "color194"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color195": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color195"
+            }
+          },
+          "named": false,
+          "value": "color195"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color196": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color196"
+            }
+          },
+          "named": false,
+          "value": "color196"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color197": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color197"
+            }
+          },
+          "named": false,
+          "value": "color197"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color198": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color198"
+            }
+          },
+          "named": false,
+          "value": "color198"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color199": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color199"
+            }
+          },
+          "named": false,
+          "value": "color199"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color200": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color200"
+            }
+          },
+          "named": false,
+          "value": "color200"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color201": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color201"
+            }
+          },
+          "named": false,
+          "value": "color201"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color202": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color202"
+            }
+          },
+          "named": false,
+          "value": "color202"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color203": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color203"
+            }
+          },
+          "named": false,
+          "value": "color203"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color204": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color204"
+            }
+          },
+          "named": false,
+          "value": "color204"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color205": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color205"
+            }
+          },
+          "named": false,
+          "value": "color205"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color206": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color206"
+            }
+          },
+          "named": false,
+          "value": "color206"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color207": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color207"
+            }
+          },
+          "named": false,
+          "value": "color207"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color208": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color208"
+            }
+          },
+          "named": false,
+          "value": "color208"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color209": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color209"
+            }
+          },
+          "named": false,
+          "value": "color209"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color210": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color210"
+            }
+          },
+          "named": false,
+          "value": "color210"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color211": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color211"
+            }
+          },
+          "named": false,
+          "value": "color211"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color212": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color212"
+            }
+          },
+          "named": false,
+          "value": "color212"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color213": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color213"
+            }
+          },
+          "named": false,
+          "value": "color213"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color214": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color214"
+            }
+          },
+          "named": false,
+          "value": "color214"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color215": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color215"
+            }
+          },
+          "named": false,
+          "value": "color215"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color216": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color216"
+            }
+          },
+          "named": false,
+          "value": "color216"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color217": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color217"
+            }
+          },
+          "named": false,
+          "value": "color217"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color218": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color218"
+            }
+          },
+          "named": false,
+          "value": "color218"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color219": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color219"
+            }
+          },
+          "named": false,
+          "value": "color219"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color220": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color220"
+            }
+          },
+          "named": false,
+          "value": "color220"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color221": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color221"
+            }
+          },
+          "named": false,
+          "value": "color221"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color222": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color222"
+            }
+          },
+          "named": false,
+          "value": "color222"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color223": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color223"
+            }
+          },
+          "named": false,
+          "value": "color223"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color224": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color224"
+            }
+          },
+          "named": false,
+          "value": "color224"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color225": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color225"
+            }
+          },
+          "named": false,
+          "value": "color225"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color226": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color226"
+            }
+          },
+          "named": false,
+          "value": "color226"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color227": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color227"
+            }
+          },
+          "named": false,
+          "value": "color227"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color228": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color228"
+            }
+          },
+          "named": false,
+          "value": "color228"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color229": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color229"
+            }
+          },
+          "named": false,
+          "value": "color229"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color230": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color230"
+            }
+          },
+          "named": false,
+          "value": "color230"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color231": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color231"
+            }
+          },
+          "named": false,
+          "value": "color231"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color232": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color232"
+            }
+          },
+          "named": false,
+          "value": "color232"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color233": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color233"
+            }
+          },
+          "named": false,
+          "value": "color233"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color234": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color234"
+            }
+          },
+          "named": false,
+          "value": "color234"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color235": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color235"
+            }
+          },
+          "named": false,
+          "value": "color235"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color236": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color236"
+            }
+          },
+          "named": false,
+          "value": "color236"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color237": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color237"
+            }
+          },
+          "named": false,
+          "value": "color237"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color238": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color238"
+            }
+          },
+          "named": false,
+          "value": "color238"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color239": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color239"
+            }
+          },
+          "named": false,
+          "value": "color239"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color240": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color240"
+            }
+          },
+          "named": false,
+          "value": "color240"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color241": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color241"
+            }
+          },
+          "named": false,
+          "value": "color241"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color242": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color242"
+            }
+          },
+          "named": false,
+          "value": "color242"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color243": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color243"
+            }
+          },
+          "named": false,
+          "value": "color243"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color244": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color244"
+            }
+          },
+          "named": false,
+          "value": "color244"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color245": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color245"
+            }
+          },
+          "named": false,
+          "value": "color245"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color246": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color246"
+            }
+          },
+          "named": false,
+          "value": "color246"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color247": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color247"
+            }
+          },
+          "named": false,
+          "value": "color247"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color248": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color248"
+            }
+          },
+          "named": false,
+          "value": "color248"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color249": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color249"
+            }
+          },
+          "named": false,
+          "value": "color249"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color250": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color250"
+            }
+          },
+          "named": false,
+          "value": "color250"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color251": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color251"
+            }
+          },
+          "named": false,
+          "value": "color251"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color252": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color252"
+            }
+          },
+          "named": false,
+          "value": "color252"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color253": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color253"
+            }
+          },
+          "named": false,
+          "value": "color253"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color254": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color254"
+            }
+          },
+          "named": false,
+          "value": "color254"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
+        }
+      ]
+    },
+    "color255": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "color255"
+            }
+          },
+          "named": false,
+          "value": "color255"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[\\t ]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hex_color"
         }
       ]
     },

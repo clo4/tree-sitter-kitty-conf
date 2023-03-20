@@ -434,6 +434,8 @@ DIRECTIVE_NAMES.add("include");
 DIRECTIVE_NAMES.add("globinclude");
 DIRECTIVE_NAMES.add("envinclude");
 
+// These are all case-insensitive, because of course they fucking are...
+// ... I'm just going to pretend they're not, until it becomes an issue.
 const FUNCTIONAL_KEYS = [
   "escape",
   "enter",
@@ -828,9 +830,32 @@ module.exports = checked_grammar({
         optional(seq(token.immediate(INLINE_WHITESPACE), $.number)),
       ),
 
-    // ----------
-    // DATA TYPES
-    // ----------
+    // TODO: test
+    [directive.disable_ligatures]: $ =>
+      directive("disable_ligatures", $.disable_ligatures_value),
+    disable_ligatures_value: $ => choice("never", "always", "cursor"),
+
+    // TODO: test
+    [directive.font_features]: $ =>
+      directive("font_features", $.postscript_font_name, $.string),
+    postscript_font_name: $ => /\S+/,
+
+    // NOTE: Mapping over all the possible color indices to define the rules individually.
+    // There are easier ways to do this, but this works with the current error checking
+    // system I made, so I'm keeping this until it can be refactored. Ideally it wouldn't
+    // generate an additional 256 rules that could really just be a regex.
+    // TODO: test
+    ...Array.from({ length: 256 }, (_, index) => `color${index}`).reduce(
+      (acc, curr) => ({
+        ...acc,
+        [directive[curr]]: $ => directive(curr, $.hex_color),
+      }),
+      {},
+    ),
+
+    // ------------------
+    // GENERIC DATA TYPES
+    // ------------------
 
     none: $ => "none",
     auto: $ => "auto",
