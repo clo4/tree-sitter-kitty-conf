@@ -1,0 +1,23 @@
+==================
+visual_bell_color hex_color
+==================
+
+visual_bell_color #c0ffee
+
+---
+
+(source_file
+  (visual_bell_color
+    (hex_color)))
+
+==================
+visual_bell_color none
+==================
+
+visual_bell_color none
+
+---
+
+(source_file
+  (visual_bell_color
+    (none)))

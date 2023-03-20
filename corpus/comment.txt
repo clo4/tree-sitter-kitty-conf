@@ -1,0 +1,61 @@
+==================
+Single comment
+==================
+
+# This is a comment
+
+---
+
+(source_file
+  (comment))
+
+==================
+Multiple comments
+==================
+
+# This is a comment
+
+# This is another comment
+
+---
+
+(source_file
+  (comment)
+  (comment))
+
+==================
+Comment on following line
+==================
+
+# This is a comment
+# This is another comment
+# Even a third comment
+
+---
+
+(source_file
+  (comment)
+  (comment)
+  (comment))
+
+==================
+Comment with no whitespace after the hash
+==================
+
+#This looks janky
+
+---
+
+(source_file
+  (comment))
+
+==================
+Doc comments aren't special
+==================
+
+#: This is some documentation for a directive.
+
+---
+
+(source_file
+  (comment))

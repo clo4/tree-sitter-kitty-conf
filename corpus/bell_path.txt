@@ -1,0 +1,23 @@
+==================
+bell_path string
+==================
+
+bell_path /home/robert/audio/something.wav
+
+---
+
+(source_file
+  (bell_path
+    (string)))
+
+==================
+bell_path none
+==================
+
+bell_path none
+
+---
+
+(source_file
+  (bell_path
+    (none)))

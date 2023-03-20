@@ -1,0 +1,92 @@
+==================
+narrow_symbols codepoints (single)
+==================
+
+narrow_symbols U+ff00
+
+---
+
+(source_file
+  (narrow_symbols
+    (codepoints
+      (unicode_codepoint))))
+
+==================
+narrow_symbols codepoints (2 single)
+==================
+
+narrow_symbols U+ff00,U+88ff
+
+---
+
+(source_file
+  (narrow_symbols
+    (codepoints
+      (unicode_codepoint)
+      (unicode_codepoint))))
+
+==================
+narrow_symbols codepoints (range)
+==================
+
+narrow_symbols U+ff00-U+88ff
+
+---
+
+(source_file
+  (narrow_symbols
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint)))))
+
+==================
+narrow_symbols codepoints (2 range)
+==================
+
+narrow_symbols U+ff00-U+88ff,U+1234-U+4444
+
+---
+
+(source_file
+  (narrow_symbols
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint))
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint)))))
+
+==================
+narrow_symbols codepoints (range and single)
+==================
+
+narrow_symbols U+ff00-U+88ff,U+1234
+
+---
+
+(source_file
+  (narrow_symbols
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint))
+      (unicode_codepoint))))
+
+==================
+narrow_symbols codepoints number (range and single)
+==================
+
+narrow_symbols U+ff00-U+88ff,U+1234 5
+
+---
+
+(source_file
+  (narrow_symbols
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint))
+      (unicode_codepoint))
+    (number)))

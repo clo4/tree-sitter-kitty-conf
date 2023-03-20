@@ -1,0 +1,11 @@
+==================
+visual_bell_duration number
+==================
+
+visual_bell_duration 11.0
+
+---
+
+(source_file
+  (visual_bell_duration
+    (number)))

@@ -1,0 +1,11 @@
+==================
+enable_audio_bell boolean
+==================
+
+enable_audio_bell yes
+
+---
+
+(source_file
+  (enable_audio_bell
+    (boolean)))

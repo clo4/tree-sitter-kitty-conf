@@ -1,0 +1,11 @@
+==================
+envinclude string
+==================
+
+envinclude KITTY_CONF_*
+
+---
+
+(source_file
+  (envinclude
+    (string)))

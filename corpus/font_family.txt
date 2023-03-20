@@ -1,0 +1,23 @@
+==================
+font_family string
+==================
+
+font_family RobotoMono Nerd Font
+
+---
+
+(source_file
+  (font_family
+    (string)))
+
+==================
+font_family auto
+==================
+
+font_family auto
+
+---
+
+(source_file
+  (font_family
+    (auto)))

@@ -1,0 +1,23 @@
+==================
+bold_font string
+==================
+
+bold_font JetBrains Mono
+
+---
+
+(source_file
+  (bold_font
+    (string)))
+
+==================
+bold_font auto
+==================
+
+bold_font auto
+
+---
+
+(source_file
+  (bold_font
+    (auto)))

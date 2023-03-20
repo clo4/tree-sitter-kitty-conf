@@ -1,0 +1,11 @@
+==================
+globinclude string
+==================
+
+globinclude kitty.d/**/*.conf
+
+---
+
+(source_file
+  (globinclude
+    (string)))

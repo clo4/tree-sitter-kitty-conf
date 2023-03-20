@@ -1,0 +1,80 @@
+==================
+symbol_map codepoints string (single)
+==================
+
+symbol_map U+ff00 Comic Sans MS
+
+---
+
+(source_file
+  (symbol_map
+    (codepoints
+      (unicode_codepoint))
+    (string)))
+
+==================
+symbol_map codepoints string (2 single)
+==================
+
+symbol_map U+ff00,U+88ff Comic Sans MS
+
+---
+
+(source_file
+  (symbol_map
+    (codepoints
+      (unicode_codepoint)
+      (unicode_codepoint))
+    (string)))
+
+==================
+symbol_map codepoints string (range)
+==================
+
+symbol_map U+ff00-U+88ff Comic Sans MS
+
+---
+
+(source_file
+  (symbol_map
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint)))
+    (string)))
+
+==================
+symbol_map codepoints string (2 range)
+==================
+
+symbol_map U+ff00-U+88ff,U+1234-U+4444 Comic Sans MS
+
+---
+
+(source_file
+  (symbol_map
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint))
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint)))
+    (string)))
+
+==================
+symbol_map codepoints string (range and single)
+==================
+
+symbol_map U+ff00-U+88ff,U+1234 Comic Sans MS
+
+---
+
+(source_file
+  (symbol_map
+    (codepoints
+      (unicode_range
+        (unicode_codepoint)
+        (unicode_codepoint))
+      (unicode_codepoint))
+    (string)))

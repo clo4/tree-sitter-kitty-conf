@@ -1,0 +1,47 @@
+==================
+bell_on_tab string
+==================
+
+bell_on_tab !!
+
+---
+
+(source_file
+  (bell_on_tab
+    (string)))
+
+==================
+bell_on_tab quoted_string
+==================
+
+bell_on_tab "🔔 "
+
+---
+
+(source_file
+  (bell_on_tab
+    (string)))
+
+==================
+bell_on_tab boolean
+==================
+
+bell_on_tab yes
+
+---
+
+(source_file
+  (bell_on_tab
+    (boolean)))
+
+==================
+bell_on_tab none
+==================
+
+bell_on_tab none
+
+---
+
+(source_file
+  (bell_on_tab
+    (none)))

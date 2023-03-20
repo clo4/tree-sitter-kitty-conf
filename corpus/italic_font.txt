@@ -1,0 +1,23 @@
+==================
+italic_font string
+==================
+
+italic_font JetBrains Mono
+
+---
+
+(source_file
+  (italic_font
+    (string)))
+
+==================
+italic_font auto
+==================
+
+italic_font auto
+
+---
+
+(source_file
+  (italic_font
+    (auto)))

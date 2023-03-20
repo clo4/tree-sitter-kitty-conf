@@ -1,16 +1,6 @@
 [
   {
-    "type": "bool",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "directive_key",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "directive_value",
+    "type": "bell_on_tab",
     "named": true,
     "fields": {},
     "children": {
@@ -18,15 +8,11 @@
       "required": true,
       "types": [
         {
-          "type": "bool",
+          "type": "boolean",
           "named": true
         },
         {
-          "type": "hex_color",
-          "named": true
-        },
-        {
-          "type": "number",
+          "type": "none",
           "named": true
         },
         {
@@ -37,228 +23,69 @@
     }
   },
   {
-    "type": "generic_directive",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "directive_key",
-            "named": true
-          }
-        ]
-      },
-      "value": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "directive_value",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "kitty_mod",
+    "type": "bell_path",
     "named": true,
     "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "directive_key",
-          "named": true
-        },
-        {
-          "type": "kitty_mod_modifiers",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "kitty_mod_modifiers",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "key_combination_op",
-          "named": true
-        },
-        {
-          "type": "modifier_key",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "map",
-    "named": true,
-    "fields": {
-      "action_args": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "map_action_args",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "directive_key",
-          "named": true
-        },
-        {
-          "type": "map_keybinding_sequence",
-          "named": true
-        },
-        {
-          "type": "shortcut_action",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "map_key",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "map_keybinding",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "key_combination_op",
-          "named": true
-        },
-        {
-          "type": "map_key",
-          "named": true
-        },
-        {
-          "type": "modifier_key",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "map_keybinding_sequence",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "key_sequence_op",
-          "named": true
-        },
-        {
-          "type": "map_keybinding",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "modifier_key",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "mouse_button",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "mouse_map",
-    "named": true,
-    "fields": {
-      "action": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "shortcut_action",
-            "named": true
-          }
-        ]
-      },
-      "action_args": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "mouse_map_action_args",
-            "named": true
-          }
-        ]
-      },
-      "button": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "mouse_map_button",
-            "named": true
-          }
-        ]
-      },
-      "event": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "mouse_map_event",
-            "named": true
-          }
-        ]
-      },
-      "mode": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "mouse_map_modes",
-            "named": true
-          }
-        ]
-      }
-    },
     "children": {
       "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "directive_key",
+          "type": "none",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "mouse_map_button",
+    "type": "bold_font",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bold_italic_font",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "codepoints",
     "named": true,
     "fields": {},
     "children": {
@@ -266,34 +93,181 @@
       "required": true,
       "types": [
         {
-          "type": "key_combination_op",
+          "type": "unicode_codepoint",
           "named": true
         },
         {
-          "type": "modifier_key",
-          "named": true
-        },
-        {
-          "type": "mouse_button",
+          "type": "unicode_range",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "mouse_map_event",
+    "type": "command_on_bell",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "none",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "mouse_map_modes",
+    "type": "enable_audio_bell",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "shortcut_action",
+    "type": "envinclude",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "font_family",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "font_size",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "force_ltr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "globinclude",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "italic_font",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "auto",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "narrow_symbols",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "codepoints",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "source_file",
@@ -304,23 +278,162 @@
       "required": false,
       "types": [
         {
+          "type": "bell_on_tab",
+          "named": true
+        },
+        {
+          "type": "bell_path",
+          "named": true
+        },
+        {
+          "type": "bold_font",
+          "named": true
+        },
+        {
+          "type": "bold_italic_font",
+          "named": true
+        },
+        {
+          "type": "command_on_bell",
+          "named": true
+        },
+        {
           "type": "comment",
           "named": true
         },
         {
-          "type": "generic_directive",
+          "type": "enable_audio_bell",
           "named": true
         },
         {
-          "type": "kitty_mod",
+          "type": "envinclude",
           "named": true
         },
         {
-          "type": "map",
+          "type": "font_family",
           "named": true
         },
         {
-          "type": "mouse_map",
+          "type": "font_size",
+          "named": true
+        },
+        {
+          "type": "force_ltr",
+          "named": true
+        },
+        {
+          "type": "globinclude",
+          "named": true
+        },
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "italic_font",
+          "named": true
+        },
+        {
+          "type": "narrow_symbols",
+          "named": true
+        },
+        {
+          "type": "symbol_map",
+          "named": true
+        },
+        {
+          "type": "visual_bell_color",
+          "named": true
+        },
+        {
+          "type": "visual_bell_duration",
+          "named": true
+        },
+        {
+          "type": "window_alert_on_bell",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "symbol_map",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "codepoints",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unicode_range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "unicode_codepoint",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "visual_bell_color",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "hex_color",
+          "named": true
+        },
+        {
+          "type": "none",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "visual_bell_duration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "window_alert_on_bell",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
           "named": true
         }
       ]
@@ -331,112 +444,16 @@
     "named": false
   },
   {
-    "type": "action_alias",
+    "type": ",",
     "named": false
   },
   {
-    "type": "active_border_color",
+    "type": "-",
     "named": false
   },
   {
-    "type": "active_tab_background",
-    "named": false
-  },
-  {
-    "type": "active_tab_font_style",
-    "named": false
-  },
-  {
-    "type": "active_tab_foreground",
-    "named": false
-  },
-  {
-    "type": "active_tab_title_template",
-    "named": false
-  },
-  {
-    "type": "allow_cloning",
-    "named": false
-  },
-  {
-    "type": "allow_hyperlinks",
-    "named": false
-  },
-  {
-    "type": "allow_remote_control",
-    "named": false
-  },
-  {
-    "type": "alt",
-    "named": false
-  },
-  {
-    "type": "b1",
-    "named": false
-  },
-  {
-    "type": "b2",
-    "named": false
-  },
-  {
-    "type": "b3",
-    "named": false
-  },
-  {
-    "type": "b4",
-    "named": false
-  },
-  {
-    "type": "b5",
-    "named": false
-  },
-  {
-    "type": "b6",
-    "named": false
-  },
-  {
-    "type": "b7",
-    "named": false
-  },
-  {
-    "type": "b8",
-    "named": false
-  },
-  {
-    "type": "background",
-    "named": false
-  },
-  {
-    "type": "background_image",
-    "named": false
-  },
-  {
-    "type": "background_image_layout",
-    "named": false
-  },
-  {
-    "type": "background_image_linear",
-    "named": false
-  },
-  {
-    "type": "background_opacity",
-    "named": false
-  },
-  {
-    "type": "background_tint",
-    "named": false
-  },
-  {
-    "type": "background_tint_gaps",
-    "named": false
-  },
-  {
-    "type": "backspace",
-    "named": false
-  },
-  {
-    "type": "bell_border_color",
-    "named": false
+    "type": "auto",
+    "named": true
   },
   {
     "type": "bell_on_tab",
@@ -455,1090 +472,6 @@
     "named": false
   },
   {
-    "type": "box_drawing_scale",
-    "named": false
-  },
-  {
-    "type": "caps_lock",
-    "named": false
-  },
-  {
-    "type": "change_font_size",
-    "named": false
-  },
-  {
-    "type": "clear_all_mouse_actions",
-    "named": false
-  },
-  {
-    "type": "clear_all_shortcuts",
-    "named": false
-  },
-  {
-    "type": "clear_terminal",
-    "named": false
-  },
-  {
-    "type": "click",
-    "named": false
-  },
-  {
-    "type": "click_interval",
-    "named": false
-  },
-  {
-    "type": "clipboard_control",
-    "named": false
-  },
-  {
-    "type": "clipboard_max_size",
-    "named": false
-  },
-  {
-    "type": "clone_source_strategies",
-    "named": false
-  },
-  {
-    "type": "close_on_child_death",
-    "named": false
-  },
-  {
-    "type": "close_window_with_confirmation",
-    "named": false
-  },
-  {
-    "type": "cmd",
-    "named": false
-  },
-  {
-    "type": "color0",
-    "named": false
-  },
-  {
-    "type": "color1",
-    "named": false
-  },
-  {
-    "type": "color10",
-    "named": false
-  },
-  {
-    "type": "color100",
-    "named": false
-  },
-  {
-    "type": "color101",
-    "named": false
-  },
-  {
-    "type": "color102",
-    "named": false
-  },
-  {
-    "type": "color103",
-    "named": false
-  },
-  {
-    "type": "color104",
-    "named": false
-  },
-  {
-    "type": "color105",
-    "named": false
-  },
-  {
-    "type": "color106",
-    "named": false
-  },
-  {
-    "type": "color107",
-    "named": false
-  },
-  {
-    "type": "color108",
-    "named": false
-  },
-  {
-    "type": "color109",
-    "named": false
-  },
-  {
-    "type": "color11",
-    "named": false
-  },
-  {
-    "type": "color110",
-    "named": false
-  },
-  {
-    "type": "color111",
-    "named": false
-  },
-  {
-    "type": "color112",
-    "named": false
-  },
-  {
-    "type": "color113",
-    "named": false
-  },
-  {
-    "type": "color114",
-    "named": false
-  },
-  {
-    "type": "color115",
-    "named": false
-  },
-  {
-    "type": "color116",
-    "named": false
-  },
-  {
-    "type": "color117",
-    "named": false
-  },
-  {
-    "type": "color118",
-    "named": false
-  },
-  {
-    "type": "color119",
-    "named": false
-  },
-  {
-    "type": "color12",
-    "named": false
-  },
-  {
-    "type": "color120",
-    "named": false
-  },
-  {
-    "type": "color121",
-    "named": false
-  },
-  {
-    "type": "color122",
-    "named": false
-  },
-  {
-    "type": "color123",
-    "named": false
-  },
-  {
-    "type": "color124",
-    "named": false
-  },
-  {
-    "type": "color125",
-    "named": false
-  },
-  {
-    "type": "color126",
-    "named": false
-  },
-  {
-    "type": "color127",
-    "named": false
-  },
-  {
-    "type": "color128",
-    "named": false
-  },
-  {
-    "type": "color129",
-    "named": false
-  },
-  {
-    "type": "color13",
-    "named": false
-  },
-  {
-    "type": "color130",
-    "named": false
-  },
-  {
-    "type": "color131",
-    "named": false
-  },
-  {
-    "type": "color132",
-    "named": false
-  },
-  {
-    "type": "color133",
-    "named": false
-  },
-  {
-    "type": "color134",
-    "named": false
-  },
-  {
-    "type": "color135",
-    "named": false
-  },
-  {
-    "type": "color136",
-    "named": false
-  },
-  {
-    "type": "color137",
-    "named": false
-  },
-  {
-    "type": "color138",
-    "named": false
-  },
-  {
-    "type": "color139",
-    "named": false
-  },
-  {
-    "type": "color14",
-    "named": false
-  },
-  {
-    "type": "color140",
-    "named": false
-  },
-  {
-    "type": "color141",
-    "named": false
-  },
-  {
-    "type": "color142",
-    "named": false
-  },
-  {
-    "type": "color143",
-    "named": false
-  },
-  {
-    "type": "color144",
-    "named": false
-  },
-  {
-    "type": "color145",
-    "named": false
-  },
-  {
-    "type": "color146",
-    "named": false
-  },
-  {
-    "type": "color147",
-    "named": false
-  },
-  {
-    "type": "color148",
-    "named": false
-  },
-  {
-    "type": "color149",
-    "named": false
-  },
-  {
-    "type": "color15",
-    "named": false
-  },
-  {
-    "type": "color150",
-    "named": false
-  },
-  {
-    "type": "color151",
-    "named": false
-  },
-  {
-    "type": "color152",
-    "named": false
-  },
-  {
-    "type": "color153",
-    "named": false
-  },
-  {
-    "type": "color154",
-    "named": false
-  },
-  {
-    "type": "color155",
-    "named": false
-  },
-  {
-    "type": "color156",
-    "named": false
-  },
-  {
-    "type": "color157",
-    "named": false
-  },
-  {
-    "type": "color158",
-    "named": false
-  },
-  {
-    "type": "color159",
-    "named": false
-  },
-  {
-    "type": "color16",
-    "named": false
-  },
-  {
-    "type": "color160",
-    "named": false
-  },
-  {
-    "type": "color161",
-    "named": false
-  },
-  {
-    "type": "color162",
-    "named": false
-  },
-  {
-    "type": "color163",
-    "named": false
-  },
-  {
-    "type": "color164",
-    "named": false
-  },
-  {
-    "type": "color165",
-    "named": false
-  },
-  {
-    "type": "color166",
-    "named": false
-  },
-  {
-    "type": "color167",
-    "named": false
-  },
-  {
-    "type": "color168",
-    "named": false
-  },
-  {
-    "type": "color169",
-    "named": false
-  },
-  {
-    "type": "color17",
-    "named": false
-  },
-  {
-    "type": "color170",
-    "named": false
-  },
-  {
-    "type": "color171",
-    "named": false
-  },
-  {
-    "type": "color172",
-    "named": false
-  },
-  {
-    "type": "color173",
-    "named": false
-  },
-  {
-    "type": "color174",
-    "named": false
-  },
-  {
-    "type": "color175",
-    "named": false
-  },
-  {
-    "type": "color176",
-    "named": false
-  },
-  {
-    "type": "color177",
-    "named": false
-  },
-  {
-    "type": "color178",
-    "named": false
-  },
-  {
-    "type": "color179",
-    "named": false
-  },
-  {
-    "type": "color18",
-    "named": false
-  },
-  {
-    "type": "color180",
-    "named": false
-  },
-  {
-    "type": "color181",
-    "named": false
-  },
-  {
-    "type": "color182",
-    "named": false
-  },
-  {
-    "type": "color183",
-    "named": false
-  },
-  {
-    "type": "color184",
-    "named": false
-  },
-  {
-    "type": "color185",
-    "named": false
-  },
-  {
-    "type": "color186",
-    "named": false
-  },
-  {
-    "type": "color187",
-    "named": false
-  },
-  {
-    "type": "color188",
-    "named": false
-  },
-  {
-    "type": "color189",
-    "named": false
-  },
-  {
-    "type": "color19",
-    "named": false
-  },
-  {
-    "type": "color190",
-    "named": false
-  },
-  {
-    "type": "color191",
-    "named": false
-  },
-  {
-    "type": "color192",
-    "named": false
-  },
-  {
-    "type": "color193",
-    "named": false
-  },
-  {
-    "type": "color194",
-    "named": false
-  },
-  {
-    "type": "color195",
-    "named": false
-  },
-  {
-    "type": "color196",
-    "named": false
-  },
-  {
-    "type": "color197",
-    "named": false
-  },
-  {
-    "type": "color198",
-    "named": false
-  },
-  {
-    "type": "color199",
-    "named": false
-  },
-  {
-    "type": "color2",
-    "named": false
-  },
-  {
-    "type": "color20",
-    "named": false
-  },
-  {
-    "type": "color200",
-    "named": false
-  },
-  {
-    "type": "color201",
-    "named": false
-  },
-  {
-    "type": "color202",
-    "named": false
-  },
-  {
-    "type": "color203",
-    "named": false
-  },
-  {
-    "type": "color204",
-    "named": false
-  },
-  {
-    "type": "color205",
-    "named": false
-  },
-  {
-    "type": "color206",
-    "named": false
-  },
-  {
-    "type": "color207",
-    "named": false
-  },
-  {
-    "type": "color208",
-    "named": false
-  },
-  {
-    "type": "color209",
-    "named": false
-  },
-  {
-    "type": "color21",
-    "named": false
-  },
-  {
-    "type": "color210",
-    "named": false
-  },
-  {
-    "type": "color211",
-    "named": false
-  },
-  {
-    "type": "color212",
-    "named": false
-  },
-  {
-    "type": "color213",
-    "named": false
-  },
-  {
-    "type": "color214",
-    "named": false
-  },
-  {
-    "type": "color215",
-    "named": false
-  },
-  {
-    "type": "color216",
-    "named": false
-  },
-  {
-    "type": "color217",
-    "named": false
-  },
-  {
-    "type": "color218",
-    "named": false
-  },
-  {
-    "type": "color219",
-    "named": false
-  },
-  {
-    "type": "color22",
-    "named": false
-  },
-  {
-    "type": "color220",
-    "named": false
-  },
-  {
-    "type": "color221",
-    "named": false
-  },
-  {
-    "type": "color222",
-    "named": false
-  },
-  {
-    "type": "color223",
-    "named": false
-  },
-  {
-    "type": "color224",
-    "named": false
-  },
-  {
-    "type": "color225",
-    "named": false
-  },
-  {
-    "type": "color226",
-    "named": false
-  },
-  {
-    "type": "color227",
-    "named": false
-  },
-  {
-    "type": "color228",
-    "named": false
-  },
-  {
-    "type": "color229",
-    "named": false
-  },
-  {
-    "type": "color23",
-    "named": false
-  },
-  {
-    "type": "color230",
-    "named": false
-  },
-  {
-    "type": "color231",
-    "named": false
-  },
-  {
-    "type": "color232",
-    "named": false
-  },
-  {
-    "type": "color233",
-    "named": false
-  },
-  {
-    "type": "color234",
-    "named": false
-  },
-  {
-    "type": "color235",
-    "named": false
-  },
-  {
-    "type": "color236",
-    "named": false
-  },
-  {
-    "type": "color237",
-    "named": false
-  },
-  {
-    "type": "color238",
-    "named": false
-  },
-  {
-    "type": "color239",
-    "named": false
-  },
-  {
-    "type": "color24",
-    "named": false
-  },
-  {
-    "type": "color240",
-    "named": false
-  },
-  {
-    "type": "color241",
-    "named": false
-  },
-  {
-    "type": "color242",
-    "named": false
-  },
-  {
-    "type": "color243",
-    "named": false
-  },
-  {
-    "type": "color244",
-    "named": false
-  },
-  {
-    "type": "color245",
-    "named": false
-  },
-  {
-    "type": "color246",
-    "named": false
-  },
-  {
-    "type": "color247",
-    "named": false
-  },
-  {
-    "type": "color248",
-    "named": false
-  },
-  {
-    "type": "color249",
-    "named": false
-  },
-  {
-    "type": "color25",
-    "named": false
-  },
-  {
-    "type": "color250",
-    "named": false
-  },
-  {
-    "type": "color251",
-    "named": false
-  },
-  {
-    "type": "color252",
-    "named": false
-  },
-  {
-    "type": "color253",
-    "named": false
-  },
-  {
-    "type": "color254",
-    "named": false
-  },
-  {
-    "type": "color255",
-    "named": false
-  },
-  {
-    "type": "color26",
-    "named": false
-  },
-  {
-    "type": "color27",
-    "named": false
-  },
-  {
-    "type": "color28",
-    "named": false
-  },
-  {
-    "type": "color29",
-    "named": false
-  },
-  {
-    "type": "color3",
-    "named": false
-  },
-  {
-    "type": "color30",
-    "named": false
-  },
-  {
-    "type": "color31",
-    "named": false
-  },
-  {
-    "type": "color32",
-    "named": false
-  },
-  {
-    "type": "color33",
-    "named": false
-  },
-  {
-    "type": "color34",
-    "named": false
-  },
-  {
-    "type": "color35",
-    "named": false
-  },
-  {
-    "type": "color36",
-    "named": false
-  },
-  {
-    "type": "color37",
-    "named": false
-  },
-  {
-    "type": "color38",
-    "named": false
-  },
-  {
-    "type": "color39",
-    "named": false
-  },
-  {
-    "type": "color4",
-    "named": false
-  },
-  {
-    "type": "color40",
-    "named": false
-  },
-  {
-    "type": "color41",
-    "named": false
-  },
-  {
-    "type": "color42",
-    "named": false
-  },
-  {
-    "type": "color43",
-    "named": false
-  },
-  {
-    "type": "color44",
-    "named": false
-  },
-  {
-    "type": "color45",
-    "named": false
-  },
-  {
-    "type": "color46",
-    "named": false
-  },
-  {
-    "type": "color47",
-    "named": false
-  },
-  {
-    "type": "color48",
-    "named": false
-  },
-  {
-    "type": "color49",
-    "named": false
-  },
-  {
-    "type": "color5",
-    "named": false
-  },
-  {
-    "type": "color50",
-    "named": false
-  },
-  {
-    "type": "color51",
-    "named": false
-  },
-  {
-    "type": "color52",
-    "named": false
-  },
-  {
-    "type": "color53",
-    "named": false
-  },
-  {
-    "type": "color54",
-    "named": false
-  },
-  {
-    "type": "color55",
-    "named": false
-  },
-  {
-    "type": "color56",
-    "named": false
-  },
-  {
-    "type": "color57",
-    "named": false
-  },
-  {
-    "type": "color58",
-    "named": false
-  },
-  {
-    "type": "color59",
-    "named": false
-  },
-  {
-    "type": "color6",
-    "named": false
-  },
-  {
-    "type": "color60",
-    "named": false
-  },
-  {
-    "type": "color61",
-    "named": false
-  },
-  {
-    "type": "color62",
-    "named": false
-  },
-  {
-    "type": "color63",
-    "named": false
-  },
-  {
-    "type": "color64",
-    "named": false
-  },
-  {
-    "type": "color65",
-    "named": false
-  },
-  {
-    "type": "color66",
-    "named": false
-  },
-  {
-    "type": "color67",
-    "named": false
-  },
-  {
-    "type": "color68",
-    "named": false
-  },
-  {
-    "type": "color69",
-    "named": false
-  },
-  {
-    "type": "color7",
-    "named": false
-  },
-  {
-    "type": "color70",
-    "named": false
-  },
-  {
-    "type": "color71",
-    "named": false
-  },
-  {
-    "type": "color72",
-    "named": false
-  },
-  {
-    "type": "color73",
-    "named": false
-  },
-  {
-    "type": "color74",
-    "named": false
-  },
-  {
-    "type": "color75",
-    "named": false
-  },
-  {
-    "type": "color76",
-    "named": false
-  },
-  {
-    "type": "color77",
-    "named": false
-  },
-  {
-    "type": "color78",
-    "named": false
-  },
-  {
-    "type": "color79",
-    "named": false
-  },
-  {
-    "type": "color8",
-    "named": false
-  },
-  {
-    "type": "color80",
-    "named": false
-  },
-  {
-    "type": "color81",
-    "named": false
-  },
-  {
-    "type": "color82",
-    "named": false
-  },
-  {
-    "type": "color83",
-    "named": false
-  },
-  {
-    "type": "color84",
-    "named": false
-  },
-  {
-    "type": "color85",
-    "named": false
-  },
-  {
-    "type": "color86",
-    "named": false
-  },
-  {
-    "type": "color87",
-    "named": false
-  },
-  {
-    "type": "color88",
-    "named": false
-  },
-  {
-    "type": "color89",
-    "named": false
-  },
-  {
-    "type": "color9",
-    "named": false
-  },
-  {
-    "type": "color90",
-    "named": false
-  },
-  {
-    "type": "color91",
-    "named": false
-  },
-  {
-    "type": "color92",
-    "named": false
-  },
-  {
-    "type": "color93",
-    "named": false
-  },
-  {
-    "type": "color94",
-    "named": false
-  },
-  {
-    "type": "color95",
-    "named": false
-  },
-  {
-    "type": "color96",
-    "named": false
-  },
-  {
-    "type": "color97",
-    "named": false
-  },
-  {
-    "type": "color98",
-    "named": false
-  },
-  {
-    "type": "color99",
-    "named": false
-  },
-  {
-    "type": "command",
-    "named": false
-  },
-  {
     "type": "command_on_bell",
     "named": false
   },
@@ -1547,275 +480,11 @@
     "named": true
   },
   {
-    "type": "confirm_os_window_close",
-    "named": false
-  },
-  {
-    "type": "control",
-    "named": false
-  },
-  {
-    "type": "copy_on_select",
-    "named": false
-  },
-  {
-    "type": "copy_to_buffer",
-    "named": false
-  },
-  {
-    "type": "ctrl",
-    "named": false
-  },
-  {
-    "type": "cursor",
-    "named": false
-  },
-  {
-    "type": "cursor_beam_thickness",
-    "named": false
-  },
-  {
-    "type": "cursor_blink_interval",
-    "named": false
-  },
-  {
-    "type": "cursor_shape",
-    "named": false
-  },
-  {
-    "type": "cursor_stop_blinking_after",
-    "named": false
-  },
-  {
-    "type": "cursor_text_color",
-    "named": false
-  },
-  {
-    "type": "cursor_underline_thickness",
-    "named": false
-  },
-  {
-    "type": "default_pointer_shape",
-    "named": false
-  },
-  {
-    "type": "delete",
-    "named": false
-  },
-  {
-    "type": "detach_tab",
-    "named": false
-  },
-  {
-    "type": "detach_window",
-    "named": false
-  },
-  {
-    "type": "detect_urls",
-    "named": false
-  },
-  {
-    "type": "dim_opacity",
-    "named": false
-  },
-  {
-    "type": "disable_ligatures",
-    "named": false
-  },
-  {
-    "type": "disable_ligatures_in",
-    "named": false
-  },
-  {
-    "type": "doubleclick",
-    "named": false
-  },
-  {
-    "type": "doublepress",
-    "named": false
-  },
-  {
-    "type": "down",
-    "named": false
-  },
-  {
-    "type": "draw_minimal_borders",
-    "named": false
-  },
-  {
-    "type": "dynamic_background_opacity",
-    "named": false
-  },
-  {
-    "type": "editor",
-    "named": false
-  },
-  {
     "type": "enable_audio_bell",
     "named": false
   },
   {
-    "type": "enabled_layouts",
-    "named": false
-  },
-  {
-    "type": "end",
-    "named": false
-  },
-  {
-    "type": "enter",
-    "named": false
-  },
-  {
-    "type": "env",
-    "named": false
-  },
-  {
-    "type": "escape",
-    "named": false
-  },
-  {
-    "type": "exe_search_path",
-    "named": false
-  },
-  {
-    "type": "f1",
-    "named": false
-  },
-  {
-    "type": "f10",
-    "named": false
-  },
-  {
-    "type": "f11",
-    "named": false
-  },
-  {
-    "type": "f12",
-    "named": false
-  },
-  {
-    "type": "f13",
-    "named": false
-  },
-  {
-    "type": "f14",
-    "named": false
-  },
-  {
-    "type": "f15",
-    "named": false
-  },
-  {
-    "type": "f16",
-    "named": false
-  },
-  {
-    "type": "f17",
-    "named": false
-  },
-  {
-    "type": "f18",
-    "named": false
-  },
-  {
-    "type": "f19",
-    "named": false
-  },
-  {
-    "type": "f2",
-    "named": false
-  },
-  {
-    "type": "f20",
-    "named": false
-  },
-  {
-    "type": "f21",
-    "named": false
-  },
-  {
-    "type": "f22",
-    "named": false
-  },
-  {
-    "type": "f23",
-    "named": false
-  },
-  {
-    "type": "f24",
-    "named": false
-  },
-  {
-    "type": "f25",
-    "named": false
-  },
-  {
-    "type": "f26",
-    "named": false
-  },
-  {
-    "type": "f27",
-    "named": false
-  },
-  {
-    "type": "f28",
-    "named": false
-  },
-  {
-    "type": "f29",
-    "named": false
-  },
-  {
-    "type": "f3",
-    "named": false
-  },
-  {
-    "type": "f30",
-    "named": false
-  },
-  {
-    "type": "f31",
-    "named": false
-  },
-  {
-    "type": "f32",
-    "named": false
-  },
-  {
-    "type": "f33",
-    "named": false
-  },
-  {
-    "type": "f34",
-    "named": false
-  },
-  {
-    "type": "f35",
-    "named": false
-  },
-  {
-    "type": "f4",
-    "named": false
-  },
-  {
-    "type": "f5",
-    "named": false
-  },
-  {
-    "type": "f6",
-    "named": false
-  },
-  {
-    "type": "f7",
-    "named": false
-  },
-  {
-    "type": "f8",
-    "named": false
-  },
-  {
-    "type": "f9",
+    "type": "envinclude",
     "named": false
   },
   {
@@ -1823,19 +492,7 @@
     "named": false
   },
   {
-    "type": "file_transfer_confirmation_bypass",
-    "named": false
-  },
-  {
-    "type": "focus_follows_mouse",
-    "named": false
-  },
-  {
     "type": "font_family",
-    "named": false
-  },
-  {
-    "type": "font_features",
     "named": false
   },
   {
@@ -1847,23 +504,7 @@
     "named": false
   },
   {
-    "type": "foreground",
-    "named": false
-  },
-  {
-    "type": "goto_layout",
-    "named": false
-  },
-  {
-    "type": "goto_tab",
-    "named": false
-  },
-  {
-    "type": "grabbed",
-    "named": false
-  },
-  {
-    "type": "grabbed,ungrabbed",
+    "type": "globinclude",
     "named": false
   },
   {
@@ -1871,403 +512,11 @@
     "named": true
   },
   {
-    "type": "hide_window_decorations",
-    "named": false
-  },
-  {
-    "type": "home",
-    "named": false
-  },
-  {
-    "type": "inactive_border_color",
-    "named": false
-  },
-  {
-    "type": "inactive_tab_background",
-    "named": false
-  },
-  {
-    "type": "inactive_tab_font_style",
-    "named": false
-  },
-  {
-    "type": "inactive_tab_foreground",
-    "named": false
-  },
-  {
-    "type": "inactive_text_alpha",
-    "named": false
-  },
-  {
-    "type": "initial_window_height",
-    "named": false
-  },
-  {
-    "type": "initial_window_width",
-    "named": false
-  },
-  {
-    "type": "input_delay",
-    "named": false
-  },
-  {
-    "type": "insert",
-    "named": false
-  },
-  {
-    "type": "iso_level3_shift",
-    "named": false
-  },
-  {
-    "type": "iso_level5_shift",
+    "type": "include",
     "named": false
   },
   {
     "type": "italic_font",
-    "named": false
-  },
-  {
-    "type": "key_combination_op",
-    "named": true
-  },
-  {
-    "type": "key_sequence_op",
-    "named": true
-  },
-  {
-    "type": "kitten",
-    "named": false
-  },
-  {
-    "type": "kitten_alias",
-    "named": false
-  },
-  {
-    "type": "kitty",
-    "named": false
-  },
-  {
-    "type": "kitty_mod",
-    "named": false
-  },
-  {
-    "type": "kitty_shell",
-    "named": false
-  },
-  {
-    "type": "kp_0",
-    "named": false
-  },
-  {
-    "type": "kp_1",
-    "named": false
-  },
-  {
-    "type": "kp_2",
-    "named": false
-  },
-  {
-    "type": "kp_3",
-    "named": false
-  },
-  {
-    "type": "kp_4",
-    "named": false
-  },
-  {
-    "type": "kp_5",
-    "named": false
-  },
-  {
-    "type": "kp_6",
-    "named": false
-  },
-  {
-    "type": "kp_7",
-    "named": false
-  },
-  {
-    "type": "kp_8",
-    "named": false
-  },
-  {
-    "type": "kp_9",
-    "named": false
-  },
-  {
-    "type": "kp_add",
-    "named": false
-  },
-  {
-    "type": "kp_begin",
-    "named": false
-  },
-  {
-    "type": "kp_decimal",
-    "named": false
-  },
-  {
-    "type": "kp_delete",
-    "named": false
-  },
-  {
-    "type": "kp_divide",
-    "named": false
-  },
-  {
-    "type": "kp_down",
-    "named": false
-  },
-  {
-    "type": "kp_end",
-    "named": false
-  },
-  {
-    "type": "kp_enter",
-    "named": false
-  },
-  {
-    "type": "kp_equal",
-    "named": false
-  },
-  {
-    "type": "kp_home",
-    "named": false
-  },
-  {
-    "type": "kp_insert",
-    "named": false
-  },
-  {
-    "type": "kp_left",
-    "named": false
-  },
-  {
-    "type": "kp_multiply",
-    "named": false
-  },
-  {
-    "type": "kp_page_down",
-    "named": false
-  },
-  {
-    "type": "kp_page_up",
-    "named": false
-  },
-  {
-    "type": "kp_right",
-    "named": false
-  },
-  {
-    "type": "kp_separator",
-    "named": false
-  },
-  {
-    "type": "kp_subtract",
-    "named": false
-  },
-  {
-    "type": "kp_up",
-    "named": false
-  },
-  {
-    "type": "launch",
-    "named": false
-  },
-  {
-    "type": "layout_action",
-    "named": false
-  },
-  {
-    "type": "left",
-    "named": false
-  },
-  {
-    "type": "left_alt",
-    "named": false
-  },
-  {
-    "type": "left_control",
-    "named": false
-  },
-  {
-    "type": "left_hyper",
-    "named": false
-  },
-  {
-    "type": "left_meta",
-    "named": false
-  },
-  {
-    "type": "left_shift",
-    "named": false
-  },
-  {
-    "type": "left_super",
-    "named": false
-  },
-  {
-    "type": "linux_display_server",
-    "named": false
-  },
-  {
-    "type": "listen_on",
-    "named": false
-  },
-  {
-    "type": "load_config_file",
-    "named": false
-  },
-  {
-    "type": "lower_volume",
-    "named": false
-  },
-  {
-    "type": "macos_colorspace",
-    "named": false
-  },
-  {
-    "type": "macos_custom_beam_cursor",
-    "named": false
-  },
-  {
-    "type": "macos_hide_from_tasks",
-    "named": false
-  },
-  {
-    "type": "macos_menubar_title_max_length",
-    "named": false
-  },
-  {
-    "type": "macos_option_as_alt",
-    "named": false
-  },
-  {
-    "type": "macos_quit_when_last_window_closed",
-    "named": false
-  },
-  {
-    "type": "macos_show_window_title_in",
-    "named": false
-  },
-  {
-    "type": "macos_thicken_font",
-    "named": false
-  },
-  {
-    "type": "macos_titlebar_color",
-    "named": false
-  },
-  {
-    "type": "macos_traditional_fullscreen",
-    "named": false
-  },
-  {
-    "type": "macos_window_resizable",
-    "named": false
-  },
-  {
-    "type": "map_action_args",
-    "named": true
-  },
-  {
-    "type": "mark1_background",
-    "named": false
-  },
-  {
-    "type": "mark1_foreground",
-    "named": false
-  },
-  {
-    "type": "mark2_background",
-    "named": false
-  },
-  {
-    "type": "mark2_foreground",
-    "named": false
-  },
-  {
-    "type": "mark3_background",
-    "named": false
-  },
-  {
-    "type": "mark3_foreground",
-    "named": false
-  },
-  {
-    "type": "media_fast_forward",
-    "named": false
-  },
-  {
-    "type": "media_pause",
-    "named": false
-  },
-  {
-    "type": "media_play",
-    "named": false
-  },
-  {
-    "type": "media_play_pause",
-    "named": false
-  },
-  {
-    "type": "media_record",
-    "named": false
-  },
-  {
-    "type": "media_reverse",
-    "named": false
-  },
-  {
-    "type": "media_rewind",
-    "named": false
-  },
-  {
-    "type": "media_stop",
-    "named": false
-  },
-  {
-    "type": "media_track_next",
-    "named": false
-  },
-  {
-    "type": "media_track_previous",
-    "named": false
-  },
-  {
-    "type": "menu",
-    "named": false
-  },
-  {
-    "type": "middle",
-    "named": false
-  },
-  {
-    "type": "modify_font",
-    "named": false
-  },
-  {
-    "type": "mouse_handle_click",
-    "named": false
-  },
-  {
-    "type": "mouse_hide_wait",
-    "named": false
-  },
-  {
-    "type": "mouse_map_action_args",
-    "named": true
-  },
-  {
-    "type": "mouse_selection",
-    "named": false
-  },
-  {
-    "type": "move_window",
-    "named": false
-  },
-  {
-    "type": "mute_volume",
     "named": false
   },
   {
@@ -2279,403 +528,23 @@
     "named": false
   },
   {
-    "type": "neighboring_window",
-    "named": false
-  },
-  {
-    "type": "new_os_window",
-    "named": false
-  },
-  {
-    "type": "new_os_window_with_cwd",
-    "named": false
-  },
-  {
-    "type": "new_tab",
-    "named": false
-  },
-  {
-    "type": "new_tab_with_cwd",
-    "named": false
-  },
-  {
-    "type": "new_window",
-    "named": false
-  },
-  {
-    "type": "new_window_with_cwd",
-    "named": false
-  },
-  {
     "type": "no",
     "named": false
   },
   {
-    "type": "nth_os_window",
-    "named": false
-  },
-  {
-    "type": "nth_window",
-    "named": false
-  },
-  {
-    "type": "num_lock",
-    "named": false
+    "type": "none",
+    "named": true
   },
   {
     "type": "number",
     "named": true
   },
   {
-    "type": "open_url",
-    "named": false
-  },
-  {
-    "type": "open_url_with",
-    "named": false
-  },
-  {
-    "type": "opt",
-    "named": false
-  },
-  {
-    "type": "option",
-    "named": false
-  },
-  {
-    "type": "page_down",
-    "named": false
-  },
-  {
-    "type": "page_up",
-    "named": false
-  },
-  {
-    "type": "pass_selection_to_program",
-    "named": false
-  },
-  {
-    "type": "paste",
-    "named": false
-  },
-  {
-    "type": "paste_actions",
-    "named": false
-  },
-  {
-    "type": "paste_from_buffer",
-    "named": false
-  },
-  {
-    "type": "pause",
-    "named": false
-  },
-  {
-    "type": "pipe",
-    "named": false
-  },
-  {
-    "type": "placement_strategy",
-    "named": false
-  },
-  {
-    "type": "plus",
-    "named": false
-  },
-  {
-    "type": "pointer_shape_when_dragging",
-    "named": false
-  },
-  {
-    "type": "pointer_shape_when_grabbed",
-    "named": false
-  },
-  {
-    "type": "press",
-    "named": false
-  },
-  {
-    "type": "print_screen",
-    "named": false
-  },
-  {
-    "type": "raise_volume",
-    "named": false
-  },
-  {
-    "type": "release",
-    "named": false
-  },
-  {
-    "type": "remember_window_size",
-    "named": false
-  },
-  {
-    "type": "remote_control",
-    "named": false
-  },
-  {
-    "type": "remote_control_password",
-    "named": false
-  },
-  {
-    "type": "repaint_delay",
-    "named": false
-  },
-  {
-    "type": "resize_debounce_time",
-    "named": false
-  },
-  {
-    "type": "resize_draw_strategy",
-    "named": false
-  },
-  {
-    "type": "resize_in_steps",
-    "named": false
-  },
-  {
-    "type": "resize_window",
-    "named": false
-  },
-  {
-    "type": "right",
-    "named": false
-  },
-  {
-    "type": "right_alt",
-    "named": false
-  },
-  {
-    "type": "right_control",
-    "named": false
-  },
-  {
-    "type": "right_hyper",
-    "named": false
-  },
-  {
-    "type": "right_meta",
-    "named": false
-  },
-  {
-    "type": "right_shift",
-    "named": false
-  },
-  {
-    "type": "right_super",
-    "named": false
-  },
-  {
-    "type": "run_kitten",
-    "named": false
-  },
-  {
-    "type": "run_simple_kitten",
-    "named": false
-  },
-  {
-    "type": "scroll_lock",
-    "named": false
-  },
-  {
-    "type": "scroll_to_mark",
-    "named": false
-  },
-  {
-    "type": "scroll_to_prompt",
-    "named": false
-  },
-  {
-    "type": "scrollback_fill_enlarged_window",
-    "named": false
-  },
-  {
-    "type": "scrollback_lines",
-    "named": false
-  },
-  {
-    "type": "scrollback_pager",
-    "named": false
-  },
-  {
-    "type": "scrollback_pager_history_size",
-    "named": false
-  },
-  {
-    "type": "select_by_word_characters",
-    "named": false
-  },
-  {
-    "type": "select_by_word_characters_forward",
-    "named": false
-  },
-  {
-    "type": "selection_background",
-    "named": false
-  },
-  {
-    "type": "selection_foreground",
-    "named": false
-  },
-  {
-    "type": "send_text",
-    "named": false
-  },
-  {
-    "type": "set_background_opacity",
-    "named": false
-  },
-  {
-    "type": "set_colors",
-    "named": false
-  },
-  {
-    "type": "set_font_size",
-    "named": false
-  },
-  {
-    "type": "set_tab_title",
-    "named": false
-  },
-  {
-    "type": "shell",
-    "named": false
-  },
-  {
-    "type": "shell_integration",
-    "named": false
-  },
-  {
-    "type": "shift",
-    "named": false
-  },
-  {
-    "type": "show_hyperlink_targets",
-    "named": false
-  },
-  {
-    "type": "show_kitty_doc",
-    "named": false
-  },
-  {
-    "type": "signal_child",
-    "named": false
-  },
-  {
-    "type": "single_window_margin_width",
-    "named": false
-  },
-  {
-    "type": "sleep",
-    "named": false
-  },
-  {
-    "type": "startup_session",
-    "named": false
-  },
-  {
     "type": "string",
     "named": true
   },
   {
-    "type": "strip_trailing_spaces",
-    "named": false
-  },
-  {
-    "type": "super",
-    "named": false
-  },
-  {
     "type": "symbol_map",
-    "named": false
-  },
-  {
-    "type": "sync_to_monitor",
-    "named": false
-  },
-  {
-    "type": "tab",
-    "named": false
-  },
-  {
-    "type": "tab_activity_symbol",
-    "named": false
-  },
-  {
-    "type": "tab_bar_align",
-    "named": false
-  },
-  {
-    "type": "tab_bar_background",
-    "named": false
-  },
-  {
-    "type": "tab_bar_edge",
-    "named": false
-  },
-  {
-    "type": "tab_bar_margin_color",
-    "named": false
-  },
-  {
-    "type": "tab_bar_margin_height",
-    "named": false
-  },
-  {
-    "type": "tab_bar_margin_width",
-    "named": false
-  },
-  {
-    "type": "tab_bar_min_tabs",
-    "named": false
-  },
-  {
-    "type": "tab_bar_style",
-    "named": false
-  },
-  {
-    "type": "tab_fade",
-    "named": false
-  },
-  {
-    "type": "tab_powerline_style",
-    "named": false
-  },
-  {
-    "type": "tab_separator",
-    "named": false
-  },
-  {
-    "type": "tab_switch_strategy",
-    "named": false
-  },
-  {
-    "type": "tab_title_max_length",
-    "named": false
-  },
-  {
-    "type": "tab_title_template",
-    "named": false
-  },
-  {
-    "type": "term",
-    "named": false
-  },
-  {
-    "type": "toggle_layout",
-    "named": false
-  },
-  {
-    "type": "toggle_marker",
-    "named": false
-  },
-  {
-    "type": "touch_scroll_multiplier",
-    "named": false
-  },
-  {
-    "type": "triplepress",
     "named": false
   },
   {
@@ -2683,40 +552,8 @@
     "named": false
   },
   {
-    "type": "undercurl_style",
-    "named": false
-  },
-  {
-    "type": "ungrabbed",
-    "named": false
-  },
-  {
-    "type": "ungrabbed,grabbed",
-    "named": false
-  },
-  {
-    "type": "up",
-    "named": false
-  },
-  {
-    "type": "update_check_interval",
-    "named": false
-  },
-  {
-    "type": "url_color",
-    "named": false
-  },
-  {
-    "type": "url_excluded_characters",
-    "named": false
-  },
-  {
-    "type": "url_prefixes",
-    "named": false
-  },
-  {
-    "type": "url_style",
-    "named": false
+    "type": "unicode_codepoint",
+    "named": true
   },
   {
     "type": "visual_bell_color",
@@ -2727,63 +564,7 @@
     "named": false
   },
   {
-    "type": "visual_window_select_action_trigger",
-    "named": false
-  },
-  {
-    "type": "visual_window_select_characters",
-    "named": false
-  },
-  {
-    "type": "watcher",
-    "named": false
-  },
-  {
-    "type": "wayland_titlebar_color",
-    "named": false
-  },
-  {
-    "type": "wheel_scroll_min_lines",
-    "named": false
-  },
-  {
-    "type": "wheel_scroll_multiplier",
-    "named": false
-  },
-  {
     "type": "window_alert_on_bell",
-    "named": false
-  },
-  {
-    "type": "window_border_width",
-    "named": false
-  },
-  {
-    "type": "window_logo_alpha",
-    "named": false
-  },
-  {
-    "type": "window_logo_path",
-    "named": false
-  },
-  {
-    "type": "window_logo_position",
-    "named": false
-  },
-  {
-    "type": "window_margin_width",
-    "named": false
-  },
-  {
-    "type": "window_padding_width",
-    "named": false
-  },
-  {
-    "type": "window_resize_step_cells",
-    "named": false
-  },
-  {
-    "type": "window_resize_step_lines",
     "named": false
   },
   {
@@ -2792,22 +573,6 @@
   },
   {
     "type": "yes",
-    "named": false
-  },
-  {
-    "type": "⇧",
-    "named": false
-  },
-  {
-    "type": "⌃",
-    "named": false
-  },
-  {
-    "type": "⌘",
-    "named": false
-  },
-  {
-    "type": "⌥",
     "named": false
   }
 ]

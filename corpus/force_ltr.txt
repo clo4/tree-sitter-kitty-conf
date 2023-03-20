@@ -1,0 +1,11 @@
+==================
+force_ltr boolean
+==================
+
+force_ltr yes
+
+---
+
+(source_file
+  (force_ltr
+    (boolean)))

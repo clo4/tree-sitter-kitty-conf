@@ -1,0 +1,11 @@
+==================
+window_alert_on_bell boolean
+==================
+
+window_alert_on_bell no
+
+---
+
+(source_file
+  (window_alert_on_bell
+    (boolean)))

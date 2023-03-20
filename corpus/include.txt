@@ -1,0 +1,11 @@
+==================
+include string
+==================
+
+include current-theme.conf
+
+---
+
+(source_file
+  (include
+    (string)))

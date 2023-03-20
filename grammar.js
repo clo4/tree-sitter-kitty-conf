@@ -5,11 +5,12 @@
 // - a boolean, e.g. yes no
 // - a string, which is anything that doesn't match the above
 
+// TODO: update this comment
 // This is an array of every known Kitty option. It can be generated with the following command:
 //     npm run print-config-options
 // Do not remove any option names from this set. Overrides are created by using the `override`
 // function defined below the set, for convenience and to make sure the set is never out of sync.
-const VALID_OPTION_NAMES = new Set([
+const DIRECTIVE_NAMES = new Set([
   "action_alias",
   "active_border_color",
   "active_tab_background",
@@ -427,6 +428,12 @@ const VALID_OPTION_NAMES = new Set([
   "window_resize_step_lines",
 ]);
 
+// These are special directives that aren't in the list above, but should be
+// treated the same as those directives.
+DIRECTIVE_NAMES.add("include");
+DIRECTIVE_NAMES.add("globinclude");
+DIRECTIVE_NAMES.add("envinclude");
+
 const FUNCTIONAL_KEYS = [
   "escape",
   "enter",
@@ -557,28 +564,6 @@ const MOUSE_BUTTONS = [
 
 const INLINE_WHITESPACE = /[\t ]+/;
 
-const overrides = [];
-
-const override = name => {
-  if (!VALID_OPTION_NAMES.has(name)) {
-    throw new Error(
-      `The rule '${name}' was defined as a Kitty option, but is not a known option.`,
-    );
-  }
-
-  VALID_OPTION_NAMES.delete(name);
-  overrides.push(name);
-
-  return name;
-};
-
-const seq_ws = (...rules) =>
-  seq(
-    ...rules.flatMap((rule, index) =>
-      index === rules.length - 1 ? [rule] : [rule, INLINE_WHITESPACE],
-    ),
-  );
-
 const KEYBOARD_MODIFIERS = [
   "⌃",
   "control",
@@ -653,6 +638,96 @@ const ACTIONS = [
   "load_config_file",
 ];
 
+// Sequence of whitespace-separated rules
+const seq_ws = (...rules) =>
+  seq(
+    ...rules.flatMap((rule, index) =>
+      index === 0 ? [rule] : [INLINE_WHITESPACE, rule],
+    ),
+  );
+
+const checked_grammar = grammar_object => {
+  if (grammar_object?.check && DIRECTIVE_NAMES.size !== 0) {
+    const percent_defined = (
+      (defined_directives.size === 0
+        ? 0
+        : defined_directives.size / DIRECTIVE_NAMES.size) * 100
+    ).toFixed(2);
+
+    const remaining_as_json = [...DIRECTIVE_NAMES]
+      .filter(name => !defined_directives.has(name))
+      .map(line => "- " + line)
+      .join("\n");
+
+    throw new Error(
+      `Not all directives are defined as rules (${defined_directives.size} / ${DIRECTIVE_NAMES.size}, ${percent_defined}%)\n${remaining_as_json}`,
+    );
+  }
+  if ("check" in grammar_object) {
+    delete grammar_object.check;
+  }
+  return grammar(grammar_object);
+};
+
+const defined_directives = new Set();
+const name_usages = new Set();
+
+const _directive_check = name => {
+  if (!DIRECTIVE_NAMES.has(name)) {
+    throw new Error(
+      `The directive name '${name}' was defined, but isn't a valid directive name. Did you make a typo or forget to update the list of rules?`,
+    );
+  }
+
+  if (!defined_directives.has(name)) {
+    throw new Error(
+      `The directive name '${name}' was defined in a rule and is a valid name, but there is no rule with the same name.`,
+    );
+  }
+
+  if (name_usages.has(name)) {
+    throw new Error(
+      `The directive name '${name}' has been used twice. Search for the name in the grammar file to locate the usages.`,
+    );
+  }
+
+  name_usages.add(name);
+};
+
+const directive_literal = (name, ...values) => {
+  _directive_check(name);
+  return seq(name, ...values);
+};
+
+const directive = new Proxy(
+  (name, ...values) => {
+    _directive_check(name);
+    return seq_ws(alias(prec(1, name), name), ...values);
+  },
+  {
+    // Getting a property is done when defining a new rule. This should be done only once per
+    // rule name, so this has to be tracked in another set. It can only use valid names, so that
+    // also has to be checked.
+    get(_, name) {
+      if (!DIRECTIVE_NAMES.has(name)) {
+        throw new Error(
+          `The rule '${name}' was defined as a directive rule, but isn't a valid directive name. Did you make a typo or forget to update the list of rules?`,
+        );
+      }
+
+      if (defined_directives.has(name)) {
+        throw new Error(
+          `The directive name '${name}' has been used twice. Search for the name in the grammar file to locate the usages.`,
+        );
+      }
+
+      defined_directives.add(name);
+
+      return name;
+    },
+  },
+);
+
 /*
 mouse_map button-name event-type modes action
 symbol_map codepoints Font Family Name
@@ -660,115 +735,131 @@ narrow_symbols codepoints [optionally the number of cells]
 map keys action args
 map keys combine sep action1 [sep action2...]
 */
-module.exports = grammar({
+module.exports = checked_grammar({
   name: "kittyconf",
-  extras: $ => [
-    // testing whether this helps
-    // /\s/
-  ],
+  // Need control over whitespace because the grammar is line-based
+  extras: $ => [],
+
+  // TODO: When this is done, uncomment this to make sure it *stays* done
+  // check: true,
+
   rules: {
     source_file: $ =>
       repeat(
         choice(
-          // newlines and whitespace are always acceptable
+          // Newlines and whitespace are always acceptable
           /\s/,
-
-          // Comments can only be at line beginnings
+          // Comments take a whole line
           $.comment,
-
-          seq($._directive, optional("\n")),
+          // Directives must be on their own lines
+          $._directive,
         ),
       ),
 
-    // This automatically uses all defined overrides, so there's nothing to update
-    // here if you add a new one.
     _directive: $ =>
-      choice(
-        ...overrides.map(option_name => $[option_name]),
-        $.generic_directive,
+      seq(
+        choice(...[...defined_directives].map(rule_name => $[rule_name])),
+        optional("\n"),
       ),
 
-    generic_directive: $ =>
-      seq_ws(
-        field("name", $.directive_key),
-        field("value", optional($.directive_value)),
-      ),
-    directive_key: $ => choice(...VALID_OPTION_NAMES),
-    directive_value: $ => choice($.string, $.number, $.hex_color, $.bool),
+    // BEGIN DIRECTIVES
+    // Accesses to the magic `directive` object register the directive so
+    // it can't get out of sync with the `_directive` rule.
+    // Calling `directive` is a whitespace-separated sequence. The directive
+    // name must come first. All directive names must be valid and can only be
+    // used once.
 
-    // Some stuff is shared between both `map` and `mouse_map`
-    modifier_key: $ => choice(...KEYBOARD_MODIFIERS),
-    key_combination_op: $ => "+",
-    key_sequence_op: $ => ">",
-    shortcut_action: $ => choice(...ACTIONS),
+    [directive.include]: $ => directive("include", $.string),
+    [directive.globinclude]: $ => directive("globinclude", $.string),
+    [directive.envinclude]: $ => directive("envinclude", $.string),
 
-    [override("map")]: $ =>
-      seq_ws(
-        alias("map", $.directive_key),
-        $.map_keybinding_sequence,
-        $.shortcut_action,
-        optional(field("action_args", alias($.string, $.map_action_args))),
-      ),
-    map_keybinding_sequence: $ =>
-      seq($.map_keybinding, repeat(seq($.key_sequence_op, $.map_keybinding))),
-    map_keybinding: $ =>
-      seq(repeat(seq($.modifier_key, $.key_combination_op)), $.map_key),
-    // map key can either be a single key or a key defined here: https://sw.kovidgoyal.net/kitty/keyboard-protocol/#functional
-    // the literal string "plus" is also valid in addition to the functional keys. Internally,
-    // a trailing + is converted to the string "plus".
-    map_key: $ => choice(/[^\S>]/, "plus", ...FUNCTIONAL_KEYS),
+    [directive.font_size]: $ => directive("font_size", $.number),
 
-    [override("kitty_mod")]: $ =>
-      seq_ws(alias("kitty_mod", $.directive_key), $.kitty_mod_modifiers),
-    kitty_mod_modifiers: $ =>
-      seq($.modifier_key, repeat(seq($.key_combination_op, $.modifier_key))),
+    [directive.font_family]: $ =>
+      directive("font_family", choice($.string, $.auto)),
 
-    [override("mouse_map")]: $ =>
-      seq_ws(
-        alias("mouse_map", $.directive_key),
-        field("button", $.mouse_map_button),
-        field("event", $.mouse_map_event),
-        field("mode", $.mouse_map_modes),
-        field("action", $.shortcut_action),
-        optional(field("action_args", $.string)),
-      ),
-    mouse_button: $ => choice(...MOUSE_BUTTONS),
-    mouse_map_button: $ =>
-      seq(repeat(seq($.modifier_key, $.key_combination_op)), $.mouse_button),
-    mouse_map_action: $ => /[\w_]+/,
-    mouse_map_event: $ =>
-      choice(
-        "press",
-        "release",
-        "doublepress",
-        "triplepress",
-        "click",
-        "doubleclick",
-      ),
-    mouse_map_modes: $ =>
-      choice("grabbed", "ungrabbed", "grabbed,ungrabbed", "ungrabbed,grabbed"),
-    mouse_map_action: $ => /[\w_]+/,
+    [directive.bold_font]: $ =>
+      directive("bold_font", choice($.string, $.auto)),
 
-    [override("symbol_map")]: $ =>
-      seq_ws(
-        alias("symbol_map", $.directive_key),
-        field("codepoints", $.symbol_map_codepoints),
-        field("font_family", $.string),
+    [directive.italic_font]: $ =>
+      directive("italic_font", choice($.string, $.auto)),
+
+    [directive.bold_italic_font]: $ =>
+      directive("bold_italic_font", choice($.string, $.auto)),
+
+    [directive.force_ltr]: $ => directive("force_ltr", $.boolean),
+
+    [directive.bell_on_tab]: $ =>
+      directive("bell_on_tab", choice($.string, $.boolean, $.none)),
+
+    [directive.enable_audio_bell]: $ =>
+      directive("enable_audio_bell", $.boolean),
+
+    [directive.visual_bell_duration]: $ =>
+      directive("visual_bell_duration", $.number),
+
+    [directive.visual_bell_color]: $ =>
+      directive("visual_bell_color", choice($.hex_color, $.none)),
+
+    [directive.window_alert_on_bell]: $ =>
+      directive("window_alert_on_bell", $.boolean),
+
+    [directive.command_on_bell]: $ =>
+      directive("command_on_bell", choice($.boolean, $.none)),
+
+    [directive.bell_path]: $ =>
+      directive("bell_path", choice($.string, $.none)),
+
+    [directive.symbol_map]: $ =>
+      directive("symbol_map", $.codepoints, $.string),
+
+    [directive.narrow_symbols]: $ =>
+      directive_literal(
+        "narrow_symbols",
+        INLINE_WHITESPACE,
+        $.codepoints,
+        optional(seq(INLINE_WHITESPACE, $.number)),
       ),
 
-    symbol_map_codepoints: $ => /\S+/,
+    // ----------
+    // DATA TYPES
+    // ----------
 
-    // Data types for values
-    number_with_unit: $ => seq(field("number", $.number), field("unit", choice("pt", "px"))),
-    number: $ => /\d+(\.\d+)/,
-    bool: $ => choice("y", "yes", "true", "n", "no", "false"),
+    none: $ => "none",
+    auto: $ => "auto",
+
+    codepoints: $ =>
+      seq(
+        choice($.unicode_codepoint, $.unicode_range),
+        repeat(seq(",", choice($.unicode_codepoint, $.unicode_range))),
+      ),
+    unicode_range: $ => seq($.unicode_codepoint, "-", $.unicode_codepoint),
+    unicode_codepoint: $ => /U\+[A-Fa-f0-9]+/,
+
+    // Keeping this here so I remember to uncomment it if required
+    // signed_number: $ => seq(optional(choice("+", "-")), $.number),
+
+    // Mostly from the Python grammar because Kitty uses Python's `float`
+    // to parse numbers. `float` has slightly different syntax to the literal
+    // syntax, so that's why it's not the exact same.
+    number: $ => {
+      const digits = repeat1(/[0-9]+_?/);
+      const exponent = seq(/[eE][\+-]?/, digits);
+
+      return token(
+        choice(
+          digits,
+          seq(digits, ".", optional(digits), optional(exponent)),
+          seq(optional(digits), ".", digits, optional(exponent)),
+          seq(digits, exponent),
+        ),
+      );
+    },
+    boolean: $ => choice("y", "yes", "true", "n", "no", "false"),
     hex_color: $ => /#[0-9a-fA-F]{6}/,
 
-    // HACK: this is weird, but whether string matches vs one of the other data types is
-    // based on what was defined first, so because string can match any other data
-    // it has to be defined last.
     string: $ => /\S.+/,
 
-    comment: $ => token(/#.*/),
+    comment: $ => token(/#.*\n/),
   },
 });
