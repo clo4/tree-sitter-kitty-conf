@@ -640,6 +640,12 @@ const ACTIONS = [
   "load_config_file",
 ];
 
+const SCROLLBACK_PAGER_KEYWORDS = [
+  "INPUT_LINE_NUMBER",
+  "CURSOR_LINE",
+  "CURSOR_COLUMN",
+];
+
 // Sequence of whitespace-separated rules
 const seq_ws = (...rules) =>
   seq(
@@ -939,6 +945,33 @@ module.exports = checked_grammar({
     [directive.cursor_stop_blinking_after]: $ =>
       directive("cursor_stop_blinking_after", $.float),
 
+    [directive.scrollback_lines]: $ =>
+      directive("scrollback_lines", $.signed_int),
+
+    [directive.scrollback_pager]: $ =>
+      directive("scrollback_pager", $.scrollback_pager_value),
+    scrollback_pager_value: $ =>
+      repeat1(
+        choice(
+          prec(1, $.scrollback_pager_keyword),
+          alias($._scrollback_pager_anything_but_keyword, $.string_part),
+        ),
+      ),
+    scrollback_pager_keyword: $ => choice(...SCROLLBACK_PAGER_KEYWORDS),
+    // HACK: this regex will match any character, then any character that cannot start a keyword.
+    // There's no other way to exclude matches without either writing an external parser right now.
+    // (This array is small enough that this will always be faster than constructing a set)
+    // TODO: Rewrite this to use an external parser instead of a hack
+    _scrollback_pager_anything_but_keyword: $ =>
+      new RegExp(
+        `.[^${SCROLLBACK_PAGER_KEYWORDS.map(str => str[0])
+          .filter((char, index, arr) => arr.indexOf(char) === index)
+          .join("")}]*`,
+      ),
+
+    [directive.scrollback_pager_history_size]: $ =>
+      directive("scrollback_pager_history_size", $.signed_int),
+
     // TODO: This can easily be one rule that's a regular expression. This isn't possible yet
     // because of the typo checking system (you can only use string literals) so I'm keeping
     // the inefficient code because it works for now.
@@ -974,6 +1007,8 @@ module.exports = checked_grammar({
     sign: $ => choice("+", "-"),
     signed_float: $ =>
       seq(field("sign", optional($.sign)), field("number", $.float)),
+    signed_int: $ =>
+      seq(field("sign", optional($.sign)), field("number", $.int)),
 
     // Mostly from the Python grammar because Kitty uses Python's `float`
     // to parse numbers. `float` has slightly different syntax to the literal

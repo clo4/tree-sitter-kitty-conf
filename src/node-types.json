@@ -4363,6 +4363,75 @@
     }
   },
   {
+    "type": "scrollback_lines",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scrollback_pager",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "scrollback_pager_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scrollback_pager_history_size",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scrollback_pager_keyword",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "scrollback_pager_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "scrollback_pager_keyword",
+          "named": true
+        },
+        {
+          "type": "string_part",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "sign",
     "named": true,
     "fields": {}
@@ -4377,6 +4446,32 @@
         "types": [
           {
             "type": "float",
+            "named": true
+          }
+        ]
+      },
+      "sign": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "sign",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "signed_int",
+    "named": true,
+    "fields": {
+      "number": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int",
             "named": true
           }
         ]
@@ -5530,6 +5625,18 @@
           "named": true
         },
         {
+          "type": "scrollback_lines",
+          "named": true
+        },
+        {
+          "type": "scrollback_pager",
+          "named": true
+        },
+        {
+          "type": "scrollback_pager_history_size",
+          "named": true
+        },
+        {
           "type": "symbol_map",
           "named": true
         },
@@ -5680,6 +5787,18 @@
   },
   {
     "type": "-",
+    "named": false
+  },
+  {
+    "type": "CURSOR_COLUMN",
+    "named": false
+  },
+  {
+    "type": "CURSOR_LINE",
+    "named": false
+  },
+  {
+    "type": "INPUT_LINE_NUMBER",
     "named": false
   },
   {
@@ -6879,6 +6998,18 @@
     "named": true
   },
   {
+    "type": "scrollback_lines",
+    "named": false
+  },
+  {
+    "type": "scrollback_pager",
+    "named": false
+  },
+  {
+    "type": "scrollback_pager_history_size",
+    "named": false
+  },
+  {
     "type": "size",
     "named": false
   },
@@ -6896,6 +7027,10 @@
   },
   {
     "type": "string",
+    "named": true
+  },
+  {
+    "type": "string_part",
     "named": true
   },
   {

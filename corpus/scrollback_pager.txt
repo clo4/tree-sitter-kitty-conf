@@ -1,0 +1,60 @@
+==================
+scrollback_pager string
+==================
+
+scrollback_pager less --chop-long-lines --RAW-CONTROL-CHARS
+
+---
+
+(source_file
+  (scrollback_pager
+    (scrollback_pager_value
+      (string_part)
+      (string_part)
+      (string_part))))
+
+==================
+scrollback_pager keyword
+==================
+
+scrollback_pager INPUT_LINE_NUMBER
+
+---
+
+(source_file
+  (scrollback_pager
+    (scrollback_pager_value
+      (scrollback_pager_keyword))))
+
+==================
+scrollback_pager string-and-keyword
+==================
+
+scrollback_pager less --chop-long-lines --RAW-CONTROL-CHARS +INPUT_LINE_NUMBER
+
+---
+
+(source_file
+  (scrollback_pager
+    (scrollback_pager_value
+      (string_part)
+      (string_part)
+      (string_part)
+      (scrollback_pager_keyword))))
+
+==================
+scrollback_pager string-and-keyword-and-string
+==================
+
+scrollback_pager less --chop-long-lines +INPUT_LINE_NUMBER --RAW-CONTROL-CHARS
+
+---
+
+(source_file
+  (scrollback_pager
+    (scrollback_pager_value
+      (string_part)
+      (scrollback_pager_keyword)
+      (string_part)
+      (string_part)
+      (string_part))))

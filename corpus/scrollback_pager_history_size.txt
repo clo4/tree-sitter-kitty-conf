@@ -1,0 +1,26 @@
+==================
+scrollback_pager_history_size int
+==================
+
+scrollback_pager_history_size 2000
+
+---
+
+(source_file
+  (scrollback_pager_history_size
+    (signed_int
+      (int))))
+
+==================
+scrollback_pager_history_size negative-int
+==================
+
+scrollback_pager_history_size -1
+
+---
+
+(source_file
+  (scrollback_pager_history_size
+    (signed_int
+      (sign)
+      (int))))

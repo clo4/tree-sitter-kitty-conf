@@ -149,6 +149,18 @@
             },
             {
               "type": "SYMBOL",
+              "name": "scrollback_lines"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "scrollback_pager"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "scrollback_pager_history_size"
+            },
+            {
+              "type": "SYMBOL",
               "name": "color0"
             },
             {
@@ -2516,6 +2528,139 @@
         {
           "type": "SYMBOL",
           "name": "float"
+        }
+      ]
+    },
+    "scrollback_lines": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "scrollback_lines"
+            }
+          },
+          "named": false,
+          "value": "scrollback_lines"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "signed_int"
+        }
+      ]
+    },
+    "scrollback_pager": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "scrollback_pager"
+            }
+          },
+          "named": false,
+          "value": "scrollback_pager"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "scrollback_pager_value"
+        }
+      ]
+    },
+    "scrollback_pager_value": {
+      "type": "REPEAT1",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "SYMBOL",
+              "name": "scrollback_pager_keyword"
+            }
+          },
+          {
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_scrollback_pager_anything_but_keyword"
+            },
+            "named": true,
+            "value": "string_part"
+          }
+        ]
+      }
+    },
+    "scrollback_pager_keyword": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "INPUT_LINE_NUMBER"
+        },
+        {
+          "type": "STRING",
+          "value": "CURSOR_LINE"
+        },
+        {
+          "type": "STRING",
+          "value": "CURSOR_COLUMN"
+        }
+      ]
+    },
+    "_scrollback_pager_anything_but_keyword": {
+      "type": "PATTERN",
+      "value": ".[^IC]*"
+    },
+    "scrollback_pager_history_size": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "scrollback_pager_history_size"
+            }
+          },
+          "named": false,
+          "value": "scrollback_pager_history_size"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "signed_int"
         }
       ]
     },
@@ -10061,6 +10206,35 @@
           "content": {
             "type": "SYMBOL",
             "name": "float"
+          }
+        }
+      ]
+    },
+    "signed_int": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "sign",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "sign"
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
+          }
+        },
+        {
+          "type": "FIELD",
+          "name": "number",
+          "content": {
+            "type": "SYMBOL",
+            "name": "int"
           }
         }
       ]

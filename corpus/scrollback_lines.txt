@@ -1,0 +1,26 @@
+==================
+scrollback_lines int
+==================
+
+scrollback_lines 2000
+
+---
+
+(source_file
+  (scrollback_lines
+    (signed_int
+      (int))))
+
+==================
+scrollback_lines negative-int
+==================
+
+scrollback_lines -1
+
+---
+
+(source_file
+  (scrollback_lines
+    (signed_int
+      (sign)
+      (int))))
