@@ -8,4 +8,10 @@ globinclude kitty.d/**/*.conf
 
 (source_file
   (globinclude
-    (string)))
+    (glob_pattern
+      (glob_pattern_literal)
+      (glob_pattern_star)
+      (glob_pattern_star)
+      (glob_pattern_literal)
+      (glob_pattern_star)
+      (glob_pattern_literal))))

@@ -786,7 +786,9 @@ module.exports = checked_grammar({
     source_file: $ =>
       repeat(
         choice(
-          // Newlines and whitespace are always acceptable
+          // Newlines and whitespace are always acceptable, but can't be put
+          // in `extras` because there needs to be explicit control over whitespace
+          // for some rules.
           /\s/,
           // Comments take a whole line
           $.comment,
@@ -798,6 +800,7 @@ module.exports = checked_grammar({
     _directive: $ =>
       seq(
         choice(...[...defined_directives].map(rule_name => $[rule_name])),
+        optional(INLINE_WHITESPACE),
         optional("\n"),
       ),
 
@@ -810,10 +813,10 @@ module.exports = checked_grammar({
 
     [directive.include]: $ => directive("include", $.string),
 
-    // TODO: This could use some syntax for the glob
-    [directive.globinclude]: $ => directive("globinclude", $.string),
+    [directive.globinclude]: $ => directive("globinclude", $.glob_pattern),
+
     // TODO: This can also use globs
-    [directive.envinclude]: $ => directive("envinclude", $.string),
+    [directive.envinclude]: $ => directive("envinclude", $.glob_pattern),
 
     [directive.font_size]: $ => directive("font_size", $.float),
 
@@ -881,6 +884,7 @@ module.exports = checked_grammar({
           field("unit", optional(alias(choice("pt", "%", "px"), $.unit))),
         ),
       ),
+    // I'm not sure if this should continue using string literals here or just accept anything.
     font_modification_type: $ =>
       choice(
         "underline_position",
@@ -953,7 +957,7 @@ module.exports = checked_grammar({
     scrollback_pager_value: $ =>
       repeat1(
         choice(
-          prec(1, $.scrollback_pager_keyword),
+          $.scrollback_pager_keyword,
           alias($._scrollback_pager_anything_but_keyword, $.string_part),
         ),
       ),
@@ -1028,6 +1032,24 @@ module.exports = checked_grammar({
     int: $ => repeat1(/[0-9]+_?/),
     boolean: $ => choice("y", "yes", "true", "n", "no", "false"),
     hex_color: $ => /#[0-9a-fA-F]{6}/,
+
+    // Kitty uses pathlib.Path.glob, which uses fnmatch syntax
+    glob_pattern: $ =>
+      repeat1(
+        choice(
+          $.glob_pattern_star,
+          $.glob_pattern_qmark,
+          $.glob_pattern_literal,
+          $.glob_pattern_literal_glob_op,
+          $.glob_pattern_seq,
+        ),
+      ),
+    glob_pattern_star: $ => "*",
+    glob_pattern_qmark: $ => "?",
+    glob_pattern_literal_glob_op: $ => choice("[*]", "[?]"),
+    glob_pattern_seq: $ => seq("[", optional("!"), /[^\]]+/, "]"),
+    // One or more characters that aren't special to the glob syntax
+    glob_pattern_literal: $ => /[^\*\?\[]+/,
 
     string: $ => /\S.+/,
 

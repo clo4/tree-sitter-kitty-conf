@@ -4170,11 +4170,52 @@
       "required": true,
       "types": [
         {
-          "type": "string",
+          "type": "glob_pattern",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "glob_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "fnmatch_glob_qmark",
+          "named": true
+        },
+        {
+          "type": "fnmatch_glob_star",
+          "named": true
+        },
+        {
+          "type": "fnmatch_literal",
+          "named": true
+        },
+        {
+          "type": "fnmatch_literal_glob_op",
+          "named": true
+        },
+        {
+          "type": "fnmatch_seq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fnmatch_literal_glob_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "fnmatch_seq",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "font_family",
@@ -4262,7 +4303,7 @@
       "required": true,
       "types": [
         {
-          "type": "string",
+          "type": "glob_pattern",
           "named": true
         }
       ]
@@ -5778,6 +5819,10 @@
     "named": false
   },
   {
+    "type": "!",
+    "named": false
+  },
+  {
     "type": "+",
     "named": false
   },
@@ -5799,6 +5844,22 @@
   },
   {
     "type": "INPUT_LINE_NUMBER",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "[*]",
+    "named": false
+  },
+  {
+    "type": "[?]",
+    "named": false
+  },
+  {
+    "type": "]",
     "named": false
   },
   {
@@ -6935,6 +6996,18 @@
   },
   {
     "type": "float",
+    "named": true
+  },
+  {
+    "type": "fnmatch_glob_qmark",
+    "named": true
+  },
+  {
+    "type": "fnmatch_glob_star",
+    "named": true
+  },
+  {
+    "type": "fnmatch_literal",
     "named": true
   },
   {

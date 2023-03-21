@@ -8,4 +8,6 @@ envinclude KITTY_CONF_*
 
 (source_file
   (envinclude
-    (string)))
+    (glob_pattern
+      (glob_pattern_literal)
+      (glob_pattern_star))))
