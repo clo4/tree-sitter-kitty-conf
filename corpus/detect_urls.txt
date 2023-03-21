@@ -1,0 +1,11 @@
+==================
+detect_urls boolean
+==================
+
+detect_urls no
+
+---
+
+(source_file
+  (detect_urls
+    (boolean)))

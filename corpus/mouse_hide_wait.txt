@@ -1,0 +1,11 @@
+==================
+mouse_hide_wait signed_float
+==================
+
+mouse_hide_wait 5.0
+
+---
+
+(source_file
+  (mouse_hide_wait
+    (signed_float (float))))

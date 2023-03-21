@@ -1,0 +1,11 @@
+==================
+wheel_scroll_min_lines signed_int
+==================
+
+wheel_scroll_min_lines 20
+
+---
+
+(source_file
+  (wheel_scroll_min_lines
+    (signed_int (int))))

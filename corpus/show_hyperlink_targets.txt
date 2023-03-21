@@ -1,0 +1,11 @@
+==================
+show_hyperlink_targets boolean
+==================
+
+show_hyperlink_targets no
+
+---
+
+(source_file
+  (show_hyperlink_targets
+    (boolean)))

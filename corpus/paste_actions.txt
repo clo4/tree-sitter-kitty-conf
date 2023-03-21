@@ -1,0 +1,35 @@
+==================
+paste_actions confirm
+==================
+
+paste_actions confirm
+
+---
+
+(source_file
+  (paste_actions
+    (paste_actions_value)))
+
+==================
+paste_actions confirm,filter
+==================
+
+paste_actions confirm,filter
+
+---
+
+(source_file
+  (paste_actions
+    (paste_actions_value)
+    (paste_actions_value)))
+
+==================
+paste_actions
+==================
+
+paste_actions
+
+---
+
+(source_file
+  (paste_actions))

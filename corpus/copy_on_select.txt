@@ -1,0 +1,35 @@
+==================
+copy_on_select boolean
+==================
+
+copy_on_select no
+
+---
+
+(source_file
+  (copy_on_select
+    (boolean)))
+
+==================
+copy_on_select clipboard
+==================
+
+copy_on_select clipboard
+
+---
+
+(source_file
+  (copy_on_select
+    (copy_on_select_clipboard)))
+
+==================
+copy_on_select kitty_buffer
+==================
+
+copy_on_select a1
+
+---
+
+(source_file
+  (copy_on_select
+    (kitty_buffer)))

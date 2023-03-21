@@ -1,0 +1,26 @@
+==================
+url_style <keyword>
+==================
+
+url_style none
+url_style straight
+url_style double
+url_style curly
+url_style dotted
+url_style dashed
+
+---
+
+(source_file
+  (url_style
+    (none))
+  (url_style
+    (url_style_value))
+  (url_style
+    (url_style_value))
+  (url_style
+    (url_style_value))
+  (url_style
+    (url_style_value))
+  (url_style
+    (url_style_value)))

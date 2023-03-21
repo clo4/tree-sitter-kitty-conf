@@ -646,26 +646,17 @@ const SCROLLBACK_PAGER_KEYWORDS = [
   "CURSOR_COLUMN",
 ];
 
-// Sequence of whitespace-separated rules
-const seq_ws = (...rules) =>
-  seq(
-    ...rules.flatMap((rule, index) => {
-      if (index === 0) {
-        return [rule];
-      }
-      return [token.immediate(INLINE_WHITESPACE), rule];
-    }),
-  );
-
 const checked_grammar = grammar_object => {
   if (
     process.env["TREE_SITTER_KITTY_CONF_ENSURE_COMPLETE"] === "1" &&
     DIRECTIVE_NAMES.size !== 0
   ) {
-    const percent_defined = (
+    const percent_remaining = (
+      100 -
       (defined_directives.size === 0
         ? 0
-        : defined_directives.size / DIRECTIVE_NAMES.size) * 100
+        : defined_directives.size / DIRECTIVE_NAMES.size) *
+        100
     ).toFixed(2);
 
     const remaining_as_json = [...DIRECTIVE_NAMES]
@@ -674,7 +665,7 @@ const checked_grammar = grammar_object => {
       .join("\n");
 
     throw new Error(
-      `Not all directives are defined as rules (${defined_directives.size} / ${DIRECTIVE_NAMES.size}, ${percent_defined}%)\n${remaining_as_json}`,
+      `Not all directives are defined as rules (${defined_directives.size} / ${DIRECTIVE_NAMES.size}, ${percent_remaining}% remaining)\n${remaining_as_json}`,
     );
   }
 
@@ -871,7 +862,14 @@ module.exports = checked_grammar({
     [directive.font_features]: $ =>
       directive(
         "font_features",
-        choice($.none, seq_ws($.postscript_font_name, $.string)),
+        choice(
+          $.none,
+          seq(
+            $.postscript_font_name,
+            token.immediate(INLINE_WHITESPACE),
+            $.string,
+          ),
+        ),
       ),
     postscript_font_name: $ => /\S+/,
 
@@ -976,6 +974,50 @@ module.exports = checked_grammar({
     [directive.scrollback_pager_history_size]: $ =>
       directive("scrollback_pager_history_size", $.signed_int),
 
+    [directive.scrollback_fill_enlarged_window]: $ =>
+      directive("scrollback_fill_enlarged_window", $.boolean),
+
+    [directive.wheel_scroll_multiplier]: $ =>
+      directive("wheel_scroll_multiplier", $.signed_float),
+
+    [directive.wheel_scroll_min_lines]: $ =>
+      directive("wheel_scroll_min_lines", $.signed_int),
+
+    [directive.touch_scroll_multiplier]: $ =>
+      directive("touch_scroll_multiplier", $.signed_float),
+
+    [directive.mouse_hide_wait]: $ =>
+      directive("mouse_hide_wait", $.signed_float),
+
+    [directive.url_color]: $ => directive("url_color", $.hex_color),
+    [directive.url_style]: $ =>
+      directive("url_style", choice($.url_style_value, $.none)),
+    url_style_value: $ =>
+      choice("straight", "double", "curly", "dotted", "dashed"),
+
+    [directive.open_url_with]: $ =>
+      directive("open_url_with", choice(alias("default", $.default), $.string)),
+
+    [directive.url_prefixes]: $ => directive("url_prefixes", $.string),
+    [directive.detect_urls]: $ => directive("detect_urls", $.boolean),
+    [directive.url_excluded_characters]: $ =>
+      directive("url_excluded_characters", $.string),
+    [directive.show_hyperlink_targets]: $ =>
+      directive("show_hyperlink_targets", $.boolean),
+    [directive.copy_on_select]: $ =>
+      directive(
+        "copy_on_select",
+        choice($.copy_on_select_clipboard, $.boolean, $.kitty_buffer),
+      ),
+    copy_on_select_clipboard: $ => "clipboard",
+
+    [directive.paste_actions]: $ =>
+      directive("paste_actions", [
+        seq($.paste_actions_value, repeat(seq(",", $.paste_actions_value))),
+      ]),
+    paste_actions_value: $ =>
+      choice("quote-urls-at-prompt", "confirm", "filter"),
+
     // TODO: This can easily be one rule that's a regular expression. This isn't possible yet
     // because of the typo checking system (you can only use string literals) so I'm keeping
     // the inefficient code because it works for now.
@@ -1051,6 +1093,7 @@ module.exports = checked_grammar({
     // One or more characters that aren't special to the glob syntax
     glob_pattern_literal: $ => /[^\*\?\[]+/,
 
+    kitty_buffer: $ => /\S.+/,
     string: $ => /\S.+/,
 
     comment: $ => token(/#.*\n/),

@@ -1,0 +1,11 @@
+==================
+wheel_scroll_multiplier signed_float
+==================
+
+wheel_scroll_multiplier 5.0
+
+---
+
+(source_file
+  (wheel_scroll_multiplier
+    (signed_float (float))))

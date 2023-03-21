@@ -4009,6 +4009,29 @@
     }
   },
   {
+    "type": "copy_on_select",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "copy_on_select_clipboard",
+          "named": true
+        },
+        {
+          "type": "kitty_buffer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "cursor",
     "named": true,
     "fields": {},
@@ -4127,6 +4150,21 @@
     }
   },
   {
+    "type": "detect_urls",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "disable_ligatures",
     "named": true,
     "fields": {},
@@ -4175,47 +4213,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "glob_pattern",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "fnmatch_glob_qmark",
-          "named": true
-        },
-        {
-          "type": "fnmatch_glob_star",
-          "named": true
-        },
-        {
-          "type": "fnmatch_literal",
-          "named": true
-        },
-        {
-          "type": "fnmatch_literal_glob_op",
-          "named": true
-        },
-        {
-          "type": "fnmatch_seq",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "fnmatch_literal_glob_op",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "fnmatch_seq",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "font_family",
@@ -4295,6 +4292,47 @@
     }
   },
   {
+    "type": "glob_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "glob_pattern_literal",
+          "named": true
+        },
+        {
+          "type": "glob_pattern_literal_glob_op",
+          "named": true
+        },
+        {
+          "type": "glob_pattern_qmark",
+          "named": true
+        },
+        {
+          "type": "glob_pattern_seq",
+          "named": true
+        },
+        {
+          "type": "glob_pattern_star",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "glob_pattern_literal_glob_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "glob_pattern_seq",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "globinclude",
     "named": true,
     "fields": {},
@@ -4349,6 +4387,11 @@
     }
   },
   {
+    "type": "kitty_buffer",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "modify_font",
     "named": true,
     "fields": {
@@ -4385,6 +4428,21 @@
     }
   },
   {
+    "type": "mouse_hide_wait",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_float",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "narrow_symbols",
     "named": true,
     "fields": {},
@@ -4398,6 +4456,60 @@
         },
         {
           "type": "int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "open_url_with",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "default",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "paste_actions",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "paste_actions_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "paste_actions_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "scrollback_fill_enlarged_window",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
           "named": true
         }
       ]
@@ -4467,6 +4579,21 @@
         },
         {
           "type": "string_part",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "show_hyperlink_targets",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
           "named": true
         }
       ]
@@ -5590,6 +5717,10 @@
           "named": true
         },
         {
+          "type": "copy_on_select",
+          "named": true
+        },
+        {
           "type": "cursor",
           "named": true
         },
@@ -5615,6 +5746,10 @@
         },
         {
           "type": "cursor_underline_thickness",
+          "named": true
+        },
+        {
+          "type": "detect_urls",
           "named": true
         },
         {
@@ -5662,7 +5797,23 @@
           "named": true
         },
         {
+          "type": "mouse_hide_wait",
+          "named": true
+        },
+        {
           "type": "narrow_symbols",
+          "named": true
+        },
+        {
+          "type": "open_url_with",
+          "named": true
+        },
+        {
+          "type": "paste_actions",
+          "named": true
+        },
+        {
+          "type": "scrollback_fill_enlarged_window",
           "named": true
         },
         {
@@ -5678,11 +5829,35 @@
           "named": true
         },
         {
+          "type": "show_hyperlink_targets",
+          "named": true
+        },
+        {
           "type": "symbol_map",
           "named": true
         },
         {
+          "type": "touch_scroll_multiplier",
+          "named": true
+        },
+        {
           "type": "undercurl_style",
+          "named": true
+        },
+        {
+          "type": "url_color",
+          "named": true
+        },
+        {
+          "type": "url_excluded_characters",
+          "named": true
+        },
+        {
+          "type": "url_prefixes",
+          "named": true
+        },
+        {
+          "type": "url_style",
           "named": true
         },
         {
@@ -5694,11 +5869,24 @@
           "named": true
         },
         {
+          "type": "wheel_scroll_min_lines",
+          "named": true
+        },
+        {
+          "type": "wheel_scroll_multiplier",
+          "named": true
+        },
+        {
           "type": "window_alert_on_bell",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "symbol_map",
@@ -5714,6 +5902,21 @@
         },
         {
           "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "touch_scroll_multiplier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_float",
           "named": true
         }
       ]
@@ -5766,6 +5969,75 @@
     }
   },
   {
+    "type": "url_color",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "hex_color",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "url_excluded_characters",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "url_prefixes",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "url_style",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "none",
+          "named": true
+        },
+        {
+          "type": "url_style_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "url_style_value",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "visual_bell_color",
     "named": true,
     "fields": {},
@@ -5794,6 +6066,36 @@
       "types": [
         {
           "type": "float",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "wheel_scroll_min_lines",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "wheel_scroll_multiplier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_float",
           "named": true
         }
       ]
@@ -6943,6 +7245,22 @@
     "named": true
   },
   {
+    "type": "confirm",
+    "named": false
+  },
+  {
+    "type": "copy_on_select",
+    "named": false
+  },
+  {
+    "type": "copy_on_select_clipboard",
+    "named": true
+  },
+  {
+    "type": "curly",
+    "named": false
+  },
+  {
     "type": "cursor",
     "named": false
   },
@@ -6975,11 +7293,31 @@
     "named": false
   },
   {
+    "type": "dashed",
+    "named": false
+  },
+  {
+    "type": "default",
+    "named": true
+  },
+  {
     "type": "dense",
     "named": false
   },
   {
+    "type": "detect_urls",
+    "named": false
+  },
+  {
     "type": "disable_ligatures",
+    "named": false
+  },
+  {
+    "type": "dotted",
+    "named": false
+  },
+  {
+    "type": "double",
     "named": false
   },
   {
@@ -6995,19 +7333,11 @@
     "named": false
   },
   {
+    "type": "filter",
+    "named": false
+  },
+  {
     "type": "float",
-    "named": true
-  },
-  {
-    "type": "fnmatch_glob_qmark",
-    "named": true
-  },
-  {
-    "type": "fnmatch_glob_star",
-    "named": true
-  },
-  {
-    "type": "fnmatch_literal",
     "named": true
   },
   {
@@ -7027,6 +7357,18 @@
     "named": false
   },
   {
+    "type": "glob_pattern_literal",
+    "named": true
+  },
+  {
+    "type": "glob_pattern_qmark",
+    "named": true
+  },
+  {
+    "type": "glob_pattern_star",
+    "named": true
+  },
+  {
     "type": "globinclude",
     "named": false
   },
@@ -7044,6 +7386,10 @@
   },
   {
     "type": "modify_font",
+    "named": false
+  },
+  {
+    "type": "mouse_hide_wait",
     "named": false
   },
   {
@@ -7067,8 +7413,24 @@
     "named": true
   },
   {
+    "type": "open_url_with",
+    "named": false
+  },
+  {
+    "type": "paste_actions",
+    "named": false
+  },
+  {
     "type": "postscript_font_name",
     "named": true
+  },
+  {
+    "type": "quote-urls-at-prompt",
+    "named": false
+  },
+  {
+    "type": "scrollback_fill_enlarged_window",
+    "named": false
   },
   {
     "type": "scrollback_lines",
@@ -7083,11 +7445,19 @@
     "named": false
   },
   {
+    "type": "show_hyperlink_targets",
+    "named": false
+  },
+  {
     "type": "size",
     "named": false
   },
   {
     "type": "sparse",
+    "named": false
+  },
+  {
+    "type": "straight",
     "named": false
   },
   {
@@ -7097,10 +7467,6 @@
   {
     "type": "strikethrough_thickness",
     "named": false
-  },
-  {
-    "type": "string",
-    "named": true
   },
   {
     "type": "string_part",
@@ -7116,6 +7482,10 @@
   },
   {
     "type": "thin",
+    "named": false
+  },
+  {
+    "type": "touch_scroll_multiplier",
     "named": false
   },
   {
@@ -7147,11 +7517,35 @@
     "named": true
   },
   {
+    "type": "url_color",
+    "named": false
+  },
+  {
+    "type": "url_excluded_characters",
+    "named": false
+  },
+  {
+    "type": "url_prefixes",
+    "named": false
+  },
+  {
+    "type": "url_style",
+    "named": false
+  },
+  {
     "type": "visual_bell_color",
     "named": false
   },
   {
     "type": "visual_bell_duration",
+    "named": false
+  },
+  {
+    "type": "wheel_scroll_min_lines",
+    "named": false
+  },
+  {
+    "type": "wheel_scroll_multiplier",
     "named": false
   },
   {

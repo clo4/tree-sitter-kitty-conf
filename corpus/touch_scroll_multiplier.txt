@@ -1,0 +1,11 @@
+==================
+touch_scroll_multiplier signed_float
+==================
+
+touch_scroll_multiplier 5.0
+
+---
+
+(source_file
+  (touch_scroll_multiplier
+    (signed_float (float))))

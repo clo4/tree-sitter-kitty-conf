@@ -1,0 +1,11 @@
+==================
+url_prefixes string
+==================
+
+url_prefixes file ftp ftps gemini git gopher http https irc ircs kitty mailto news sftp ssh
+
+---
+
+(source_file
+  (url_prefixes
+    (string)))
