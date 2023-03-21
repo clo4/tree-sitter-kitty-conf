@@ -75,7 +75,7 @@ narrow_symbols U+ff00-U+88ff,U+1234
       (unicode_codepoint))))
 
 ==================
-narrow_symbols codepoints number (range and single)
+narrow_symbols codepoints int (range and single)
 ==================
 
 narrow_symbols U+ff00-U+88ff,U+1234 5
@@ -89,4 +89,4 @@ narrow_symbols U+ff00-U+88ff,U+1234 5
         (unicode_codepoint)
         (unicode_codepoint))
       (unicode_codepoint))
-    (number)))
+    (int)))

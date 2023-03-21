@@ -1,0 +1,24 @@
+==================
+font_features font-name features
+==================
+
+font_features FiraCode-Bold +zero -onum
+
+---
+
+(source_file
+  (font_features
+    (postscript_font_name)
+    (string)))
+
+==================
+font_features none
+==================
+
+font_features none
+
+---
+
+(source_file
+  (font_features
+    (none)))

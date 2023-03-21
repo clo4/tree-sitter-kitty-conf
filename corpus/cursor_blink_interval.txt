@@ -1,0 +1,11 @@
+==================
+cursor_blink_interval signed_float
+==================
+
+cursor_blink_interval -1
+
+---
+
+(source_file
+  (cursor_blink_interval
+    (signed_float (sign) (float))))

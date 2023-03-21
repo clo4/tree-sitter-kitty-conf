@@ -1,0 +1,44 @@
+==================
+box_drawing_scale (float tuple)
+==================
+
+box_drawing_scale 0.001, 1, 1.5, 2
+
+---
+
+(source_file
+  (box_drawing_scale
+    thin: (float)
+    normal: (float)
+    thick: (float)
+    very_thick: (float)))
+
+==================
+box_drawing_scale (float tuple, no spaces)
+==================
+
+box_drawing_scale 0.001,1,1.5,2
+
+---
+
+(source_file
+  (box_drawing_scale
+    thin: (float)
+    normal: (float)
+    thick: (float)
+    very_thick: (float)))
+
+==================
+box_drawing_scale (float tuple, too many spaces)
+==================
+
+box_drawing_scale 0.001  ,  1  ,  1.5  ,  2
+
+---
+
+(source_file
+  (box_drawing_scale
+    thin: (float)
+    normal: (float)
+    thick: (float)
+    very_thick: (float)))

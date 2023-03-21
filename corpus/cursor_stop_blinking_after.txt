@@ -1,0 +1,11 @@
+==================
+cursor_stop_blinking_after float
+==================
+
+cursor_stop_blinking_after 15.0
+
+---
+
+(source_file
+  (cursor_stop_blinking_after
+    (float)))

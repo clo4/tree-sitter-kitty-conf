@@ -1,0 +1,23 @@
+==================
+cursor_text_color background
+==================
+
+cursor_text_color background
+
+---
+
+(source_file
+  (cursor_text_color
+    (cursor_text_color_background)))
+
+==================
+cursor_text_color hex_color
+==================
+
+cursor_text_color #FF00aa
+
+---
+
+(source_file
+  (cursor_text_color
+    (hex_color)))

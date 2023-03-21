@@ -647,12 +647,15 @@ const seq_ws = (...rules) =>
       if (index === 0) {
         return [rule];
       }
-      return [INLINE_WHITESPACE, rule];
+      return [token.immediate(INLINE_WHITESPACE), rule];
     }),
   );
 
 const checked_grammar = grammar_object => {
-  if (grammar_object?.check && DIRECTIVE_NAMES.size !== 0) {
+  if (
+    process.env["TREE_SITTER_KITTY_CONF_ENSURE_COMPLETE"] === "1" &&
+    DIRECTIVE_NAMES.size !== 0
+  ) {
     const percent_defined = (
       (defined_directives.size === 0
         ? 0
@@ -668,9 +671,7 @@ const checked_grammar = grammar_object => {
       `Not all directives are defined as rules (${defined_directives.size} / ${DIRECTIVE_NAMES.size}, ${percent_defined}%)\n${remaining_as_json}`,
     );
   }
-  if ("check" in grammar_object) {
-    delete grammar_object.check;
-  }
+
   return grammar(grammar_object);
 };
 
@@ -678,6 +679,11 @@ const defined_directives = new Set();
 const name_usages = new Set();
 
 const _directive_check = name => {
+  // There are three things to check here:
+  // 1. The directive name is valid
+  // 2. The directive has been defined as a rule
+  // 3. The directive name hasn't been used before
+  // These are safeguards against typos. The grammar won't build if you mess it up.
   if (!DIRECTIVE_NAMES.has(name)) {
     throw new Error(
       `The directive name '${name}' was defined, but isn't a valid directive name. Did you make a typo or forget to update the list of rules?`,
@@ -699,11 +705,10 @@ const _directive_check = name => {
   name_usages.add(name);
 };
 
-const directive_literal = (name, ...values) => {
-  _directive_check(name);
-  return seq(name, ...values);
-};
-
+// `directive` is an addition to the DSL that makes it easy to define new Kitty directives.
+// You must access it to create the rule name, then call it as a function to define the rule.
+// When used as a fuction, each rule is whitespace separated. You can use square brackets
+// [like so] around a rule to make it optional.
 const directive = new Proxy(
   (name, ...values) => {
     _directive_check(name);
@@ -711,7 +716,29 @@ const directive = new Proxy(
     if (values.length === 0) {
       return name_alias;
     }
-    return seq_ws(name_alias, ...values);
+    const rules = [name_alias];
+    for (const rule of values) {
+      // An array indicates a sequence of consecutive optional values.
+      // This may contain many values or only one value.
+      if (Array.isArray(rule)) {
+        if (rule.length === 0) {
+          throw new Error(
+            "An optional directive component must contain at least one rule",
+          );
+        }
+        const optional_rules = [];
+        for (const optional_rule of rule) {
+          optional_rules.push(
+            token.immediate(INLINE_WHITESPACE),
+            optional_rule,
+          );
+        }
+        rules.push(optional(seq(...optional_rules)));
+      } else {
+        rules.push(token.immediate(INLINE_WHITESPACE), rule);
+      }
+    }
+    return seq(...rules);
   },
   {
     // Getting a property is done when defining a new rule. This should be done only once per
@@ -749,9 +776,6 @@ module.exports = checked_grammar({
   // Need control over whitespace because the grammar is line-based
   extras: $ => [],
 
-  // TODO: When this is done, uncomment this to make sure it *stays* done
-  // check: true,
-
   rules: {
     source_file: $ =>
       repeat(
@@ -776,13 +800,16 @@ module.exports = checked_grammar({
     // it can't get out of sync with the `_directive` rule.
     // Calling `directive` is a whitespace-separated sequence. The directive
     // name must come first. All directive names must be valid and can only be
-    // used once.
+    // used once. Using an array indicates an optional sequence.
 
     [directive.include]: $ => directive("include", $.string),
+
+    // TODO: This could use some syntax for the glob
     [directive.globinclude]: $ => directive("globinclude", $.string),
+    // TODO: This can also use globs
     [directive.envinclude]: $ => directive("envinclude", $.string),
 
-    [directive.font_size]: $ => directive("font_size", $.number),
+    [directive.font_size]: $ => directive("font_size", $.float),
 
     [directive.font_family]: $ =>
       directive("font_family", choice($.string, $.auto)),
@@ -805,7 +832,7 @@ module.exports = checked_grammar({
       directive("enable_audio_bell", $.boolean),
 
     [directive.visual_bell_duration]: $ =>
-      directive("visual_bell_duration", $.number),
+      directive("visual_bell_duration", $.float),
 
     [directive.visual_bell_color]: $ =>
       directive("visual_bell_color", choice($.hex_color, $.none)),
@@ -823,34 +850,103 @@ module.exports = checked_grammar({
       directive("symbol_map", $.codepoints, $.string),
 
     [directive.narrow_symbols]: $ =>
-      seq(
-        directive("narrow_symbols"),
-        INLINE_WHITESPACE,
-        $.codepoints,
-        optional(seq(token.immediate(INLINE_WHITESPACE), $.number)),
-      ),
+      directive("narrow_symbols", $.codepoints, [$.int]),
 
-    // TODO: test
     [directive.disable_ligatures]: $ =>
       directive("disable_ligatures", $.disable_ligatures_value),
     disable_ligatures_value: $ => choice("never", "always", "cursor"),
 
+    // The harfbuzz font features grammar seems like a pain so I'm omitting that for now.
+    // It's a string until it's parsed anyway /shrug
     // TODO: test
     [directive.font_features]: $ =>
-      directive("font_features", $.postscript_font_name, $.string),
+      directive(
+        "font_features",
+        choice($.none, seq_ws($.postscript_font_name, $.string)),
+      ),
     postscript_font_name: $ => /\S+/,
 
-    // NOTE: Mapping over all the possible color indices to define the rules individually.
-    // There are easier ways to do this, but this works with the current error checking
-    // system I made, so I'm keeping this until it can be refactored. Ideally it wouldn't
-    // generate an additional 256 rules that could really just be a regex.
+    [directive.modify_font]: $ =>
+      directive(
+        "modify_font",
+        field("type", $.font_modification_type),
+        seq(
+          field("amount", $.signed_float),
+          field("unit", optional(alias(choice("pt", "%", "px"), $.unit))),
+        ),
+      ),
+    font_modification_type: $ =>
+      choice(
+        "underline_position",
+        "underline_thickness",
+        "strikethrough_position",
+        "strikethrough_thickness",
+        "cell_width",
+        "cell_height",
+        "baseline",
+        "size",
+      ),
+
+    [directive.box_drawing_scale]: $ =>
+      directive(
+        "box_drawing_scale",
+        seq(
+          field("thin", $.float),
+          optional(token.immediate(INLINE_WHITESPACE)),
+          ",",
+          optional(token.immediate(INLINE_WHITESPACE)),
+          field("normal", $.float),
+          optional(token.immediate(INLINE_WHITESPACE)),
+          ",",
+          optional(token.immediate(INLINE_WHITESPACE)),
+          field("thick", $.float),
+          optional(token.immediate(INLINE_WHITESPACE)),
+          ",",
+          optional(token.immediate(INLINE_WHITESPACE)),
+          field("very_thick", $.float),
+        ),
+      ),
+
+    [directive.undercurl_style]: $ =>
+      directive("undercurl_style", $.undercurl_style_value),
+    undercurl_style_value: $ =>
+      seq(choice("thick", "thin"), "-", choice("sparse", "dense")),
+
+    [directive.cursor]: $ => directive("cursor", choice($.hex_color, $.none)),
+
+    [directive.cursor_text_color]: $ =>
+      directive(
+        "cursor_text_color",
+        choice(
+          $.hex_color,
+          alias("background", $.cursor_text_color_background),
+        ),
+      ),
+
+    [directive.cursor_shape]: $ =>
+      directive("cursor_shape", $.cursor_shape_value),
+    cursor_shape_value: $ => choice("block", "beam", "underline"),
+
+    [directive.cursor_beam_thickness]: $ =>
+      directive("cursor_beam_thickness", $.float),
+
+    [directive.cursor_underline_thickness]: $ =>
+      directive("cursor_underline_thickness", $.float),
+
+    [directive.cursor_blink_interval]: $ =>
+      directive("cursor_blink_interval", $.signed_float),
+
+    [directive.cursor_stop_blinking_after]: $ =>
+      directive("cursor_stop_blinking_after", $.float),
+
+    // TODO: This can easily be one rule that's a regular expression. This isn't possible yet
+    // because of the typo checking system (you can only use string literals) so I'm keeping
+    // the inefficient code because it works for now.
     // TODO: test
-    ...Array.from({ length: 256 }, (_, index) => `color${index}`).reduce(
-      (acc, curr) => ({
-        ...acc,
-        [directive[curr]]: $ => directive(curr, $.hex_color),
-      }),
-      {},
+    ...Object.fromEntries(
+      [...DIRECTIVE_NAMES]
+        .filter(name => name.startsWith("color"))
+        .map(curr => [directive[curr], $ => directive(curr, $.hex_color)]),
     ),
 
     // ------------------
@@ -865,19 +961,26 @@ module.exports = checked_grammar({
         choice($.unicode_codepoint, $.unicode_range),
         repeat(seq(",", choice($.unicode_codepoint, $.unicode_range))),
       ),
-    unicode_range: $ => seq($.unicode_codepoint, "-", $.unicode_codepoint),
+    unicode_range: $ =>
+      seq(
+        field("start", $.unicode_codepoint),
+        "-",
+        field("end", $.unicode_codepoint),
+      ),
     unicode_codepoint: $ => /U\+[A-Fa-f0-9]+/,
 
     // Keeping this here so I remember to uncomment it if required
-    // signed_number: $ => seq(optional(choice("+", "-")), $.number),
+
+    sign: $ => choice("+", "-"),
+    signed_float: $ =>
+      seq(field("sign", optional($.sign)), field("number", $.float)),
 
     // Mostly from the Python grammar because Kitty uses Python's `float`
     // to parse numbers. `float` has slightly different syntax to the literal
     // syntax, so that's why it's not the exact same.
-    number: $ => {
+    float: $ => {
       const digits = repeat1(/[0-9]+_?/);
       const exponent = seq(/[eE][\+-]?/, digits);
-
       return token(
         choice(
           digits,
@@ -887,6 +990,7 @@ module.exports = checked_grammar({
         ),
       );
     },
+    int: $ => repeat1(/[0-9]+_?/),
     boolean: $ => choice("y", "yes", "true", "n", "no", "false"),
     hex_color: $ => /#[0-9a-fA-F]{6}/,
 

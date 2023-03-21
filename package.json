@@ -1,23 +1,24 @@
 {
-    "name": "tree-sitter-kitty-conf",
-    "version": "0.0.1",
-    "description": "",
-    "main": "bindings/node",
-    "scripts": {
-        "test": "tree-sitter generate && tree-sitter test",
-        "build": "tree-sitter generate",
-        "format": "prettier --write '*.js' '*.json'",
-        "kitty-directives": "kitty +runpy 'from kitty.config import option_names_for_completion; import json; print(json.dumps(option_names_for_completion(), indent=2))'",
-        "kitty-actions": "kitty +runpy 'from kitty.options.utils import func_with_args; import json; print(json.dumps(list(func_with_args.args_funcs.keys()), indent=2))'"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "nan": "^2.17.0"
-    },
-    "devDependencies": {
-        "prettier": "^2.8.4",
-        "tree-sitter-cli": "^0.20.7"
-    }
+  "name": "tree-sitter-kitty-conf",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "TREE_SITTER_KITTY_CONF_ENSURE_COMPLETE=1 tree-sitter generate && tree-sitter test",
+    "test-unchecked": "tree-sitter generate && tree-sitter test",
+    "build": "tree-sitter generate",
+    "format": "prettier --write '*.js' '*.json'",
+    "kitty-directives": "kitty +runpy 'from kitty.config import option_names_for_completion; import json; print(json.dumps(option_names_for_completion(), indent=2))'",
+    "kitty-actions": "kitty +runpy 'from kitty.options.utils import func_with_args; import json; print(json.dumps(list(func_with_args.args_funcs.keys()), indent=2))'"
+  },
+  "keywords": [],
+  "author": "clo4",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.17.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "tree-sitter-cli": "^0.20.7"
+  }
 }

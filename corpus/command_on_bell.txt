@@ -1,23 +1,35 @@
 ==================
-command_on_bell boolean
+disable_ligatures always
 ==================
 
-command_on_bell yes
+disable_ligatures always
 
 ---
 
 (source_file
-  (command_on_bell
-    (boolean)))
+  (disable_ligatures
+    (disable_ligatures_value)))
 
 ==================
-command_on_bell none
+disable_ligatures never
 ==================
 
-command_on_bell none
+disable_ligatures never
 
 ---
 
 (source_file
-  (command_on_bell
-    (none)))
+  (disable_ligatures
+    (disable_ligatures_value)))
+
+==================
+disable_ligatures cursor
+==================
+
+disable_ligatures cursor
+
+---
+
+(source_file
+  (disable_ligatures
+    (disable_ligatures_value)))

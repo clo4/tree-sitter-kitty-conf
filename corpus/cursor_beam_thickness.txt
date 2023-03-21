@@ -1,0 +1,11 @@
+==================
+cursor_beam_thickness float
+==================
+
+cursor_beam_thickness 1.5
+
+---
+
+(source_file
+  (cursor_beam_thickness
+    (float)))

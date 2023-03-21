@@ -1,0 +1,14 @@
+==================
+cursor_shape block|beam|underline
+==================
+
+cursor_shape block
+cursor_shape beam
+cursor_shape underline
+
+---
+
+(source_file
+  (cursor_shape (cursor_shape_value))
+  (cursor_shape (cursor_shape_value))
+  (cursor_shape (cursor_shape_value)))

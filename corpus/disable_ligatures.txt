@@ -1,0 +1,23 @@
+==================
+command_on_bell boolean
+==================
+
+command_on_bell yes
+
+---
+
+(source_file
+  (command_on_bell
+    (boolean)))
+
+==================
+command_on_bell none
+==================
+
+command_on_bell none
+
+---
+
+(source_file
+  (command_on_bell
+    (none)))

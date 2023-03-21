@@ -1,0 +1,20 @@
+==================
+undercurl_style thickness-density
+==================
+
+undercurl_style thick-sparse
+undercurl_style thin-sparse
+undercurl_style thick-dense
+undercurl_style thin-dense
+
+---
+
+(source_file
+  (undercurl_style
+    (undercurl_style_value))
+  (undercurl_style
+    (undercurl_style_value))
+  (undercurl_style
+    (undercurl_style_value))
+  (undercurl_style
+    (undercurl_style_value)))

@@ -1,0 +1,45 @@
+==================
+modify_font font_modification_type amount (signed)
+==================
+
+modify_font underline_position -3
+
+---
+
+(source_file
+  (modify_font
+    type: (font_modification_type)
+    amount: (signed_float
+      sign: (sign)
+      number: (float))))
+
+==================
+modify_font font_modification_type amount (unsigned, unit)
+==================
+
+modify_font underline_thickness 150%
+
+---
+
+(source_file
+  (modify_font
+    type: (font_modification_type)
+    amount: (signed_float
+      number: (float))
+    unit: (unit)))
+
+==================
+modify_font font_modification_type amount (signed, unit)
+==================
+
+modify_font cell_height -2px
+
+---
+
+(source_file
+  (modify_font
+    type: (font_modification_type)
+    amount: (signed_float
+      sign: (sign)
+      number: (float))
+    unit: (unit)))

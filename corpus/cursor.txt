@@ -1,0 +1,23 @@
+==================
+cursor none
+==================
+
+cursor none
+
+---
+
+(source_file
+  (cursor
+    (none)))
+
+==================
+cursor hex_color
+==================
+
+cursor #FF00aa
+
+---
+
+(source_file
+  (cursor
+    (hex_color)))

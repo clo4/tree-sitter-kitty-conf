@@ -1,0 +1,11 @@
+==================
+cursor_underline_thickness float
+==================
+
+cursor_underline_thickness 1.5
+
+---
+
+(source_file
+  (cursor_underline_thickness
+    (float)))
