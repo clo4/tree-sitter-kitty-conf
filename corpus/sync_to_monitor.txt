@@ -1,0 +1,11 @@
+==================
+sync_to_monitor boolean
+==================
+
+sync_to_monitor false
+
+---
+
+(source_file
+  (sync_to_monitor
+    (boolean)))

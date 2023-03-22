@@ -434,6 +434,13 @@ DIRECTIVE_NAMES.add("include");
 DIRECTIVE_NAMES.add("globinclude");
 DIRECTIVE_NAMES.add("envinclude");
 
+// The colorN rules are handled by their own rule
+for (const name of DIRECTIVE_NAMES) {
+  if (name.startsWith("color")) {
+    DIRECTIVE_NAMES.delete(name);
+  }
+}
+
 // These are all case-insensitive, because of course they fucking are...
 // ... I'm just going to pretend they're not, until it becomes an issue.
 const FUNCTIONAL_KEYS = [
@@ -590,54 +597,125 @@ const KEYBOARD_MODIFIERS = [
 ];
 
 const ACTIONS = [
+  "clear_selection",
+  "copy_and_clear_or_interrupt",
+  "copy_ansi_to_clipboard",
+  "copy_or_interrupt",
+  "copy_to_clipboard",
   "pass_selection_to_program",
-  "new_window",
-  "new_tab",
-  "new_os_window",
-  "new_window_with_cwd",
-  "new_tab_with_cwd",
-  "new_os_window_with_cwd",
-  "launch",
-  "mouse_handle_click",
-  "send_text",
-  "run_kitten",
-  "run_simple_kitten",
-  "kitten",
-  "open_url",
-  "goto_tab",
-  "detach_window",
-  "close_window_with_confirmation",
-  "detach_tab",
-  "set_background_opacity",
-  "goto_layout",
-  "toggle_layout",
-  "kitty_shell",
-  "show_kitty_doc",
-  "set_tab_title",
-  "set_font_size",
-  "signal_child",
-  "change_font_size",
-  "clear_terminal",
+  "paste",
+  "show_first_command_output_on_screen",
+  "show_last_command_output",
+  "show_last_non_empty_command_output",
+  "show_last_visited_command_output",
+  "show_scrollback",
   "copy_to_buffer",
   "paste_from_buffer",
-  "paste",
-  "neighboring_window",
-  "resize_window",
-  "move_window",
-  "pipe",
-  "set_colors",
-  "remote_control",
-  "nth_os_window",
-  "nth_window",
-  "scroll_to_prompt",
-  "visual_window_select_action_trigger",
-  "sleep",
-  "disable_ligatures_in",
+  "paste_from_clipboard",
+  "paste_from_selection",
+  "dump_lines_with_attrs",
+  "close_shared_ssh_connections",
+  "debug_config",
+  "show_kitty_env_vars",
+  "goto_layout",
+  "last_used_layout",
   "layout_action",
-  "toggle_marker",
+  "next_layout",
+  "toggle_layout",
+  "remove_marker",
   "scroll_to_mark",
-  "mouse_selection",
+  "toggle_marker",
+  "create_marker",
+  "send_text",
+  "show_kitty_doc",
+  "signal_child",
+  "clear_terminal",
+  "combine",
+  "disable_ligatures_in",
+  "discard_event",
+  "edit_config_file",
+  "hide_macos_app",
+  "hide_macos_other_apps",
+  "input_unicode_character",
+  "kitten",
+  "kitty_shell",
+  "launch",
   "load_config_file",
+  "minimize_macos_window",
+  "open_url",
+  "open_url_with_hints",
+  "remote_control",
+  "set_colors",
+  "sleep",
+  "toggle_macos_secure_keyboard_entry",
+  "no_op",
+  "mouse_click_url",
+  "mouse_click_url_or_select",
+  "mouse_handle_click",
+  "mouse_select_command_output",
+  "mouse_selection",
+  "mouse_show_command_output",
+  "paste_selection",
+  "paste_selection_or_clipboard",
+  "scroll_end",
+  "scroll_home",
+  "scroll_line_down",
+  "scroll_line_up",
+  "scroll_page_down",
+  "scroll_page_up",
+  "scroll_prompt_to_bottom",
+  "scroll_prompt_to_top",
+  "scroll_to_prompt",
+  "close_other_tabs_in_os_window",
+  "close_tab",
+  "detach_tab",
+  "goto_tab",
+  "move_tab_backward",
+  "move_tab_forward",
+  "new_tab",
+  "new_tab_with_cwd",
+  "next_tab",
+  "previous_tab",
+  "select_tab",
+  "set_tab_title",
+  "close_other_windows_in_tab",
+  "eighth_window",
+  "fifth_window",
+  "first_window",
+  "focus_visible_window",
+  "fourth_window",
+  "move_window",
+  "move_window_backward",
+  "move_window_forward",
+  "move_window_to_top",
+  "neighboring_window",
+  "next_window",
+  "ninth_window",
+  "nth_window",
+  "previous_window",
+  "reset_window_sizes",
+  "resize_window",
+  "second_window",
+  "seventh_window",
+  "sixth_window",
+  "swap_with_window",
+  "tenth_window",
+  "third_window",
+  "change_font_size",
+  "close_os_window",
+  "close_window",
+  "close_window_with_confirmation",
+  "detach_window",
+  "new_os_window",
+  "new_os_window_with_cwd",
+  "new_window",
+  "new_window_with_cwd",
+  "nth_os_window",
+  "quit",
+  "set_background_opacity",
+  "start_resizing_window",
+  "toggle_fullscreen",
+  "toggle_maximized",
 ];
 
 ACTIONS.push("no_op");
@@ -775,6 +853,8 @@ module.exports = checked_grammar({
   // Need control over whitespace because the grammar is line-based
   extras: $ => [],
 
+  // word: $ => $.identifier,
+
   rules: {
     source_file: $ =>
       repeat(
@@ -792,7 +872,10 @@ module.exports = checked_grammar({
 
     _directive: $ =>
       seq(
-        choice(...[...defined_directives].map(rule_name => $[rule_name])),
+        choice(
+          ...[...defined_directives].map(rule_name => $[rule_name]),
+          $.color0_to_color255,
+        ),
         // This cannot be `token.immediate(INLINE_WHITESPACE)`, haven't looked into why
         optional(INLINE_WHITESPACE),
         optional("\n"),
@@ -827,27 +910,6 @@ module.exports = checked_grammar({
       directive("bold_italic_font", choice($.string, $.auto)),
 
     [directive.force_ltr]: $ => directive("force_ltr", $.boolean),
-
-    [directive.bell_on_tab]: $ =>
-      directive("bell_on_tab", choice($.string, $.boolean, $.none)),
-
-    [directive.enable_audio_bell]: $ =>
-      directive("enable_audio_bell", $.boolean),
-
-    [directive.visual_bell_duration]: $ =>
-      directive("visual_bell_duration", $.float),
-
-    [directive.visual_bell_color]: $ =>
-      directive("visual_bell_color", choice($.hex_color, $.none)),
-
-    [directive.window_alert_on_bell]: $ =>
-      directive("window_alert_on_bell", $.boolean),
-
-    [directive.command_on_bell]: $ =>
-      directive("command_on_bell", choice($.boolean, $.none)),
-
-    [directive.bell_path]: $ =>
-      directive("bell_path", choice($.string, $.none)),
 
     [directive.symbol_map]: $ =>
       directive("symbol_map", $.codepoints, $.string),
@@ -1088,19 +1150,109 @@ module.exports = checked_grammar({
         seq($.mouse_grabbed_mode, ",", $.mouse_grabbed_mode),
       ),
     mouse_grabbed_mode: $ => choice("grabbed", "ungrabbed"),
+    // TODO: Some of these actions have specific arguments that are valid, these should
+    // be parsed as keywords. This is out of scope for now but I'll get around to it.
     mouse_action: $ => choice($.mouse_action_alias, $.action),
     mouse_action_alias: $ => /\S+/,
 
-    // TODO: This can easily be one rule that's a regular expression. This isn't possible yet
-    // because of the typo checking system (you can only use string literals) so I'm keeping
-    // the inefficient code because it works for now.
-    // TODO: test
-    ...Object.fromEntries(
-      [...DIRECTIVE_NAMES]
-        .filter(name => name.startsWith("color"))
-        .map(curr => [directive[curr], $ => directive(curr, $.hex_color)]),
-    ),
+    // needs test {{{
+    [directive.clear_all_mouse_actions]: $ =>
+      directive("clear_all_mouse_actions", $.boolean),
 
+    [directive.repaint_delay]: $ => directive("repaint_delay", $.int),
+    [directive.input_delay]: $ => directive("input_delay", $.int),
+    [directive.sync_to_monitor]: $ => directive("sync_to_monitor", $.boolean),
+    /// }}}
+
+    [directive.bell_on_tab]: $ =>
+      directive("bell_on_tab", choice($.string, $.boolean, $.none)),
+
+    [directive.enable_audio_bell]: $ =>
+      directive("enable_audio_bell", $.boolean),
+
+    [directive.visual_bell_duration]: $ =>
+      directive("visual_bell_duration", $.float),
+
+    [directive.visual_bell_color]: $ =>
+      directive("visual_bell_color", choice($.hex_color, $.none)),
+
+    [directive.window_alert_on_bell]: $ =>
+      directive("window_alert_on_bell", $.boolean),
+
+    [directive.command_on_bell]: $ =>
+      directive("command_on_bell", choice($.boolean, $.none)),
+
+    [directive.bell_path]: $ =>
+      directive("bell_path", choice($.string, $.none)),
+
+    // needs test {{{
+    [directive.remember_window_size]: $ =>
+      directive("remember_window_size", $.boolean),
+    [directive.initial_window_width]: $ =>
+      directive(
+        "initial_window_width",
+        seq($.int, optional(alias("c", $.unit))),
+      ),
+    [directive.initial_window_height]: $ =>
+      directive(
+        "initial_window_height",
+        seq($.int, optional(alias("c", $.unit))),
+      ),
+    [directive.enabled_layouts]: $ =>
+      directive(
+        "enabled_layouts",
+        choice(
+          $.all_layouts,
+          seq(
+            $.layout,
+            repeat(
+              seq(
+                optional(token.immediate(INLINE_WHITESPACE)),
+                ",",
+                optional(token.immediate(INLINE_WHITESPACE)),
+                $.layout,
+              ),
+            ),
+          ),
+        ),
+      ),
+    all_layouts: $ => choice("all", "*"),
+    // layout = name [ ":" key "=" value [ ";" key "=" value ]* ]
+    layout: $ =>
+      seq(
+        field("name", alias(/\w+/, $.layout_name)),
+        optional(field("options", seq(":", $.layout_options))),
+      ),
+    layout_options: $ =>
+      seq($.layout_option, repeat(seq(";", $.layout_option))),
+    layout_option: $ =>
+      seq(
+        field("key", $.layout_option_name),
+        "=",
+        field("value", $._layout_option_value),
+      ),
+    layout_option_name: $ => /[\w_]+/,
+    _layout_option_value: $ => choice($.boolean, $.int, $.layout_option_atom),
+
+    /// }}}
+
+    color0_to_color255: $ =>
+      seq($.color_directive, token.immediate(INLINE_WHITESPACE), $.hex_color),
+    color_directive: $ =>
+      token(
+        seq(
+          "color",
+          choice(
+            // Any number from 0 to 255
+            /[0-9]/,
+            /[1-9][0-9]/,
+            /1[0-9][0-9]/,
+            /2[0-4][0-9]/,
+            /25[0-5]/,
+          ),
+        ),
+      ),
+    // --------------------------
     // Common / shared data types
     // --------------------------
 
@@ -1171,6 +1323,11 @@ module.exports = checked_grammar({
     kitty_buffer: $ => /\S.+/,
     string: $ => /\S.+/,
 
+    // HACK: This has to be below $.int to be lowest priority. I'm sure if I understood more
+    // about how tree-sitter works I could avoid this, but alas I don't, so I can't (be bothered).
+    layout_option_atom: $ => /[^\s;:=,]+/,
+
+    // identifier: $ => /[a-zA-Z0-9_]+/,
     comment: $ => token(/#.*\n/),
   },
 });

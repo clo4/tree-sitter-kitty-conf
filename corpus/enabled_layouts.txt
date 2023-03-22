@@ -1,0 +1,116 @@
+==================
+enabled_layouts all
+==================
+
+enabled_layouts all
+enabled_layouts *
+
+---
+
+(source_file
+  (enabled_layouts
+    (all_layouts))
+  (enabled_layouts
+    (all_layouts)))
+
+==================
+enabled_layouts tall
+==================
+
+enabled_layouts tall
+
+---
+
+(source_file
+  (enabled_layouts
+    (layout
+      name: (layout_name))))
+
+==================
+enabled_layouts tall, fat
+==================
+
+enabled_layouts tall, fat
+
+---
+
+(source_file
+  (enabled_layouts
+    (layout
+      name: (layout_name))
+    (layout
+      name: (layout_name))))
+
+
+==================
+enabled_layouts tall:bias=60, fat
+==================
+
+enabled_layouts tall:bias=60, fat
+
+---
+
+(source_file
+  (enabled_layouts
+    (layout
+      name: (layout_name)
+      options: (layout_options
+        (layout_option
+          key: (layout_option_name)
+          value: (int))))
+    (layout
+      name: (layout_name))))
+
+==================
+enabled_layouts fat, tall:bias=50;full_size=1;mirrored=false
+==================
+
+enabled_layouts fat, tall:bias=50;full_size=1;mirrored=false
+
+---
+
+(source_file
+  (enabled_layouts
+    (layout
+      name: (layout_name))
+    (layout
+      name: (layout_name)
+      options: (layout_options
+        (layout_option
+          key: (layout_option_name)
+          value: (int))
+        (layout_option
+          key: (layout_option_name)
+          value: (int))
+        (layout_option
+          key: (layout_option_name)
+          value: (boolean))))))
+
+==================
+enabled_layouts splits:split_axis=horizontal, tall:bias=50;full_size=1;mirrored=false
+==================
+
+enabled_layouts splits:split_axis=horizontal, tall:bias=50;full_size=1;mirrored=false
+
+---
+
+(source_file
+  (enabled_layouts
+    (layout
+      name: (layout_name)
+      options: (layout_options
+        (layout_option
+          key: (layout_option_name)
+          value: (layout_option_atom))))
+    (layout
+      name: (layout_name)
+      options: (layout_options
+        (layout_option
+          key: (layout_option_name)
+          value: (int))
+        (layout_option
+          key: (layout_option_name)
+          value: (int))
+        (layout_option
+          key: (layout_option_name)
+          value: (boolean))))))

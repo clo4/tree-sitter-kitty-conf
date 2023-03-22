@@ -9,7 +9,7 @@
     "build": "tree-sitter generate",
     "format": "prettier --write '*.js' '*.json'",
     "kitty-directives": "kitty +runpy 'from kitty.config import option_names_for_completion; import json; print(json.dumps(option_names_for_completion(), indent=2))'",
-    "kitty-actions": "kitty +runpy 'from kitty.options.utils import func_with_args; import json; print(json.dumps(list(func_with_args.args_funcs.keys()), indent=2))'"
+    "kitty-repl": "kitty +runpy 'import code; code.interact()'"
   },
   "keywords": [],
   "author": "clo4",
@@ -18,7 +18,7 @@
     "nan": "^2.17.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.6",
     "tree-sitter-cli": "^0.20.7"
   }
 }

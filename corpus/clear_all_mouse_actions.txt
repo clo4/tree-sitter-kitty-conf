@@ -1,0 +1,11 @@
+==================
+clear_all_mouse_actions boolean
+==================
+
+clear_all_mouse_actions y
+
+---
+
+(source_file
+  (clear_all_mouse_actions
+    (boolean)))

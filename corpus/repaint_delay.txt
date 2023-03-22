@@ -1,0 +1,11 @@
+==================
+repaint_delay 10
+==================
+
+repaint_delay 10
+
+---
+
+(source_file
+  (repaint_delay
+    (int)))

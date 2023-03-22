@@ -1,0 +1,520 @@
+==================
+color0 to color255
+==================
+
+color0 #c0ffee
+color1 #c0ffee
+color2 #c0ffee
+color3 #c0ffee
+color4 #c0ffee
+color5 #c0ffee
+color6 #c0ffee
+color7 #c0ffee
+color8 #c0ffee
+color9 #c0ffee
+color10 #c0ffee
+color11 #c0ffee
+color12 #c0ffee
+color13 #c0ffee
+color14 #c0ffee
+color15 #c0ffee
+color16 #c0ffee
+color17 #c0ffee
+color18 #c0ffee
+color19 #c0ffee
+color20 #c0ffee
+color21 #c0ffee
+color22 #c0ffee
+color23 #c0ffee
+color24 #c0ffee
+color25 #c0ffee
+color26 #c0ffee
+color27 #c0ffee
+color28 #c0ffee
+color29 #c0ffee
+color30 #c0ffee
+color31 #c0ffee
+color32 #c0ffee
+color33 #c0ffee
+color34 #c0ffee
+color35 #c0ffee
+color36 #c0ffee
+color37 #c0ffee
+color38 #c0ffee
+color39 #c0ffee
+color40 #c0ffee
+color41 #c0ffee
+color42 #c0ffee
+color43 #c0ffee
+color44 #c0ffee
+color45 #c0ffee
+color46 #c0ffee
+color47 #c0ffee
+color48 #c0ffee
+color49 #c0ffee
+color50 #c0ffee
+color51 #c0ffee
+color52 #c0ffee
+color53 #c0ffee
+color54 #c0ffee
+color55 #c0ffee
+color56 #c0ffee
+color57 #c0ffee
+color58 #c0ffee
+color59 #c0ffee
+color60 #c0ffee
+color61 #c0ffee
+color62 #c0ffee
+color63 #c0ffee
+color64 #c0ffee
+color65 #c0ffee
+color66 #c0ffee
+color67 #c0ffee
+color68 #c0ffee
+color69 #c0ffee
+color70 #c0ffee
+color71 #c0ffee
+color72 #c0ffee
+color73 #c0ffee
+color74 #c0ffee
+color75 #c0ffee
+color76 #c0ffee
+color77 #c0ffee
+color78 #c0ffee
+color79 #c0ffee
+color80 #c0ffee
+color81 #c0ffee
+color82 #c0ffee
+color83 #c0ffee
+color84 #c0ffee
+color85 #c0ffee
+color86 #c0ffee
+color87 #c0ffee
+color88 #c0ffee
+color89 #c0ffee
+color90 #c0ffee
+color91 #c0ffee
+color92 #c0ffee
+color93 #c0ffee
+color94 #c0ffee
+color95 #c0ffee
+color96 #c0ffee
+color97 #c0ffee
+color98 #c0ffee
+color99 #c0ffee
+color100 #c0ffee
+color101 #c0ffee
+color102 #c0ffee
+color103 #c0ffee
+color104 #c0ffee
+color105 #c0ffee
+color106 #c0ffee
+color107 #c0ffee
+color108 #c0ffee
+color109 #c0ffee
+color110 #c0ffee
+color111 #c0ffee
+color112 #c0ffee
+color113 #c0ffee
+color114 #c0ffee
+color115 #c0ffee
+color116 #c0ffee
+color117 #c0ffee
+color118 #c0ffee
+color119 #c0ffee
+color120 #c0ffee
+color121 #c0ffee
+color122 #c0ffee
+color123 #c0ffee
+color124 #c0ffee
+color125 #c0ffee
+color126 #c0ffee
+color127 #c0ffee
+color128 #c0ffee
+color129 #c0ffee
+color130 #c0ffee
+color131 #c0ffee
+color132 #c0ffee
+color133 #c0ffee
+color134 #c0ffee
+color135 #c0ffee
+color136 #c0ffee
+color137 #c0ffee
+color138 #c0ffee
+color139 #c0ffee
+color140 #c0ffee
+color141 #c0ffee
+color142 #c0ffee
+color143 #c0ffee
+color144 #c0ffee
+color145 #c0ffee
+color146 #c0ffee
+color147 #c0ffee
+color148 #c0ffee
+color149 #c0ffee
+color150 #c0ffee
+color151 #c0ffee
+color152 #c0ffee
+color153 #c0ffee
+color154 #c0ffee
+color155 #c0ffee
+color156 #c0ffee
+color157 #c0ffee
+color158 #c0ffee
+color159 #c0ffee
+color160 #c0ffee
+color161 #c0ffee
+color162 #c0ffee
+color163 #c0ffee
+color164 #c0ffee
+color165 #c0ffee
+color166 #c0ffee
+color167 #c0ffee
+color168 #c0ffee
+color169 #c0ffee
+color170 #c0ffee
+color171 #c0ffee
+color172 #c0ffee
+color173 #c0ffee
+color174 #c0ffee
+color175 #c0ffee
+color176 #c0ffee
+color177 #c0ffee
+color178 #c0ffee
+color179 #c0ffee
+color180 #c0ffee
+color181 #c0ffee
+color182 #c0ffee
+color183 #c0ffee
+color184 #c0ffee
+color185 #c0ffee
+color186 #c0ffee
+color187 #c0ffee
+color188 #c0ffee
+color189 #c0ffee
+color190 #c0ffee
+color191 #c0ffee
+color192 #c0ffee
+color193 #c0ffee
+color194 #c0ffee
+color195 #c0ffee
+color196 #c0ffee
+color197 #c0ffee
+color198 #c0ffee
+color199 #c0ffee
+color200 #c0ffee
+color201 #c0ffee
+color202 #c0ffee
+color203 #c0ffee
+color204 #c0ffee
+color205 #c0ffee
+color206 #c0ffee
+color207 #c0ffee
+color208 #c0ffee
+color209 #c0ffee
+color210 #c0ffee
+color211 #c0ffee
+color212 #c0ffee
+color213 #c0ffee
+color214 #c0ffee
+color215 #c0ffee
+color216 #c0ffee
+color217 #c0ffee
+color218 #c0ffee
+color219 #c0ffee
+color220 #c0ffee
+color221 #c0ffee
+color222 #c0ffee
+color223 #c0ffee
+color224 #c0ffee
+color225 #c0ffee
+color226 #c0ffee
+color227 #c0ffee
+color228 #c0ffee
+color229 #c0ffee
+color230 #c0ffee
+color231 #c0ffee
+color232 #c0ffee
+color233 #c0ffee
+color234 #c0ffee
+color235 #c0ffee
+color236 #c0ffee
+color237 #c0ffee
+color238 #c0ffee
+color239 #c0ffee
+color240 #c0ffee
+color241 #c0ffee
+color242 #c0ffee
+color243 #c0ffee
+color244 #c0ffee
+color245 #c0ffee
+color246 #c0ffee
+color247 #c0ffee
+color248 #c0ffee
+color249 #c0ffee
+color250 #c0ffee
+color251 #c0ffee
+color252 #c0ffee
+color253 #c0ffee
+color254 #c0ffee
+color255 #c0ffee
+
+------------------
+
+(source_file
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color))
+  (color0_to_color255 (color_directive) (hex_color)))

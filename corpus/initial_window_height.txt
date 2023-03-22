@@ -1,0 +1,23 @@
+==================
+initial_window_height int
+==================
+
+initial_window_height 10
+
+---
+
+(source_file
+  (initial_window_height
+    (int)))
+    
+==================
+initial_window_height int unit
+==================
+
+initial_window_height 10c
+
+---
+
+(source_file
+  (initial_window_height
+    (int) (unit)))

@@ -1,0 +1,11 @@
+==================
+remember_window_size boolean
+==================
+
+remember_window_size false
+
+---
+
+(source_file
+  (remember_window_size
+    (boolean)))

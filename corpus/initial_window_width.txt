@@ -1,0 +1,23 @@
+==================
+initial_window_width int
+==================
+
+initial_window_width 10
+
+---
+
+(source_file
+  (initial_window_width
+    (int)))
+    
+==================
+initial_window_width int unit
+==================
+
+initial_window_width 10c
+
+---
+
+(source_file
+  (initial_window_width
+    (int) (unit)))
