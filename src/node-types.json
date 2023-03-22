@@ -1,5 +1,10 @@
 [
   {
+    "type": "action",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "bell_on_tab",
     "named": true,
     "fields": {},
@@ -128,6 +133,21 @@
           }
         ]
       }
+    }
+  },
+  {
+    "type": "click_interval",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "signed_float",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -4150,6 +4170,21 @@
     }
   },
   {
+    "type": "default_pointer_shape",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pointer_shape",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "detect_urls",
     "named": true,
     "fields": {},
@@ -4209,6 +4244,21 @@
       "types": [
         {
           "type": "glob_pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "focus_follows_mouse",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean",
           "named": true
         }
       ]
@@ -4387,6 +4437,11 @@
     }
   },
   {
+    "type": "keyboard_modifier",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "kitty_buffer",
     "named": true,
     "fields": {}
@@ -4428,6 +4483,64 @@
     }
   },
   {
+    "type": "mouse_action",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "action",
+          "named": true
+        },
+        {
+          "type": "mouse_action_alias",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mouse_action_alias",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "mouse_button",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "keyboard_modifier",
+          "named": true
+        },
+        {
+          "type": "mouse_button_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mouse_button_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "mouse_event",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "mouse_grabbed_mode",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "mouse_hide_wait",
     "named": true,
     "fields": {},
@@ -4437,6 +4550,52 @@
       "types": [
         {
           "type": "signed_float",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mouse_map",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "mouse_action",
+          "named": true
+        },
+        {
+          "type": "mouse_button",
+          "named": true
+        },
+        {
+          "type": "mouse_event",
+          "named": true
+        },
+        {
+          "type": "mouse_mode",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mouse_mode",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "mouse_grabbed_mode",
           "named": true
         }
       ]
@@ -4497,6 +4656,46 @@
   },
   {
     "type": "paste_actions_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pointer_shape",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pointer_shape_when_dragging",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pointer_shape",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pointer_shape_when_grabbed",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pointer_shape",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "postscript_font_name",
     "named": true,
     "fields": {}
   },
@@ -4579,6 +4778,36 @@
         },
         {
           "type": "string_part",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "select_by_word_characters",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "select_by_word_characters_forward",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
           "named": true
         }
       ]
@@ -4682,6 +4911,10 @@
         },
         {
           "type": "box_drawing_scale",
+          "named": true
+        },
+        {
+          "type": "click_interval",
           "named": true
         },
         {
@@ -5749,6 +5982,10 @@
           "named": true
         },
         {
+          "type": "default_pointer_shape",
+          "named": true
+        },
+        {
           "type": "detect_urls",
           "named": true
         },
@@ -5762,6 +5999,10 @@
         },
         {
           "type": "envinclude",
+          "named": true
+        },
+        {
+          "type": "focus_follows_mouse",
           "named": true
         },
         {
@@ -5801,6 +6042,10 @@
           "named": true
         },
         {
+          "type": "mouse_map",
+          "named": true
+        },
+        {
           "type": "narrow_symbols",
           "named": true
         },
@@ -5810,6 +6055,14 @@
         },
         {
           "type": "paste_actions",
+          "named": true
+        },
+        {
+          "type": "pointer_shape_when_dragging",
+          "named": true
+        },
+        {
+          "type": "pointer_shape_when_grabbed",
           "named": true
         },
         {
@@ -5829,7 +6082,19 @@
           "named": true
         },
         {
+          "type": "select_by_word_characters",
+          "named": true
+        },
+        {
+          "type": "select_by_word_characters_forward",
+          "named": true
+        },
+        {
           "type": "show_hyperlink_targets",
+          "named": true
+        },
+        {
+          "type": "strip_trailing_spaces",
           "named": true
         },
         {
@@ -5885,6 +6150,26 @@
   },
   {
     "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "strip_trailing_spaces",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "strip_trailing_spaces_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "strip_trailing_spaces_value",
     "named": true,
     "fields": {}
   },
@@ -6165,12 +6450,52 @@
     "named": false
   },
   {
+    "type": "alt",
+    "named": false
+  },
+  {
     "type": "always",
+    "named": false
+  },
+  {
+    "type": "arrow",
     "named": false
   },
   {
     "type": "auto",
     "named": true
+  },
+  {
+    "type": "b1",
+    "named": false
+  },
+  {
+    "type": "b2",
+    "named": false
+  },
+  {
+    "type": "b3",
+    "named": false
+  },
+  {
+    "type": "b4",
+    "named": false
+  },
+  {
+    "type": "b5",
+    "named": false
+  },
+  {
+    "type": "b6",
+    "named": false
+  },
+  {
+    "type": "b7",
+    "named": false
+  },
+  {
+    "type": "b8",
+    "named": false
   },
   {
     "type": "baseline",
@@ -6210,6 +6535,30 @@
   },
   {
     "type": "cell_width",
+    "named": false
+  },
+  {
+    "type": "change_font_size",
+    "named": false
+  },
+  {
+    "type": "clear_terminal",
+    "named": false
+  },
+  {
+    "type": "click",
+    "named": false
+  },
+  {
+    "type": "click_interval",
+    "named": false
+  },
+  {
+    "type": "close_window_with_confirmation",
+    "named": false
+  },
+  {
+    "type": "cmd",
     "named": false
   },
   {
@@ -7237,6 +7586,10 @@
     "named": false
   },
   {
+    "type": "command",
+    "named": false
+  },
+  {
     "type": "command_on_bell",
     "named": false
   },
@@ -7249,12 +7602,24 @@
     "named": false
   },
   {
+    "type": "control",
+    "named": false
+  },
+  {
     "type": "copy_on_select",
     "named": false
   },
   {
     "type": "copy_on_select_clipboard",
     "named": true
+  },
+  {
+    "type": "copy_to_buffer",
+    "named": false
+  },
+  {
+    "type": "ctrl",
+    "named": false
   },
   {
     "type": "curly",
@@ -7301,7 +7666,19 @@
     "named": true
   },
   {
+    "type": "default_pointer_shape",
+    "named": false
+  },
+  {
     "type": "dense",
+    "named": false
+  },
+  {
+    "type": "detach_tab",
+    "named": false
+  },
+  {
+    "type": "detach_window",
     "named": false
   },
   {
@@ -7313,11 +7690,23 @@
     "named": false
   },
   {
+    "type": "disable_ligatures_in",
+    "named": false
+  },
+  {
     "type": "dotted",
     "named": false
   },
   {
     "type": "double",
+    "named": false
+  },
+  {
+    "type": "doubleclick",
+    "named": false
+  },
+  {
+    "type": "doublepress",
     "named": false
   },
   {
@@ -7339,6 +7728,10 @@
   {
     "type": "float",
     "named": true
+  },
+  {
+    "type": "focus_follows_mouse",
+    "named": false
   },
   {
     "type": "font_family",
@@ -7373,6 +7766,22 @@
     "named": false
   },
   {
+    "type": "goto_layout",
+    "named": false
+  },
+  {
+    "type": "goto_tab",
+    "named": false
+  },
+  {
+    "type": "grabbed",
+    "named": false
+  },
+  {
+    "type": "hand",
+    "named": false
+  },
+  {
     "type": "hex_color",
     "named": true
   },
@@ -7385,11 +7794,63 @@
     "named": false
   },
   {
+    "type": "kitten",
+    "named": false
+  },
+  {
+    "type": "kitty",
+    "named": false
+  },
+  {
+    "type": "kitty_mod",
+    "named": false
+  },
+  {
+    "type": "kitty_shell",
+    "named": false
+  },
+  {
+    "type": "launch",
+    "named": false
+  },
+  {
+    "type": "layout_action",
+    "named": false
+  },
+  {
+    "type": "left",
+    "named": false
+  },
+  {
+    "type": "load_config_file",
+    "named": false
+  },
+  {
+    "type": "middle",
+    "named": false
+  },
+  {
     "type": "modify_font",
     "named": false
   },
   {
+    "type": "mouse_handle_click",
+    "named": false
+  },
+  {
     "type": "mouse_hide_wait",
+    "named": false
+  },
+  {
+    "type": "mouse_map",
+    "named": false
+  },
+  {
+    "type": "mouse_selection",
+    "named": false
+  },
+  {
+    "type": "move_window",
     "named": false
   },
   {
@@ -7401,7 +7862,35 @@
     "named": false
   },
   {
+    "type": "neighboring_window",
+    "named": false
+  },
+  {
     "type": "never",
+    "named": false
+  },
+  {
+    "type": "new_os_window",
+    "named": false
+  },
+  {
+    "type": "new_os_window_with_cwd",
+    "named": false
+  },
+  {
+    "type": "new_tab",
+    "named": false
+  },
+  {
+    "type": "new_tab_with_cwd",
+    "named": false
+  },
+  {
+    "type": "new_window",
+    "named": false
+  },
+  {
+    "type": "new_window_with_cwd",
     "named": false
   },
   {
@@ -7409,11 +7898,43 @@
     "named": false
   },
   {
+    "type": "no_op",
+    "named": false
+  },
+  {
     "type": "none",
     "named": true
   },
   {
+    "type": "nth_os_window",
+    "named": false
+  },
+  {
+    "type": "nth_window",
+    "named": false
+  },
+  {
+    "type": "open_url",
+    "named": false
+  },
+  {
     "type": "open_url_with",
+    "named": false
+  },
+  {
+    "type": "opt",
+    "named": false
+  },
+  {
+    "type": "option",
+    "named": false
+  },
+  {
+    "type": "pass_selection_to_program",
+    "named": false
+  },
+  {
+    "type": "paste",
     "named": false
   },
   {
@@ -7421,11 +7942,59 @@
     "named": false
   },
   {
-    "type": "postscript_font_name",
-    "named": true
+    "type": "paste_from_buffer",
+    "named": false
+  },
+  {
+    "type": "pipe",
+    "named": false
+  },
+  {
+    "type": "pointer_shape_when_dragging",
+    "named": false
+  },
+  {
+    "type": "pointer_shape_when_grabbed",
+    "named": false
+  },
+  {
+    "type": "press",
+    "named": false
   },
   {
     "type": "quote-urls-at-prompt",
+    "named": false
+  },
+  {
+    "type": "release",
+    "named": false
+  },
+  {
+    "type": "remote_control",
+    "named": false
+  },
+  {
+    "type": "resize_window",
+    "named": false
+  },
+  {
+    "type": "right",
+    "named": false
+  },
+  {
+    "type": "run_kitten",
+    "named": false
+  },
+  {
+    "type": "run_simple_kitten",
+    "named": false
+  },
+  {
+    "type": "scroll_to_mark",
+    "named": false
+  },
+  {
+    "type": "scroll_to_prompt",
     "named": false
   },
   {
@@ -7445,11 +8014,59 @@
     "named": false
   },
   {
+    "type": "select_by_word_characters",
+    "named": false
+  },
+  {
+    "type": "select_by_word_characters_forward",
+    "named": false
+  },
+  {
+    "type": "send_text",
+    "named": false
+  },
+  {
+    "type": "set_background_opacity",
+    "named": false
+  },
+  {
+    "type": "set_colors",
+    "named": false
+  },
+  {
+    "type": "set_font_size",
+    "named": false
+  },
+  {
+    "type": "set_tab_title",
+    "named": false
+  },
+  {
+    "type": "shift",
+    "named": false
+  },
+  {
     "type": "show_hyperlink_targets",
     "named": false
   },
   {
+    "type": "show_kitty_doc",
+    "named": false
+  },
+  {
+    "type": "signal_child",
+    "named": false
+  },
+  {
     "type": "size",
+    "named": false
+  },
+  {
+    "type": "sleep",
+    "named": false
+  },
+  {
+    "type": "smart",
     "named": false
   },
   {
@@ -7473,6 +8090,14 @@
     "named": true
   },
   {
+    "type": "strip_trailing_spaces",
+    "named": false
+  },
+  {
+    "type": "super",
+    "named": false
+  },
+  {
     "type": "symbol_map",
     "named": false
   },
@@ -7485,7 +8110,19 @@
     "named": false
   },
   {
+    "type": "toggle_layout",
+    "named": false
+  },
+  {
+    "type": "toggle_marker",
+    "named": false
+  },
+  {
     "type": "touch_scroll_multiplier",
+    "named": false
+  },
+  {
+    "type": "triplepress",
     "named": false
   },
   {
@@ -7506,6 +8143,10 @@
   },
   {
     "type": "underline_thickness",
+    "named": false
+  },
+  {
+    "type": "ungrabbed",
     "named": false
   },
   {
@@ -7541,6 +8182,10 @@
     "named": false
   },
   {
+    "type": "visual_window_select_action_trigger",
+    "named": false
+  },
+  {
     "type": "wheel_scroll_min_lines",
     "named": false
   },
@@ -7558,6 +8203,22 @@
   },
   {
     "type": "yes",
+    "named": false
+  },
+  {
+    "type": "⇧",
+    "named": false
+  },
+  {
+    "type": "⌃",
+    "named": false
+  },
+  {
+    "type": "⌘",
+    "named": false
+  },
+  {
+    "type": "⌥",
     "named": false
   }
 ]

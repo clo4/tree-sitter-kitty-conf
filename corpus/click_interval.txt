@@ -1,0 +1,11 @@
+==================
+click_interval signed_float
+==================
+
+click_interval -1.0
+
+---
+
+(source_file
+  (click_interval
+    (signed_float (sign) (float))))

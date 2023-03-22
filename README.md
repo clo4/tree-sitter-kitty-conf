@@ -30,3 +30,5 @@ cursor_blink_interval -1
 There's no formal definition of the language outside of the code and the documentation, so you need to reference both when building this grammar.
 
 It's better to be slightly more permissive than Kitty in order to provide correct highlights and queries, and leave the error reporting up to the terminal itself.
+
+Conceptually, this grammar is closest to something like the mcfunction grammar.

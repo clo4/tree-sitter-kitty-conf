@@ -217,6 +217,42 @@
             },
             {
               "type": "SYMBOL",
+              "name": "strip_trailing_spaces"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "select_by_word_characters"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "select_by_word_characters_forward"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "click_interval"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "focus_follows_mouse"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "pointer_shape_when_grabbed"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "default_pointer_shape"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "pointer_shape_when_dragging"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "mouse_map"
+            },
+            {
+              "type": "SYMBOL",
               "name": "color0"
             },
             {
@@ -3249,6 +3285,500 @@
           "value": "filter"
         }
       ]
+    },
+    "strip_trailing_spaces": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "strip_trailing_spaces"
+            }
+          },
+          "named": false,
+          "value": "strip_trailing_spaces"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "strip_trailing_spaces_value"
+        }
+      ]
+    },
+    "strip_trailing_spaces_value": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "always"
+        },
+        {
+          "type": "STRING",
+          "value": "never"
+        },
+        {
+          "type": "STRING",
+          "value": "smart"
+        }
+      ]
+    },
+    "select_by_word_characters": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "select_by_word_characters"
+            }
+          },
+          "named": false,
+          "value": "select_by_word_characters"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        }
+      ]
+    },
+    "select_by_word_characters_forward": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "select_by_word_characters_forward"
+            }
+          },
+          "named": false,
+          "value": "select_by_word_characters_forward"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        }
+      ]
+    },
+    "click_interval": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "click_interval"
+            }
+          },
+          "named": false,
+          "value": "click_interval"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "signed_float"
+        }
+      ]
+    },
+    "focus_follows_mouse": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "focus_follows_mouse"
+            }
+          },
+          "named": false,
+          "value": "focus_follows_mouse"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "boolean"
+        }
+      ]
+    },
+    "pointer_shape_when_grabbed": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "pointer_shape_when_grabbed"
+            }
+          },
+          "named": false,
+          "value": "pointer_shape_when_grabbed"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pointer_shape"
+        }
+      ]
+    },
+    "default_pointer_shape": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "default_pointer_shape"
+            }
+          },
+          "named": false,
+          "value": "default_pointer_shape"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pointer_shape"
+        }
+      ]
+    },
+    "pointer_shape_when_dragging": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "pointer_shape_when_dragging"
+            }
+          },
+          "named": false,
+          "value": "pointer_shape_when_dragging"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pointer_shape"
+        }
+      ]
+    },
+    "mouse_map": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "PREC",
+            "value": 1,
+            "content": {
+              "type": "STRING",
+              "value": "mouse_map"
+            }
+          },
+          "named": false,
+          "value": "mouse_map"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mouse_button"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mouse_event"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mouse_mode"
+        },
+        {
+          "type": "IMMEDIATE_TOKEN",
+          "content": {
+            "type": "PATTERN",
+            "value": "[\\t ]+"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mouse_action"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "IMMEDIATE_TOKEN",
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "[\\t ]+"
+                  }
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "string"
+                }
+              ]
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "mouse_button": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "keyboard_modifier"
+              },
+              {
+                "type": "STRING",
+                "value": "+"
+              }
+            ]
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "mouse_button_name"
+        }
+      ]
+    },
+    "mouse_button_name": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "left"
+        },
+        {
+          "type": "STRING",
+          "value": "right"
+        },
+        {
+          "type": "STRING",
+          "value": "middle"
+        },
+        {
+          "type": "STRING",
+          "value": "b1"
+        },
+        {
+          "type": "STRING",
+          "value": "b2"
+        },
+        {
+          "type": "STRING",
+          "value": "b3"
+        },
+        {
+          "type": "STRING",
+          "value": "b4"
+        },
+        {
+          "type": "STRING",
+          "value": "b5"
+        },
+        {
+          "type": "STRING",
+          "value": "b6"
+        },
+        {
+          "type": "STRING",
+          "value": "b7"
+        },
+        {
+          "type": "STRING",
+          "value": "b8"
+        }
+      ]
+    },
+    "mouse_event": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "press"
+        },
+        {
+          "type": "STRING",
+          "value": "release"
+        },
+        {
+          "type": "STRING",
+          "value": "doublepress"
+        },
+        {
+          "type": "STRING",
+          "value": "triplepress"
+        },
+        {
+          "type": "STRING",
+          "value": "click"
+        },
+        {
+          "type": "STRING",
+          "value": "doubleclick"
+        }
+      ]
+    },
+    "mouse_mode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "mouse_grabbed_mode"
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "mouse_grabbed_mode"
+            },
+            {
+              "type": "STRING",
+              "value": ","
+            },
+            {
+              "type": "SYMBOL",
+              "name": "mouse_grabbed_mode"
+            }
+          ]
+        }
+      ]
+    },
+    "mouse_grabbed_mode": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "grabbed"
+        },
+        {
+          "type": "STRING",
+          "value": "ungrabbed"
+        }
+      ]
+    },
+    "mouse_action": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "mouse_action_alias"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "action"
+        }
+      ]
+    },
+    "mouse_action_alias": {
+      "type": "PATTERN",
+      "value": "\\S+"
     },
     "color0": {
       "type": "SEQ",
@@ -10753,6 +11283,309 @@
     "unicode_codepoint": {
       "type": "PATTERN",
       "value": "U\\+[A-Fa-f0-9]+"
+    },
+    "action": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "pass_selection_to_program"
+        },
+        {
+          "type": "STRING",
+          "value": "new_window"
+        },
+        {
+          "type": "STRING",
+          "value": "new_tab"
+        },
+        {
+          "type": "STRING",
+          "value": "new_os_window"
+        },
+        {
+          "type": "STRING",
+          "value": "new_window_with_cwd"
+        },
+        {
+          "type": "STRING",
+          "value": "new_tab_with_cwd"
+        },
+        {
+          "type": "STRING",
+          "value": "new_os_window_with_cwd"
+        },
+        {
+          "type": "STRING",
+          "value": "launch"
+        },
+        {
+          "type": "STRING",
+          "value": "mouse_handle_click"
+        },
+        {
+          "type": "STRING",
+          "value": "send_text"
+        },
+        {
+          "type": "STRING",
+          "value": "run_kitten"
+        },
+        {
+          "type": "STRING",
+          "value": "run_simple_kitten"
+        },
+        {
+          "type": "STRING",
+          "value": "kitten"
+        },
+        {
+          "type": "STRING",
+          "value": "open_url"
+        },
+        {
+          "type": "STRING",
+          "value": "goto_tab"
+        },
+        {
+          "type": "STRING",
+          "value": "detach_window"
+        },
+        {
+          "type": "STRING",
+          "value": "close_window_with_confirmation"
+        },
+        {
+          "type": "STRING",
+          "value": "detach_tab"
+        },
+        {
+          "type": "STRING",
+          "value": "set_background_opacity"
+        },
+        {
+          "type": "STRING",
+          "value": "goto_layout"
+        },
+        {
+          "type": "STRING",
+          "value": "toggle_layout"
+        },
+        {
+          "type": "STRING",
+          "value": "kitty_shell"
+        },
+        {
+          "type": "STRING",
+          "value": "show_kitty_doc"
+        },
+        {
+          "type": "STRING",
+          "value": "set_tab_title"
+        },
+        {
+          "type": "STRING",
+          "value": "set_font_size"
+        },
+        {
+          "type": "STRING",
+          "value": "signal_child"
+        },
+        {
+          "type": "STRING",
+          "value": "change_font_size"
+        },
+        {
+          "type": "STRING",
+          "value": "clear_terminal"
+        },
+        {
+          "type": "STRING",
+          "value": "copy_to_buffer"
+        },
+        {
+          "type": "STRING",
+          "value": "paste_from_buffer"
+        },
+        {
+          "type": "STRING",
+          "value": "paste"
+        },
+        {
+          "type": "STRING",
+          "value": "neighboring_window"
+        },
+        {
+          "type": "STRING",
+          "value": "resize_window"
+        },
+        {
+          "type": "STRING",
+          "value": "move_window"
+        },
+        {
+          "type": "STRING",
+          "value": "pipe"
+        },
+        {
+          "type": "STRING",
+          "value": "set_colors"
+        },
+        {
+          "type": "STRING",
+          "value": "remote_control"
+        },
+        {
+          "type": "STRING",
+          "value": "nth_os_window"
+        },
+        {
+          "type": "STRING",
+          "value": "nth_window"
+        },
+        {
+          "type": "STRING",
+          "value": "scroll_to_prompt"
+        },
+        {
+          "type": "STRING",
+          "value": "visual_window_select_action_trigger"
+        },
+        {
+          "type": "STRING",
+          "value": "sleep"
+        },
+        {
+          "type": "STRING",
+          "value": "disable_ligatures_in"
+        },
+        {
+          "type": "STRING",
+          "value": "layout_action"
+        },
+        {
+          "type": "STRING",
+          "value": "toggle_marker"
+        },
+        {
+          "type": "STRING",
+          "value": "scroll_to_mark"
+        },
+        {
+          "type": "STRING",
+          "value": "mouse_selection"
+        },
+        {
+          "type": "STRING",
+          "value": "load_config_file"
+        },
+        {
+          "type": "STRING",
+          "value": "no_op"
+        }
+      ]
+    },
+    "keyboard_modifier": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "⌃"
+        },
+        {
+          "type": "STRING",
+          "value": "control"
+        },
+        {
+          "type": "STRING",
+          "value": "ctrl"
+        },
+        {
+          "type": "STRING",
+          "value": "control"
+        },
+        {
+          "type": "STRING",
+          "value": "⇧"
+        },
+        {
+          "type": "STRING",
+          "value": "shift"
+        },
+        {
+          "type": "STRING",
+          "value": "⌥"
+        },
+        {
+          "type": "STRING",
+          "value": "alt"
+        },
+        {
+          "type": "STRING",
+          "value": "option"
+        },
+        {
+          "type": "STRING",
+          "value": "alt"
+        },
+        {
+          "type": "STRING",
+          "value": "opt"
+        },
+        {
+          "type": "STRING",
+          "value": "alt"
+        },
+        {
+          "type": "STRING",
+          "value": "⌘"
+        },
+        {
+          "type": "STRING",
+          "value": "super"
+        },
+        {
+          "type": "STRING",
+          "value": "command"
+        },
+        {
+          "type": "STRING",
+          "value": "super"
+        },
+        {
+          "type": "STRING",
+          "value": "cmd"
+        },
+        {
+          "type": "STRING",
+          "value": "super"
+        },
+        {
+          "type": "STRING",
+          "value": "kitty_mod"
+        },
+        {
+          "type": "STRING",
+          "value": "kitty"
+        }
+      ]
+    },
+    "pointer_shape": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "arrow"
+        },
+        {
+          "type": "STRING",
+          "value": "beam"
+        },
+        {
+          "type": "STRING",
+          "value": "hand"
+        }
+      ]
     },
     "sign": {
       "type": "CHOICE",

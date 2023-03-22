@@ -640,6 +640,8 @@ const ACTIONS = [
   "load_config_file",
 ];
 
+ACTIONS.push("no_op");
+
 const SCROLLBACK_PAGER_KEYWORDS = [
   "INPUT_LINE_NUMBER",
   "CURSOR_LINE",
@@ -791,6 +793,7 @@ module.exports = checked_grammar({
     _directive: $ =>
       seq(
         choice(...[...defined_directives].map(rule_name => $[rule_name])),
+        // This cannot be `token.immediate(INLINE_WHITESPACE)`, haven't looked into why
         optional(INLINE_WHITESPACE),
         optional("\n"),
       ),
@@ -1018,6 +1021,76 @@ module.exports = checked_grammar({
     paste_actions_value: $ =>
       choice("quote-urls-at-prompt", "confirm", "filter"),
 
+    // write tests from here down
+
+    [directive.strip_trailing_spaces]: $ =>
+      directive("strip_trailing_spaces", $.strip_trailing_spaces_value),
+    strip_trailing_spaces_value: $ => choice("always", "never", "smart"),
+
+    [directive.select_by_word_characters]: $ =>
+      directive("select_by_word_characters", $.string),
+
+    [directive.select_by_word_characters_forward]: $ =>
+      directive("select_by_word_characters_forward", $.string),
+
+    [directive.click_interval]: $ =>
+      directive("click_interval", $.signed_float),
+
+    [directive.focus_follows_mouse]: $ =>
+      directive("focus_follows_mouse", $.boolean),
+
+    [directive.pointer_shape_when_grabbed]: $ =>
+      directive("pointer_shape_when_grabbed", $.pointer_shape),
+
+    [directive.default_pointer_shape]: $ =>
+      directive("default_pointer_shape", $.pointer_shape),
+
+    [directive.pointer_shape_when_dragging]: $ =>
+      directive("pointer_shape_when_dragging", $.pointer_shape),
+
+    [directive.mouse_map]: $ =>
+      directive(
+        "mouse_map",
+        $.mouse_button,
+        $.mouse_event,
+        $.mouse_mode,
+        $.mouse_action,
+        [$.string],
+      ),
+    mouse_button: $ =>
+      seq(repeat(seq($.keyboard_modifier, "+")), $.mouse_button_name),
+    mouse_button_name: $ =>
+      choice(
+        "left",
+        "right",
+        "middle",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+      ),
+    mouse_event: $ =>
+      choice(
+        "press",
+        "release",
+        "doublepress",
+        "triplepress",
+        "click",
+        "doubleclick",
+      ),
+    mouse_mode: $ =>
+      choice(
+        $.mouse_grabbed_mode,
+        seq($.mouse_grabbed_mode, ",", $.mouse_grabbed_mode),
+      ),
+    mouse_grabbed_mode: $ => choice("grabbed", "ungrabbed"),
+    mouse_action: $ => choice($.mouse_action_alias, $.action),
+    mouse_action_alias: $ => /\S+/,
+
     // TODO: This can easily be one rule that's a regular expression. This isn't possible yet
     // because of the typo checking system (you can only use string literals) so I'm keeping
     // the inefficient code because it works for now.
@@ -1028,9 +1101,8 @@ module.exports = checked_grammar({
         .map(curr => [directive[curr], $ => directive(curr, $.hex_color)]),
     ),
 
-    // ------------------
-    // GENERIC DATA TYPES
-    // ------------------
+    // Common / shared data types
+    // --------------------------
 
     none: $ => "none",
     auto: $ => "auto",
@@ -1048,7 +1120,10 @@ module.exports = checked_grammar({
       ),
     unicode_codepoint: $ => /U\+[A-Fa-f0-9]+/,
 
-    // Keeping this here so I remember to uncomment it if required
+    action: $ => choice(...ACTIONS),
+    keyboard_modifier: $ => choice(...KEYBOARD_MODIFIERS),
+
+    pointer_shape: $ => choice("arrow", "beam", "hand"),
 
     sign: $ => choice("+", "-"),
     signed_float: $ =>
@@ -1056,7 +1131,7 @@ module.exports = checked_grammar({
     signed_int: $ =>
       seq(field("sign", optional($.sign)), field("number", $.int)),
 
-    // Mostly from the Python grammar because Kitty uses Python's `float`
+    // Adapted from the Python grammar because Kitty uses Python's `float`
     // to parse numbers. `float` has slightly different syntax to the literal
     // syntax, so that's why it's not the exact same.
     float: $ => {

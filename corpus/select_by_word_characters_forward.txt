@@ -1,0 +1,10 @@
+==================
+select_by_word_characters_forward string
+==================
+
+select_by_word_characters_forward <$#[(@{!*<&$^!
+
+---
+
+(source_file
+  (select_by_word_characters_forward (string)))

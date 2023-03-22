@@ -1,0 +1,11 @@
+==================
+pointer_shape_when_dragging pointer_shape
+==================
+
+pointer_shape_when_dragging beam
+
+---
+
+(source_file
+  (pointer_shape_when_dragging
+    (pointer_shape)))

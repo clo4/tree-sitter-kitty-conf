@@ -1,0 +1,11 @@
+==================
+default_pointer_shape pointer_shape
+==================
+
+default_pointer_shape beam
+
+---
+
+(source_file
+  (default_pointer_shape
+    (pointer_shape)))

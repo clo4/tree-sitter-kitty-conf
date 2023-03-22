@@ -1,0 +1,59 @@
+==================
+mouse_map middle click ungrabbed no_op
+==================
+
+mouse_map middle click ungrabbed no_op
+
+---
+
+(source_file
+  (mouse_map
+    (mouse_button
+      (mouse_button_name))
+    (mouse_event)
+    (mouse_mode
+      (mouse_grabbed_mode))
+    (mouse_action
+      (action))))
+
+==================
+mouse_map shift+right doubleclick grabbed,ungrabbed mouse_handle_click link
+==================
+
+mouse_map shift+right doubleclick grabbed,ungrabbed mouse_handle_click link
+
+---
+
+(source_file
+  (mouse_map
+    (mouse_button
+      (keyboard_modifier)
+      (mouse_button_name))
+    (mouse_event)
+    (mouse_mode
+      (mouse_grabbed_mode)
+      (mouse_grabbed_mode))
+    (mouse_action
+      (action))
+    (string)))
+
+==================
+mouse_map cmd+shift+left release grabbed unknown_so_probably_alias some args here
+==================
+
+mouse_map cmd+shift+left release grabbed unknown_so_probably_alias some args here
+
+---
+
+(source_file
+  (mouse_map
+    (mouse_button
+      (keyboard_modifier)
+      (keyboard_modifier)
+      (mouse_button_name))
+    (mouse_event)
+    (mouse_mode
+      (mouse_grabbed_mode))
+    (mouse_action
+      (mouse_action_alias))
+    (string)))

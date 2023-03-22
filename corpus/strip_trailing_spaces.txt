@@ -1,0 +1,14 @@
+==================
+strip_trailing_spaces always|never|smart
+==================
+
+strip_trailing_spaces always
+strip_trailing_spaces never
+strip_trailing_spaces smart
+
+---
+
+(source_file
+  (strip_trailing_spaces (strip_trailing_spaces_value))
+  (strip_trailing_spaces (strip_trailing_spaces_value))
+  (strip_trailing_spaces (strip_trailing_spaces_value)))

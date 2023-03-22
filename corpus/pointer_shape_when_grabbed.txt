@@ -1,0 +1,11 @@
+==================
+pointer_shape_when_grabbed pointer_shape
+==================
+
+pointer_shape_when_grabbed beam
+
+---
+
+(source_file
+  (pointer_shape_when_grabbed
+    (pointer_shape)))
