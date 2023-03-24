@@ -1,0 +1,11 @@
+==================
+resize_debounce_time float
+==================
+
+resize_debounce_time 0.1
+
+---
+
+(source_file
+  (resize_debounce_time
+    (float)))

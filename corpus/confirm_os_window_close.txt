@@ -1,0 +1,11 @@
+==================
+confirm_os_window_close signed_int
+==================
+
+confirm_os_window_close -1
+
+---
+
+(source_file
+  (confirm_os_window_close
+    (signed_int (sign) (int))))

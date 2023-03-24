@@ -1,0 +1,11 @@
+==================
+inactive_text_alpha float
+==================
+
+inactive_text_alpha 0.4
+
+---
+
+(source_file
+  (inactive_text_alpha
+    (float)))

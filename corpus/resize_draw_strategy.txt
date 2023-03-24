@@ -1,0 +1,17 @@
+==================
+resize_draw_strategy static|scale|size
+==================
+
+resize_draw_strategy static
+resize_draw_strategy scale
+resize_draw_strategy size
+
+---
+
+(source_file
+  (resize_draw_strategy
+    (resize_draw_strategy_value))
+  (resize_draw_strategy
+    (resize_draw_strategy_value))
+  (resize_draw_strategy
+    (resize_draw_strategy_value)))

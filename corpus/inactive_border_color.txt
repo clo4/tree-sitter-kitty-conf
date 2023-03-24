@@ -1,0 +1,23 @@
+==================
+inactive_border_color hex_color
+==================
+
+inactive_border_color #c0ffee
+
+---
+
+(source_file
+  (inactive_border_color
+    (hex_color)))
+
+==================
+inactive_border_color none
+==================
+
+inactive_border_color none
+
+---
+
+(source_file
+  (inactive_border_color
+    (none)))

@@ -1,0 +1,11 @@
+==================
+resize_in_steps boolean
+==================
+
+resize_in_steps n
+
+---
+
+(source_file
+  (resize_in_steps
+    (boolean)))

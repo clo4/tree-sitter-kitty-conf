@@ -1,0 +1,23 @@
+==================
+bell_border_color hex_color
+==================
+
+bell_border_color #c0ffee
+
+---
+
+(source_file
+  (bell_border_color
+    (hex_color)))
+
+==================
+bell_border_color none
+==================
+
+bell_border_color none
+
+---
+
+(source_file
+  (bell_border_color
+    (none)))

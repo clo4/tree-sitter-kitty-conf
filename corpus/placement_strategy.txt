@@ -1,0 +1,23 @@
+==================
+placement_strategy center
+==================
+
+placement_strategy center
+
+---
+
+(source_file
+  (placement_strategy
+    (placement_strategy_value)))
+
+==================
+placement_strategy top-left
+==================
+
+placement_strategy top-left
+
+---
+
+(source_file
+  (placement_strategy
+    (placement_strategy_value)))

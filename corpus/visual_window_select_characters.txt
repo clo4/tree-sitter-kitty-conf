@@ -1,0 +1,11 @@
+==================
+visual_window_select_characters string
+==================
+
+visual_window_select_characters abcdef
+
+---
+
+(source_file
+  (visual_window_select_characters
+    (string)))

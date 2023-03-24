@@ -1,0 +1,11 @@
+==================
+window_resize_step_cells int
+==================
+
+window_resize_step_cells 2
+
+---
+
+(source_file
+  (window_resize_step_cells
+    (int)))

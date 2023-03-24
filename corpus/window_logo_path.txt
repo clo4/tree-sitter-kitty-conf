@@ -1,0 +1,39 @@
+==================
+window_logo_path none
+==================
+
+window_logo_path none
+
+---
+
+(source_file
+  (window_logo_path
+    (none)))
+
+==================
+window_logo_path varstring
+==================
+
+window_logo_path $HOME/Pictures/$PIC_NAME
+
+---
+
+(source_file
+  (window_logo_path
+    (varstring
+      (varstring_var)
+      (varstring_part)
+      (varstring_var))))
+      
+==================
+window_logo_path varstring (no variables)
+==================
+
+window_logo_path /home/robert/Pictures/picture.png
+
+---
+
+(source_file
+  (window_logo_path
+    (varstring
+      (varstring_part))))

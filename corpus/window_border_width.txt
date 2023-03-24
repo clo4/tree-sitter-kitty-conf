@@ -1,0 +1,26 @@
+==================
+window_border_width int
+==================
+
+window_border_width 1
+
+---
+
+(source_file
+  (window_border_width
+    (int)))
+
+==================
+window_border_width int unit
+==================
+
+window_border_width 1pt
+window_border_width 1px
+
+---
+
+(source_file
+  (window_border_width
+    (int) (unit))
+  (window_border_width
+    (int) (unit)))

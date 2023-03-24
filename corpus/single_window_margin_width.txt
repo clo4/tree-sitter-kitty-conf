@@ -1,0 +1,53 @@
+==================
+single_window_margin_width signed_int
+==================
+
+single_window_margin_width 1
+
+---
+
+(source_file
+  (single_window_margin_width
+    (signed_int (int))))
+
+==================
+single_window_margin_width signed_int signed_int
+==================
+
+single_window_margin_width 1 1
+
+---
+
+(source_file
+  (single_window_margin_width
+    (signed_int (int))
+    (signed_int (int))))
+
+==================
+single_window_margin_width signed_int signed_int signed_int
+==================
+
+single_window_margin_width 1 1 1
+
+---
+
+(source_file
+  (single_window_margin_width
+    (signed_int (int))
+    (signed_int (int))
+    (signed_int (int))))
+
+==================
+single_window_margin_width signed_int signed_int signed_int signed_int
+==================
+
+single_window_margin_width 1 1 1 1
+
+---
+
+(source_file
+  (single_window_margin_width
+    (signed_int (int))
+    (signed_int (int))
+    (signed_int (int))
+    (signed_int (int))))

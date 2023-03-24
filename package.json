@@ -9,7 +9,8 @@
     "build": "tree-sitter generate",
     "format": "prettier --write '*.js' '*.json'",
     "kitty-directives": "kitty +runpy 'from kitty.config import option_names_for_completion; import json; print(json.dumps(option_names_for_completion(), indent=2))'",
-    "kitty-repl": "kitty +runpy 'import code; code.interact()'"
+    "kitty-repl": "kitty +runpy 'import code; code.interact()'",
+    "mktest": "deno run --allow-write=corpus scripts/new_test.js"
   },
   "keywords": [],
   "author": "clo4",

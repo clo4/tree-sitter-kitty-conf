@@ -1,0 +1,47 @@
+==================
+window_padding_width int
+==================
+
+window_padding_width 5
+
+---
+
+(source_file
+  (window_padding_width
+    (int)))
+
+==================
+window_padding_width int int
+==================
+
+window_padding_width 1 1
+
+---
+
+(source_file
+  (window_padding_width
+    (int) (int)))
+
+==================
+window_padding_width int int int
+==================
+
+window_padding_width 1 1 1
+
+---
+
+(source_file
+  (window_padding_width
+    (int) (int) (int)))
+
+==================
+window_padding_width int int int int
+==================
+
+window_padding_width 1 1 1 1
+
+---
+
+(source_file
+  (window_padding_width
+    (int) (int) (int) (int)))

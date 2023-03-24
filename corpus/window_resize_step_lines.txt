@@ -1,0 +1,11 @@
+==================
+window_resize_step_lines int
+==================
+
+window_resize_step_lines 1
+
+---
+
+(source_file
+  (window_resize_step_lines
+    (int)))

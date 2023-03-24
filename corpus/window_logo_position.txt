@@ -1,0 +1,66 @@
+==================
+window_logo_position center
+==================
+
+window_logo_position center
+
+---
+
+(source_file
+  (window_logo_position
+    (window_logo_position_center)))
+
+==================
+window_logo_position <vertical>
+==================
+
+window_logo_position top
+window_logo_position bottom
+
+---
+
+(source_file
+  (window_logo_position
+    (window_logo_position_vertical))
+  (window_logo_position
+    (window_logo_position_vertical)))
+
+==================
+window_logo_position <horizontal>
+==================
+
+window_logo_position left
+window_logo_position right
+
+---
+
+(source_file
+  (window_logo_position
+    (window_logo_position_horizontal))
+  (window_logo_position
+    (window_logo_position_horizontal)))
+
+==================
+window_logo_position <vertical>-<horizontal>
+==================
+
+window_logo_position top-left
+window_logo_position top-right
+window_logo_position bottom-left
+window_logo_position bottom-right
+
+---
+
+(source_file
+  (window_logo_position
+    (window_logo_position_vertical)
+    (window_logo_position_horizontal))
+  (window_logo_position
+    (window_logo_position_vertical)
+    (window_logo_position_horizontal))
+  (window_logo_position
+    (window_logo_position_vertical)
+    (window_logo_position_horizontal))
+  (window_logo_position
+    (window_logo_position_vertical)
+    (window_logo_position_horizontal)))

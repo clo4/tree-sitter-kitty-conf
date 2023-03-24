@@ -1,0 +1,11 @@
+==================
+draw_minimal_borders boolean
+==================
+
+draw_minimal_borders false
+
+---
+
+(source_file
+  (draw_minimal_borders
+    (boolean)))

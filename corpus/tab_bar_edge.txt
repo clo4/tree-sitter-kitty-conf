@@ -1,0 +1,14 @@
+==================
+tab_bar_edge top|bottom
+==================
+
+tab_bar_edge top
+tab_bar_edge bottom
+
+---
+
+(source_file
+  (tab_bar_edge
+    (tab_bar_edge_value))
+  (tab_bar_edge
+    (tab_bar_edge_value)))

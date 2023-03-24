@@ -1,0 +1,47 @@
+==================
+window_margin_width int
+==================
+
+window_margin_width 1
+
+---
+
+(source_file
+  (window_margin_width
+    (int)))
+
+==================
+window_margin_width int int
+==================
+
+window_margin_width 1 2
+
+---
+
+(source_file
+  (window_margin_width
+    (int) (int)))
+
+==================
+window_margin_width int int int
+==================
+
+window_margin_width 1 2 3
+
+---
+
+(source_file
+  (window_margin_width
+    (int) (int) (int)))
+
+==================
+window_margin_width int int int int
+==================
+
+window_margin_width 1 2 3 4
+
+---
+
+(source_file
+  (window_margin_width
+    (int) (int) (int) (int)))

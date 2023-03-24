@@ -5,11 +5,7 @@
 // - a boolean, e.g. yes no
 // - a string, which is anything that doesn't match the above
 
-// TODO: update this comment
-// This is an array of every known Kitty option. It can be generated with the following command:
-//     npm run print-config-options
-// Do not remove any option names from this set. Overrides are created by using the `override`
-// function defined below the set, for convenience and to make sure the set is never out of sync.
+// Generate with `bun kitty-directives`
 const DIRECTIVE_NAMES = new Set([
   "action_alias",
   "active_border_color",
@@ -800,7 +796,7 @@ const directive = new Proxy(
       if (Array.isArray(rule)) {
         if (rule.length === 0) {
           throw new Error(
-            "An optional directive component must contain at least one rule",
+            "An optional directive group must contain at least one rule",
           );
         }
         const optional_rules = [];
@@ -841,13 +837,15 @@ const directive = new Proxy(
   },
 );
 
-/*
-mouse_map button-name event-type modes action
-symbol_map codepoints Font Family Name
-narrow_symbols codepoints [optionally the number of cells]
-map keys action args
-map keys combine sep action1 [sep action2...]
-*/
+// TODO: I want to make the grammar less specific. Eg if the directive takes 1-4 numbers, there's
+// no reason to break after 4. Instead it can just take any number of numbers.
+// There shouldn't be a distinction between floats, ints, signed numbers, numbers with units, etc.
+//
+// TODO: explore if adding `word` means I can get away with less explicit control over the whitespace.
+//
+// It's important that each directive be individually defined because certain directives will
+// only interpret their input as a string even if you provide a number. The highlighting should
+// reflect this.
 module.exports = checked_grammar({
   name: "kittyconf",
   // Need control over whitespace because the grammar is line-based
@@ -1083,8 +1081,6 @@ module.exports = checked_grammar({
     paste_actions_value: $ =>
       choice("quote-urls-at-prompt", "confirm", "filter"),
 
-    // write tests from here down
-
     [directive.strip_trailing_spaces]: $ =>
       directive("strip_trailing_spaces", $.strip_trailing_spaces_value),
     strip_trailing_spaces_value: $ => choice("always", "never", "smart"),
@@ -1155,14 +1151,12 @@ module.exports = checked_grammar({
     mouse_action: $ => choice($.mouse_action_alias, $.action),
     mouse_action_alias: $ => /\S+/,
 
-    // needs test {{{
     [directive.clear_all_mouse_actions]: $ =>
       directive("clear_all_mouse_actions", $.boolean),
 
     [directive.repaint_delay]: $ => directive("repaint_delay", $.int),
     [directive.input_delay]: $ => directive("input_delay", $.int),
     [directive.sync_to_monitor]: $ => directive("sync_to_monitor", $.boolean),
-    /// }}}
 
     [directive.bell_on_tab]: $ =>
       directive("bell_on_tab", choice($.string, $.boolean, $.none)),
@@ -1185,7 +1179,6 @@ module.exports = checked_grammar({
     [directive.bell_path]: $ =>
       directive("bell_path", choice($.string, $.none)),
 
-    // needs test {{{
     [directive.remember_window_size]: $ =>
       directive("remember_window_size", $.boolean),
     [directive.initial_window_width]: $ =>
@@ -1234,7 +1227,98 @@ module.exports = checked_grammar({
     layout_option_name: $ => /[\w_]+/,
     _layout_option_value: $ => choice($.boolean, $.int, $.layout_option_atom),
 
-    /// }}}
+    [directive.window_resize_step_cells]: $ =>
+      directive("window_resize_step_cells", $.int),
+
+    [directive.window_resize_step_lines]: $ =>
+      directive("window_resize_step_lines", $.int),
+
+    [directive.window_border_width]: $ =>
+      directive(
+        "window_border_width",
+        seq($.int, optional(alias(choice("pt", "px"), $.unit))),
+      ),
+
+    [directive.draw_minimal_borders]: $ =>
+      directive("draw_minimal_borders", $.boolean),
+
+    [directive.window_margin_width]: $ =>
+      directive("window_margin_width", $.int, [$.int], [$.int], [$.int]),
+
+    [directive.single_window_margin_width]: $ =>
+      directive(
+        "single_window_margin_width",
+        $.signed_int,
+        [$.signed_int],
+        [$.signed_int],
+        [$.signed_int],
+      ),
+
+    [directive.window_padding_width]: $ =>
+      directive("window_padding_width", $.int, [$.int], [$.int], [$.int]),
+
+    [directive.placement_strategy]: $ =>
+      directive("placement_strategy", $.placement_strategy_value),
+    placement_strategy_value: $ => choice("center", "top-left"),
+
+    [directive.active_border_color]: $ =>
+      directive("active_border_color", choice($.hex_color, $.none)),
+
+    [directive.inactive_border_color]: $ =>
+      directive("inactive_border_color", choice($.hex_color, $.none)),
+
+    [directive.bell_border_color]: $ =>
+      directive("bell_border_color", choice($.hex_color, $.none)),
+
+    [directive.inactive_text_alpha]: $ =>
+      directive("inactive_text_alpha", $.float),
+
+    [directive.hide_window_decorations]: $ =>
+      directive(
+        "hide_window_decorations",
+        choice($.boolean, $.hide_window_decorations_titlebar_only),
+      ),
+    hide_window_decorations_titlebar_only: $ => "titlebar-only",
+
+    [directive.window_logo_path]: $ =>
+      directive("window_logo_path", choice($.none, $.varstring)),
+
+    [directive.window_logo_position]: $ =>
+      directive(
+        "window_logo_position",
+        choice(
+          $.window_logo_position_center,
+          $.window_logo_position_horizontal,
+          $.window_logo_position_vertical,
+          seq(
+            $.window_logo_position_vertical,
+            "-",
+            $.window_logo_position_horizontal,
+          ),
+        ),
+      ),
+    window_logo_position_center: $ => "center",
+    window_logo_position_vertical: $ => choice("top", "bottom"),
+    window_logo_position_horizontal: $ => choice("left", "right"),
+
+    [directive.window_logo_alpha]: $ => directive("window_logo_alpha", $.float),
+    [directive.resize_debounce_time]: $ =>
+      directive("resize_debounce_time", $.float),
+
+    [directive.resize_draw_strategy]: $ =>
+      directive("resize_draw_strategy", $.resize_draw_strategy_value),
+    resize_draw_strategy_value: $ => choice("static", "scale", "size"),
+
+    [directive.resize_in_steps]: $ => directive("resize_in_steps", $.boolean),
+    [directive.visual_window_select_characters]: $ =>
+      directive("visual_window_select_characters", $.string),
+
+    [directive.confirm_os_window_close]: $ =>
+      directive("confirm_os_window_close", $.signed_int),
+
+    [directive.tab_bar_edge]: $ =>
+      directive("tab_bar_edge", $.tab_bar_edge_value),
+    tab_bar_edge_value: $ => choice("top", "bottom"),
 
     color0_to_color255: $ =>
       seq($.color_directive, token.immediate(INLINE_WHITESPACE), $.hex_color),
@@ -1244,6 +1328,8 @@ module.exports = checked_grammar({
           "color",
           choice(
             // Any number from 0 to 255
+            // Does the Cursed Committee agree that making a number range with
+            // a regular expression is at least a *little* bit cursed?
             /[0-9]/,
             /[1-9][0-9]/,
             /1[0-9][0-9]/,
@@ -1256,7 +1342,8 @@ module.exports = checked_grammar({
     // Common / shared data types
     // --------------------------
 
-    none: $ => "none",
+    // I don't know why yet but adding token(prec(...)) fixed the window_logo_path test /shrug
+    none: $ => token(prec(10, "none")),
     auto: $ => "auto",
 
     codepoints: $ =>
@@ -1301,6 +1388,14 @@ module.exports = checked_grammar({
     int: $ => repeat1(/[0-9]+_?/),
     boolean: $ => choice("y", "yes", "true", "n", "no", "false"),
     hex_color: $ => /#[0-9a-fA-F]{6}/,
+
+    varstring: $ =>
+      repeat1(
+        choice($.varstring_var, $.varstring_dollar_literal, $.varstring_part),
+      ),
+    varstring_dollar_literal: $ => "$$",
+    varstring_var: $ => choice(seq("$", /\w+/), seq("${", /[^}]+/, "}")),
+    varstring_part: $ => /[^$]*/,
 
     // Kitty uses pathlib.Path.glob, which uses fnmatch syntax
     glob_pattern: $ =>

@@ -1,0 +1,11 @@
+==================
+window_logo_alpha float
+==================
+
+window_logo_alpha 0.1
+
+---
+
+(source_file
+  (window_logo_alpha
+    (float)))
