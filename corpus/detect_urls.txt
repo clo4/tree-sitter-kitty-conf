@@ -1,5 +1,5 @@
 ==================
-detect_urls boolean
+detect_urls bool
 ==================
 
 detect_urls no
@@ -8,4 +8,4 @@ detect_urls no
 
 (source_file
   (detect_urls
-    (boolean)))
+    (bool)))

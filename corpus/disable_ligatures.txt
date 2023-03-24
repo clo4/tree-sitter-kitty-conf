@@ -1,5 +1,5 @@
 ==================
-command_on_bell boolean
+command_on_bell bool
 ==================
 
 command_on_bell yes
@@ -8,7 +8,7 @@ command_on_bell yes
 
 (source_file
   (command_on_bell
-    (boolean)))
+    (bool)))
 
 ==================
 command_on_bell none

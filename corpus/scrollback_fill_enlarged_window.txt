@@ -1,5 +1,5 @@
 ==================
-scrollback_fill_enlarged_window boolean
+scrollback_fill_enlarged_window bool
 ==================
 
 scrollback_fill_enlarged_window yes
@@ -8,4 +8,4 @@ scrollback_fill_enlarged_window yes
 
 (source_file
   (scrollback_fill_enlarged_window
-    (boolean)))
+    (bool)))

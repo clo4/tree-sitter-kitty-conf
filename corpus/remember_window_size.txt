@@ -1,5 +1,5 @@
 ==================
-remember_window_size boolean
+remember_window_size bool
 ==================
 
 remember_window_size false
@@ -8,4 +8,4 @@ remember_window_size false
 
 (source_file
   (remember_window_size
-    (boolean)))
+    (bool)))

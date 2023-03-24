@@ -1,5 +1,5 @@
 ==================
-resize_in_steps boolean
+resize_in_steps bool
 ==================
 
 resize_in_steps n
@@ -8,4 +8,4 @@ resize_in_steps n
 
 (source_file
   (resize_in_steps
-    (boolean)))
+    (bool)))

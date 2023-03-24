@@ -23,7 +23,7 @@ bell_on_tab "🔔 "
     (string)))
 
 ==================
-bell_on_tab boolean
+bell_on_tab bool
 ==================
 
 bell_on_tab yes
@@ -32,7 +32,7 @@ bell_on_tab yes
 
 (source_file
   (bell_on_tab
-    (boolean)))
+    (bool)))
 
 ==================
 bell_on_tab none

@@ -56,7 +56,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         },
         {
@@ -128,7 +128,7 @@
     }
   },
   {
-    "type": "boolean",
+    "type": "bool",
     "named": true,
     "fields": {}
   },
@@ -187,7 +187,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -255,7 +255,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         },
         {
@@ -289,7 +289,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         },
         {
@@ -445,7 +445,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -480,7 +480,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -495,7 +495,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -544,7 +544,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -621,7 +621,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -697,7 +697,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         },
         {
@@ -892,7 +892,7 @@
         "required": true,
         "types": [
           {
-            "type": "boolean",
+            "type": "bool",
             "named": true
           },
           {
@@ -1204,7 +1204,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -1269,7 +1269,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -1284,7 +1284,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -1398,7 +1398,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -1892,7 +1892,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
@@ -2164,7 +2164,7 @@
       "required": true,
       "types": [
         {
-          "type": "boolean",
+          "type": "bool",
           "named": true
         }
       ]
